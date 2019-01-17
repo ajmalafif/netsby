@@ -2,6 +2,7 @@ import React from 'react'
 import Helmet from 'react-helmet'
 import { StaticQuery, graphql } from "gatsby"
 import { createGlobalStyle } from 'styled-components'
+import Navbar from '../components/Navbar.js'
 
 const GlobalStyle = createGlobalStyle`
   body {
@@ -51,7 +52,7 @@ const TemplateWrapper = ({ children }) => (
           <meta property="og:image" content="/img/og-image.jpg" />
         </Helmet>
         <GlobalStyle />
-        {/* <Navbar /> */}
+        <Navbar />
         <div>{children}</div>
       </div>
     )}
