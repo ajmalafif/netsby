@@ -1,8 +1,23 @@
 import React from 'react'
 import Helmet from 'react-helmet'
 import { StaticQuery, graphql } from "gatsby"
+import { createGlobalStyle } from 'styled-components'
 
-import Navbar from '../components/Navbar'
+const GlobalStyle = createGlobalStyle`
+  body {
+    font-family: "Inter UI", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
+  }
+
+  h1,
+  h2,
+  h3,
+  h4,
+  h5,
+  h6 {
+    font-family: "Inter UI", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
+    font-weight: 600;
+  }
+`
 
 const TemplateWrapper = ({ children }) => (
   <StaticQuery
@@ -35,7 +50,8 @@ const TemplateWrapper = ({ children }) => (
           <meta property="og:url" content="/" />
           <meta property="og:image" content="/img/og-image.jpg" />
         </Helmet>
-        <Navbar />
+        <GlobalStyle />
+        {/* <Navbar /> */}
         <div>{children}</div>
       </div>
     )}
