@@ -4,22 +4,22 @@
   "version": "0.1.0",
   "author": "Ajmal Afif",
   "dependencies": {
-    "gatsby": "^2.0.66",
-    "gatsby-image": "^2.0.23",
+    "gatsby": "^2.0.91",
+    "gatsby-image": "^2.0.26",
     "gatsby-plugin-netlify": "^2.0.6",
     "gatsby-plugin-netlify-cms": "^3.0.9",
     "gatsby-plugin-react-helmet": "^3.0.4",
     "gatsby-plugin-sass": "^2.0.7",
-    "gatsby-plugin-sharp": "^2.0.15",
+    "gatsby-plugin-sharp": "^2.0.17",
     "gatsby-remark-copy-linked-files": "^2.0.7",
     "gatsby-remark-images": "^3.0.1",
     "gatsby-remark-relative-images": "^0.2.1",
-    "gatsby-source-filesystem": "^2.0.12",
-    "gatsby-transformer-remark": "^2.1.15",
-    "gatsby-transformer-sharp": "^2.1.9",
+    "gatsby-source-filesystem": "^2.0.16",
+    "gatsby-transformer-remark": "^2.2.0",
+    "gatsby-transformer-sharp": "^2.1.10",
     "lodash": "^4.17.5",
     "lodash-webpack-plugin": "^0.11.4",
-    "netlify-cms": "^2.3.2",
+    "netlify-cms": "^2.3.3",
     "node-sass": "^4.11.0",
     "parcel-bundler": "^1.9.4",
     "prop-types": "^15.6.0",
@@ -45,6 +45,6 @@
   },
   "devDependencies": {
     "prettier": "^1.15.3",
-    "rimraf": "^2.6.2"
+    "rimraf": "^2.6.3"
   }
 }
