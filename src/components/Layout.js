@@ -6,6 +6,7 @@ import Navbar from '../components/Navbar.js'
 
 const GlobalStyle = createGlobalStyle`
   body {
+    margin: 0;
     font-family: "Inter UI", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
   }
 
@@ -33,7 +34,7 @@ const TemplateWrapper = ({ children }) => (
         }
     `}
     render={data => (
-      <div>
+      <div className="ph4-ns">
         <Helmet>
           <html lang="en" />
           <title>{data.site.siteMetadata.title}</title>
