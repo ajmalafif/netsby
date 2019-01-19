@@ -6,9 +6,7 @@ description: >-
   Let's see if this works well. Will install everything with this Gatsby.
   Replicating https://ajmalafif.design
 tags:
-  - flavor
-  - tasting
+  - design
+  - ux
 ---
-![flavor wheel](/img/products-full-width.jpg)
-
 Let's see if this works well. Will install everything with this Gatsby. Replicating https://ajmalafif.design
