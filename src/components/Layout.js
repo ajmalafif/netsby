@@ -2,6 +2,7 @@ import React from 'react'
 import Helmet from 'react-helmet'
 import { StaticQuery, graphql } from "gatsby"
 import { createGlobalStyle } from 'styled-components'
+import tachyons from 'tachyons-components'
 import Navbar from '../components/Navbar.js'
 
 const GlobalStyle = createGlobalStyle`
