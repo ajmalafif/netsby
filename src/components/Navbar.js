@@ -15,7 +15,7 @@ f4 mb0
 `
 
 const Header = tachyons("header")`
-fixed w-100 z-2 left-0 top-0 right-0 ph4-ns
+w-100 z-2 left-0 top-0 right-0 ph4-ns
 `
 
 const Nav = tachyons("nav")`
@@ -69,7 +69,7 @@ const Navbar = class extends React.Component {
         </List>
         <List>
           <Link className="navbar-item" to="/products">
-            Products
+            Experience
           </Link>
         </List>
         <List>
@@ -79,7 +79,7 @@ const Navbar = class extends React.Component {
         </List>
         <List>
           <Link className="navbar-item" to="/contact/examples">
-            Form Examples
+            Blog
           </Link>
         </List>
       </UnorderedList>

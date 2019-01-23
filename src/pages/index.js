@@ -1,15 +1,7 @@
 import React from 'react'
 import PropTypes from 'prop-types'
 import { Link, graphql } from 'gatsby'
-import tachyons from 'tachyons-components'
 import Layout from '../components/Layout'
-
-const Button = tachyons('button')`
-  f6 f5-ns fw6 dib ba
-  b--black-20 bg-blue white
-  ph3 ph4-ns pv2 pv3-ns br2
-  grow no-underline
-`
 
 export default class IndexPage extends React.Component {
   render() {
@@ -18,7 +10,6 @@ export default class IndexPage extends React.Component {
 
     return (
       <Layout>
-        <Button>Custom</Button>
         <section className="section">
           <div className="container">
             <div className="content">
@@ -27,8 +18,7 @@ export default class IndexPage extends React.Component {
             {posts
               .map(({ node: post }) => (
                 <div
-                  className="content"
-                  style={{ border: '1px solid #333', padding: '2em 4em' }}
+                  className="b1"
                   key={post.id}
                 >
                   <p>
