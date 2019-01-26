@@ -22,6 +22,13 @@ collections:
   - name: "pages"
     label: "Pages"
     files:
+      - file: "src/pages/experience/index.md"
+        label: "Experience"
+        name: "experience"
+        fields:
+          - {label: "Template Key", name: "templateKey", widget: "hidden", default: "experience-page"}
+          - {label: "Title", name: "title", widget: "string"}
+          - {label: "Body", name: "body", widget: "markdown"}
       - file: "src/pages/about/index.md"
         label: "About"
         name: "about"
