@@ -56,29 +56,39 @@ const Navbar = class extends React.Component {
     <Nav role="navigation" aria-label="main-navigation">
       <ContainerLogo>
         <HeaderLogo>
-          <Link to="/" className="dark-gray link logo" title="Ajmal Afif">
+          <Link 
+          to="/" 
+          className="dark-gray link logo" 
+          title="Ajmal Afif">
             @ajmalafif
           </Link>
         </HeaderLogo>
       </ContainerLogo>
       <UnorderedList>
         <List>
-          <Link className="navbar-item" to="/about">
+          <Link
+          className="link dark-gray"
+          to="/about"
+          activeStyle={{
+            color: '#05f',
+            fontWeight: '600'
+          }}
+          >
             About
           </Link>
         </List>
         <List>
-          <Link className="navbar-item" to="/products">
+          <Link className="link dark-gray" to="/products">
             Experience
           </Link>
         </List>
         <List>
-          <Link className="navbar-item" to="/contact">
+          <Link className="link dark-gray" to="/contact">
             Contact
           </Link>
         </List>
         <List>
-          <Link className="navbar-item" to="/contact/examples">
+          <Link className="link dark-gray" to="/contact/examples">
             Blog
           </Link>
         </List>
