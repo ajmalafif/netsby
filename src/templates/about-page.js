@@ -2,25 +2,27 @@ import React from 'react'
 import PropTypes from 'prop-types'
 import { graphql } from 'gatsby'
 import Layout from '../components/Layout'
+import tachyons from 'tachyons-components'
 import Content, { HTMLContent } from '../components/Content'
+
+const SectionTitle = tachyons("h1")`
+  mb1 mt0
+`
 
 export const AboutPageTemplate = ({ title, content, contentComponent }) => {
   const PageContent = contentComponent || Content
 
   return (
-    <section className="section section--gradient">
-      <div className="container">
-        <div className="columns">
-          <div className="column is-10 is-offset-1">
-            <div className="section">
-              <h2 className="title is-size-3 has-text-weight-bold is-bold-light">
-                {title}
-              </h2>
-              <PageContent className="content" content={content} />
-            </div>
-          </div>
+    <section className="w-100 mt4 mt5-ns">
+      <article className="mt6 db wrap">
+        <div className="fl w-100 w-50-ns tc tl-ns pb0 pb4-ns">
+          <SectionTitle>{title}</SectionTitle>
+          <p className="moon-gray mt0">Ajmal Afif</p>
         </div>
-      </div>
+        <div className="fl w-100 w-50-ns ph4 ph0-ns lh-copy mb6">
+          <PageContent className="content" content={content} />
+        </div>
+      </article>
     </section>
   )
 }
