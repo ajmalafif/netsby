@@ -5,25 +5,45 @@ import Layout from '../components/Layout'
 import tachyons from 'tachyons-components'
 import Content, { HTMLContent } from '../components/Content'
 
+const Section = tachyons("section")`
+  w-100 mt4 mt5-ns
+`
+
+const Article = tachyons("article")`
+  mt6 db wrap
+`
+
+const SectionAside = tachyons("div")`
+  fl w-100 w-50-ns tc tl-ns pb0 pb4-ns
+`
+
+const SectionSubTitle = tachyons("p")`
+  moon-gray mt0
+`
+
 const SectionTitle = tachyons("h1")`
   mb1 mt0
+`
+
+const SectionContent = tachyons("div")`
+  fl w-100 w-50-ns ph4 ph0-ns lh-copy mb6
 `
 
 export const AboutPageTemplate = ({ title, content, contentComponent }) => {
   const PageContent = contentComponent || Content
 
   return (
-    <section className="w-100 mt4 mt5-ns">
-      <article className="mt6 db wrap">
-        <div className="fl w-100 w-50-ns tc tl-ns pb0 pb4-ns">
+    <Section>
+      <Article>
+        <SectionAside>
           <SectionTitle>{title}</SectionTitle>
-          <p className="moon-gray mt0">Ajmal Afif</p>
-        </div>
-        <div className="fl w-100 w-50-ns ph4 ph0-ns lh-copy mb6">
+          <SectionSubTitle>Ajmal Afif</SectionSubTitle>
+        </SectionAside>
+        <SectionContent>
           <PageContent className="content" content={content} />
-        </div>
-      </article>
-    </section>
+        </SectionContent>
+      </Article>
+    </Section>
   )
 }
 

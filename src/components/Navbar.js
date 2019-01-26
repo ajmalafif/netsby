@@ -15,7 +15,7 @@ f4 mb0
 `
 
 const Header = tachyons("header")`
-w-100 z-2 left-0 top-0 right-0 ph4-ns
+  z-2 left-0 top-0 right-0 ph4-ns
 `
 
 const Nav = tachyons("nav")`
@@ -53,7 +53,7 @@ const Navbar = class extends React.Component {
  render() {
    return (
      <Header>
-    <Nav style={{ position: 'relative', margin: '0 auto', maxWidth: '980px' }} role="navigation" aria-label="main-navigation">
+    <Nav role="navigation" aria-label="main-navigation">
       <ContainerLogo>
         <HeaderLogo>
           <Link to="/" className="dark-gray link logo" title="Ajmal Afif">

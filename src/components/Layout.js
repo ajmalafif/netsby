@@ -12,6 +12,17 @@ const GlobalStyle = createGlobalStyle`
     -moz-osx-font-smoothing: grayscale;
     text-rendering: optimizeLegibility;
   }
+
+  .wrap {
+    position: relative;
+    margin: 0 auto;
+    max-width: 980px;
+  }
+
+  h1 {
+    font-size: 36px;
+    font-weight: 400; 
+  }
 `;
 
 const TemplateWrapper = ({ children }) => (
