@@ -3,7 +3,7 @@ import { Link } from 'gatsby'
 import tachyons from 'tachyons-components'
 
 const UnorderedList = tachyons("ul")`
-dib w-100 w-75-ns tr-ns tc mt4 mt0-ns ph0
+dib w-100 w-75-ns tc tr-ns mt4 mt0-ns ph0
 `
 
 const List = tachyons("li")`
@@ -15,7 +15,7 @@ f4 mb0
 `
 
 const Header = tachyons("header")`
-  z-2 left-0 top-0 right-0 ph4-ns
+z-2 left-0 top-0 right-0 ph4-ns
 `
 
 const Nav = tachyons("nav")`
