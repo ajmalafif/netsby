@@ -1,8 +1,13 @@
 import React from 'react'
 import Helmet from 'react-helmet'
 import { StaticQuery, graphql } from "gatsby"
+import tachyons from 'tachyons-components'
 import { createGlobalStyle } from 'styled-components'
 import Navbar from '../components/Navbar.js'
+
+const StyledBody = tachyons("div")`
+ph4-ns
+`
 
 const GlobalStyle = createGlobalStyle`
   body {
@@ -24,25 +29,54 @@ const GlobalStyle = createGlobalStyle`
     font-weight: 400;
   }
 
-  nav h1 {
-    text-align: left;
+  header {
+    max-height: 85px;
+  }
+
+  nav {
     @media screen and (min-width: 30em) {
+      padding-top: 16px;
+      padding-bottom: 16px;
+      width: 100%;
+      max-height: 53px;
+    }
+  }
+
+  nav h1 {
+    @media screen and (min-width: 30em) {
+      text-align: left;
+      display: inline-block;
+      margin-top: 16px;
+      margin-bottom: 0;
+      max-height: 22px;
+      line-height: 20px;
       width: 25%;
     }
   }
 
   nav ul {
-    padding: 0;
-    text-align: right;
     @media screen and (min-width: 30em) {
+      padding: 0;
+      margin-top: 0;
+      display: inline-block;
+      text-align: right;
       width: 75%;
+      max-height: 19px;
     }
   }
 
   nav li {
-    display: inline-block;
-    margin-right: 32px;
-    text-align: right;
+    @media screen and (min-width: 30em) {
+      display: inline-block;
+      margin-right: 32px;
+      text-align: right;
+    }
+  }
+
+  nav li a {
+    @media screen and (min-width: 30em) {
+      font-size: 16px;
+    }
   }
 
 `;
@@ -60,7 +94,7 @@ const TemplateWrapper = ({ children }) => (
         }
     `}
     render={data => (
-      <div className="ph4-ns">
+      <StyledBody>
         <Helmet>
           <html lang="en" />
           <title>{data.site.siteMetadata.title}</title>
@@ -81,7 +115,7 @@ const TemplateWrapper = ({ children }) => (
         <GlobalStyle />
         <Navbar />
         <div>{children}</div>
-      </div>
+      </StyledBody>
     )}
   />
 )

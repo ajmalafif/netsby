@@ -1,8 +1,8 @@
 import React from 'react'
 import PropTypes from 'prop-types'
 import { graphql } from 'gatsby'
-import Layout from '../components/Layout'
 import tachyons from 'tachyons-components'
+import Layout from '../components/Layout'
 import Content, { HTMLContent } from '../components/Content'
 
 const Section = tachyons("section")`

@@ -20,34 +20,32 @@ const List = tachyons("li")`
 f5 dib mr4 mr4-ns
 `
 const HeaderLogo = tachyons("h1")`
-f4 mb0 mt3
+f4 mb0 mt3 dib w-100 w-25-ns tl-ns tc
 `
 const Header = tachyons("header")`
-z-2 left-0 top-0 right-0 ph4-ns
+z-2 left-0 top-0 right-0 ph4-ns wrap
 `
 const Nav = tachyons("nav")`
-dt w-100 border-box pv3 wrap
+db w-100 border-box pv3
 `
-const ContainerLogo = tachyons("div")`
-dib w-100 w-25-ns tl-ns tc
-`
+// const ContainerLogo = tachyons("div")`
+
+// `
 
 const Navbar = class extends React.Component {
- 
- render() {
-   return (
-     <Header>
+
+render() {
+  return (
+    <Header>
     <Nav role="navigation" aria-label="main-navigation">
-      <ContainerLogo>
-        <HeaderLogo>
-          <StyledLink
-          to="/"
-          style={{ fontSize: '16px' }}
-          title="Ajmal Afif">
-            @ajmalafif
-          </StyledLink>
-        </HeaderLogo>
-      </ContainerLogo>
+      <HeaderLogo>
+        <StyledLink
+        to="/"
+        style={{ fontSize: '16px' }}
+        title="Ajmal Afif">
+          @ajmalafif
+        </StyledLink>
+      </HeaderLogo>
       <UnorderedList>
         <List>
           <StyledLink to="/experience/"
@@ -70,12 +68,12 @@ const Navbar = class extends React.Component {
           </StyledLink>
         </List>
         <List>
-          <StyledLink className="link dark-gray" to="/contact">
-            Contact
-          </StyledLink>
-        </List>
-        <List>
-          <StyledLink className="link dark-gray" to="/contact/examples">
+          <StyledLink to="/contact/examples/"
+          activeStyle={{
+            color: '#05f',
+            fontWeight: 600
+          }}
+          >
             Blog
           </StyledLink>
         </List>
