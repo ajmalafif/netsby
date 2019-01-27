@@ -64,6 +64,16 @@ module.exports = {
         modulePath: `${__dirname}/src/cms/cms.js`,
       },
     },
-    'gatsby-plugin-netlify', // make sure to keep it last in the array
+    'gatsby-plugin-netlify',
+    {
+      resolve: `gatsby-plugin-purgecss`,
+      options: {
+        printRejected: true, // Print removed selectors and processed file names
+        develop: true, // Enable while using `gatsby develop`
+        // whitelist: ['whitelist'], // Don't remove this selector
+        ignore: ['/ignored.css', 'prismjs/', 'docsearch.js/'], // Ignore files/folders
+        purgeOnly : ['components/'] // Purge only these files/folders
+      }
+    } // make sure to keep it last in the array
   ],
 }

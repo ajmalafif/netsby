@@ -25,6 +25,7 @@ const GlobalStyle = createGlobalStyle`
   }
 
   nav h1 {
+    text-align: left;
     @media screen and (min-width: 30em) {
       width: 25%;
     }
@@ -32,6 +33,7 @@ const GlobalStyle = createGlobalStyle`
 
   nav ul {
     padding: 0;
+    text-align: right;
     @media screen and (min-width: 30em) {
       width: 75%;
     }
