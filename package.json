@@ -50,7 +50,7 @@
   },
   "devDependencies": {
     "gatsby-plugin-remove-trailing-slashes": "^2.0.6",
-    "prettier": "^1.15.3",
+    "prettier": "^1.16.1",
     "rimraf": "^2.6.3"
   }
 }
