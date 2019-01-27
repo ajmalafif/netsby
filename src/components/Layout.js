@@ -23,6 +23,15 @@ const GlobalStyle = createGlobalStyle`
     font-size: 36px;
     font-weight: 400;
   }
+
+  ul {
+    padding: 0;
+  }
+
+  li {
+    display: inline-block;
+  }
+
 `;
 
 const TemplateWrapper = ({ children }) => (
