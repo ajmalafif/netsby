@@ -50,7 +50,7 @@ const Navbar = class extends React.Component {
           textDecoration: 'none',
           color: '#333'
           }}
-          to="/experience"
+          to="/experience/"
           activeStyle={{
             color: '#05f',
             fontWeight: '600'
@@ -67,7 +67,7 @@ const Navbar = class extends React.Component {
           textDecoration: 'none',
           color: '#333'
           }}
-          to="/about"
+          to="/about/"
           activeStyle={{
             color: '#05f',
             fontWeight: '600'

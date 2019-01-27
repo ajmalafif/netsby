@@ -37,11 +37,12 @@ export const ExperiencePageTemplate = ({ title, content, contentComponent }) => 
       <Article>
         <SectionAside>
           <SectionTitle>{title}</SectionTitle>
-          <SectionSubTitle>Ajmal Afif</SectionSubTitle>
+          <SectionSubTitle>Featured work & past experiences</SectionSubTitle>
         </SectionAside>
         <SectionContent>
-          <PageContent className="content" content={content} />
+        I have extensive working experience with diversed teammates in recent years, and worked with multiple startups & agencies for almost 6 years in the past.
         </SectionContent>
+        <PageContent className="content" content={content} />
       </Article>
     </Section>
   )

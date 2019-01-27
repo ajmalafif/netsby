@@ -1,9 +1,14 @@
 ---
-templateKey: about-page
-title: About Ajmal
+templateKey: experience-page
+title: Experience
 ---
-One of my life goals is to create a fulfilling and balanced lifestyle, and extend it to people I love and care for the most.
+# UX Designer at Grab
+I am a UX Designer in the Economics team at Grab. I work closely with Project Managers and Behavioral Scientists realizing our ideas by creating a library of use cases through prototypes. This role empowers me to contribute to scoping features and influence product roadmaps.
 
-I went to Pennsylvania State University for college and have a degree in Actuarial Science.
+Besides that, for each project that I am involved in, I work closely with our User Experience Research team (UER). Depending on the stage of the project, together with other members of the working group, most of the time we'll be involved in either the Fundamental User Research, Product Related Research or Design Related Research that is run by UER team.
 
-I see myself as a journeyman that is always pursuing mastery by putting my knowledge into practice. I believe the best way to learn is by doing and also teaching.
+## Design Systems
+Outside of my official role, I am involved as a committee member of Grab Design Systems (GDS). I help to maintain our official Sketch Libraries, shape contribution processes, and teach fellow designers how they can consume and contribute to GDS through informal training sessions.
+
+## Design Tools Advocate
+I record bitesized screencasts sharing tips & tricks for using design tools like Sketch, Invision & Abstract and shared them in our Slack channels.
