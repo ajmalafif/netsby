@@ -46,7 +46,8 @@ const GlobalStyle = createGlobalStyle`
     @media screen and (min-width: 30em) {
       text-align: left;
       display: inline-block;
-      margin-top: 16px;
+      font-size: 1.25rem;
+      margin-top: 1rem;
       margin-bottom: 0;
       max-height: 22px;
       line-height: 20px;
