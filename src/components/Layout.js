@@ -26,10 +26,15 @@ const GlobalStyle = createGlobalStyle`
 
   ul {
     padding: 0;
+    @media screen and (min-width: 30em) {
+      width: 75%;
+    }
   }
 
   li {
     display: inline-block;
+    margin-right: 32px;
+    text-align: right;
   }
 
 `;
