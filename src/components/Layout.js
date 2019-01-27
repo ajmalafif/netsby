@@ -24,14 +24,20 @@ const GlobalStyle = createGlobalStyle`
     font-weight: 400;
   }
 
-  ul {
+  nav h1 {
+    @media screen and (min-width: 30em) {
+      width: 25%;
+    }
+  }
+
+  nav ul {
     padding: 0;
     @media screen and (min-width: 30em) {
       width: 75%;
     }
   }
 
-  li {
+  nav li {
     display: inline-block;
     margin-right: 32px;
     text-align: right;
