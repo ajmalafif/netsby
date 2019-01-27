@@ -55,6 +55,7 @@ const Navbar = class extends React.Component {
             color: '#05f',
             fontWeight: '600'
           }}
+          activeClassName='active'
           >
             Experience
           </Link>
@@ -72,6 +73,7 @@ const Navbar = class extends React.Component {
             color: '#05f',
             fontWeight: '600'
           }}
+          activeClassName='active'
           >
             About
           </Link>

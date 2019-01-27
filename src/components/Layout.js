@@ -23,6 +23,11 @@ const GlobalStyle = createGlobalStyle`
     font-size: 36px;
     font-weight: 400;
   }
+
+  li a.active {
+    color: '#05f';
+    font-weight: '600';
+  }
 `;
 
 const TemplateWrapper = ({ children }) => (
