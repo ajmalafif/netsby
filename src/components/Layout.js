@@ -13,66 +13,85 @@ ph4-ns
 
 const GlobalStyle = createGlobalStyle`
   body {
-    margin: 0;
-    font-family: "Inter UI", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
-    -webkit-font-smoothing: antialiased;
-    -moz-osx-font-smoothing: grayscale;
-    text-rendering: optimizeLegibility;
+  font-family: "Inter UI", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
+    Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji",
+    "Segoe UI Symbol";
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  text-rendering: optimizeLegibility;
   }
+
+  h1 {
+    font-size: 36px;
+    font-weight: normal;
+  }
+
+  h3 {
+    font-size: 20px;
+    font-weight: normal;
+  }
+
+  nav li:last-child {
+    margin-right: 0;
+  }
+
+  ul {
+    padding: 0;
+  }
+
+  .bg-primary {
+    background-color: #0055ff;
+  }
+
+  .bg-secondary {
+    background-color: rgba(0, 85, 255, 0.03);
+  }
+
+  .br-secondary {
+    border: 1px solid #0055ff;
+  }
+
+  .bs-secondary {
+    box-shadow: 0 1px 2px 0 rgba(0, 0, 0, 0.1);
+  }
+
   .wrap {
     position: relative;
     margin: 0 auto;
     max-width: 980px;
   }
-  h1 {
-    font-size: 36px;
-    font-weight: 400;
-    margin: 0;
+
+  .blog article .link,
+  .blog article .link:visited {
+    color: #000;
   }
-  header {
-    height: 86px;
+
+  .logo {
+    font-size: 16px;
   }
-  nav {
-    @media screen and (min-width: 30em) {
-      padding-top: 16px;
-      padding-bottom: 16px;
-      width: 100%;
-      max-height: 53px;
-    }
+
+  input[type="text"]:focus,
+  input[type="email"]:focus,
+  textarea:focus {
+    box-shadow: 0 0 2px rgb(0, 85, 255, 0.5);
+    border: 1px solid rgba(0, 85, 255, 0.03);
+    outline: none;
   }
-  nav h1 {
-    @media screen and (min-width: 30em) {
-      text-align: left;
-      display: inline-block;
-      font-size: 1.25rem;
-      margin-top: 1rem;
-      margin-bottom: 0;
-      max-height: 22px;
-      line-height: 20px;
-      width: 25%;
-    }
+
+  a.bg-primary:focus,
+  a.bg-primary:hover,
+  button:focus,
+  button:hover {
+    background-color: #04c;
   }
-  nav ul {
-    @media screen and (min-width: 30em) {
-      padding: 0;
-      margin-top: 0;
-      display: inline-block;
-      text-align: right;
-      width: 75%;
-      max-height: 19px;
-    }
+
+  a.bg-secondary {
+    color: #04c;
   }
-  nav li {
-    @media screen and (min-width: 30em) {
-      display: inline-block;
-      margin-right: 32px;
-      text-align: right;
-    }
-  }
-  nav li a {
-    @media screen and (min-width: 30em) {
-      font-size: 16px;
-    }
+
+  a.bg-secondary:focus,
+  a.bg-secondary:hover {
+    background-color: rgb(0, 85, 255, 0.09);
   }
 `;
 

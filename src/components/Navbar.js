@@ -23,10 +23,10 @@ const HeaderLogo = tachyons("h1")`
 f4 mb0 mt3 dib w-100 w-25-ns tl-ns tc
 `
 const Header = tachyons("header")`
-z-2 left-0 top-0 right-0 wrap
+w-100
 `
 const Nav = tachyons("nav")`
-db w-100 border-box pv3
+dt w-100 border-box pv3 wrap
 `
 // const ContainerLogo = tachyons("div")`
 
