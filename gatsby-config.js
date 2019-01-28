@@ -6,6 +6,7 @@ module.exports = {
   plugins: [
     'gatsby-plugin-react-helmet',
     'gatsby-plugin-styled-components',
+    'gatsby-plugin-sass',
     {
       // keep as first gatsby-source-filesystem plugin for gatsby image support
       resolve: 'gatsby-source-filesystem',
@@ -72,7 +73,7 @@ module.exports = {
         develop: true, // Enable while using `gatsby develop`
         // whitelist: ['whitelist'], // Don't remove this selector
         ignore: ['/ignored.css', 'prismjs/', 'docsearch.js/'], // Ignore files/folders
-        purgeOnly : ['components/'] // Purge only these files/folders
+        purgeOnly : ['components/', 'styles'] // Purge only these files/folders
       }
     } // make sure to keep it last in the array
   ],

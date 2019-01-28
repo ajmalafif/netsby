@@ -4,6 +4,8 @@ import { StaticQuery, graphql } from "gatsby"
 import tachyons from 'tachyons-components'
 import { createGlobalStyle } from 'styled-components'
 import Navbar from '../components/Navbar.js'
+import '../styles/main.scss'
+
 
 const StyledBody = tachyons("div")`
 ph4-ns
@@ -27,14 +29,8 @@ const GlobalStyle = createGlobalStyle`
     font-weight: 400;
     margin: 0;
   }
-  section {
-    @media screen and (min-width: 30em) {
-    margin-top: 4rem;
-    }
-    margin-top: 2rem;
-  }
   header {
-    max-height: 85px;
+    height: 86px;
   }
   nav {
     @media screen and (min-width: 30em) {
@@ -76,12 +72,6 @@ const GlobalStyle = createGlobalStyle`
   nav li a {
     @media screen and (min-width: 30em) {
       font-size: 16px;
-    }
-  }
-  .w-50-ns {
-    @media screen and (min-width: 30em) {
-      width: 50%;
-      float: left;
     }
   }
 `;

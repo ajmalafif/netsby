@@ -6,15 +6,15 @@ import Layout from '../components/Layout'
 import Content, { HTMLContent } from '../components/Content'
 
 const Section = tachyons("section")`
-  w-100 mt4 mt5-ns
+  w-100 pt4 pt5-ns
 `
 
 const Article = tachyons("article")`
-  mt6 db wrap
+  db wrap
 `
 
 const SectionAside = tachyons("div")`
-  fl fn-ns w-100 w-50-ns tc tl-ns pb0 pb4-ns
+  fl w-100 w-50-ns tc tl-ns pb0 pb4-ns
 `
 
 const SectionSubTitle = tachyons("p")`
@@ -26,7 +26,7 @@ const SectionTitle = tachyons("h1")`
 `
 
 const SectionContent = tachyons("div")`
-  fl fn-ns w-100 w-50-ns ph4 ph0-ns lh-copy mb6
+  fl w-100 w-50-ns ph4 ph0-ns lh-copy mb6
 `
 
 export const ExperiencePageTemplate = ({ title, content, contentComponent }) => {
@@ -40,7 +40,7 @@ export const ExperiencePageTemplate = ({ title, content, contentComponent }) => 
           <SectionSubTitle>Featured work & past experiences</SectionSubTitle>
         </SectionAside>
         <SectionContent>
-        I have extensive working experience with diversed teammates in recent years, and worked with multiple startups & agencies for almost 6 years in the past.
+          <p>I have extensive working experience with diversed teammates in recent years, and worked with multiple startups & agencies for almost 6 years in the past.</p>
         </SectionContent>
         <PageContent className="content" content={content} />
       </Article>
