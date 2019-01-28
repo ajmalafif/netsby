@@ -67,6 +67,19 @@ module.exports = {
     },
     'gatsby-plugin-netlify',
     {
+      resolve: `gatsby-plugin-manifest`,
+      options: {
+        name: 'netsby',
+        short_name: 'netsby',
+        start_url: '/',
+        background_color: '#05f',
+        theme_color: '#05f',
+        display: 'minimal-ui',
+        icon: 'src/img/icon@3x.png', // This path is relative to the root of the site.
+      },
+    },
+    'gatsby-plugin-offline',
+    {
       resolve: `gatsby-plugin-purgecss`,
       options: {
         printRejected: true, // Print removed selectors and processed file names
