@@ -14,7 +14,7 @@ const Article = tachyons("article")`
 `
 
 const SectionAside = tachyons("div")`
-  fl w-100 w-50-ns tc tl-ns pb0 pb4-ns
+  fl fn-ns w-100 w-50-ns tc tl-ns pb0 pb4-ns
 `
 
 const SectionSubTitle = tachyons("p")`
@@ -26,7 +26,7 @@ const SectionTitle = tachyons("h1")`
 `
 
 const SectionContent = tachyons("div")`
-  fl w-100 w-50-ns ph4 ph0-ns lh-copy mb6
+  fl fn-ns w-100 w-50-ns ph4 ph0-ns lh-copy mb6
 `
 
 export const ExperiencePageTemplate = ({ title, content, contentComponent }) => {

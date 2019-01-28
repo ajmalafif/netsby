@@ -17,22 +17,25 @@ const GlobalStyle = createGlobalStyle`
     -moz-osx-font-smoothing: grayscale;
     text-rendering: optimizeLegibility;
   }
-
   .wrap {
     position: relative;
     margin: 0 auto;
     max-width: 980px;
   }
-
   h1 {
     font-size: 36px;
     font-weight: 400;
+    margin: 0;
   }
-
+  section {
+    @media screen and (min-width: 30em) {
+    margin-top: 4rem;
+    }
+    margin-top: 2rem;
+  }
   header {
     max-height: 85px;
   }
-
   nav {
     @media screen and (min-width: 30em) {
       padding-top: 16px;
@@ -41,7 +44,6 @@ const GlobalStyle = createGlobalStyle`
       max-height: 53px;
     }
   }
-
   nav h1 {
     @media screen and (min-width: 30em) {
       text-align: left;
@@ -54,7 +56,6 @@ const GlobalStyle = createGlobalStyle`
       width: 25%;
     }
   }
-
   nav ul {
     @media screen and (min-width: 30em) {
       padding: 0;
@@ -65,7 +66,6 @@ const GlobalStyle = createGlobalStyle`
       max-height: 19px;
     }
   }
-
   nav li {
     @media screen and (min-width: 30em) {
       display: inline-block;
@@ -73,13 +73,17 @@ const GlobalStyle = createGlobalStyle`
       text-align: right;
     }
   }
-
   nav li a {
     @media screen and (min-width: 30em) {
       font-size: 16px;
     }
   }
-
+  .w-50-ns {
+    @media screen and (min-width: 30em) {
+      width: 50%;
+      float: left;
+    }
+  }
 `;
 
 const TemplateWrapper = ({ children }) => (
