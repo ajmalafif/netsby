@@ -1,14 +1,9 @@
 ---
-templateKey: 'product-page'
-path: /products
-title: Our Coffee
+templateKey: product-page
+title: Experience
 image: /img/jumbotron.jpg
-heading: What we offer
-description: >-
-  Kaldi is the ultimate spot for coffee lovers who want to learn about their
-  java’s origin and support the farmers that grew it. We take coffee production,
-  roasting and brewing seriously and we’re glad to pass that knowledge to
-  anyone.
+heading: Experience
+description: subtitle
 intro:
   blurbs:
     - image: /img/coffee.png
@@ -38,12 +33,10 @@ intro:
         space where you can hang out with fellow coffee lovers and learn about
         coffee making techniques. All of the artwork on display there is for
         sale. The full price you pay goes to the artist.
-  heading: What we offer
-  description: >
-    Kaldi is the ultimate spot for coffee lovers who want to learn about their
-    java’s origin and support the farmers that grew it. We take coffee
-    production, roasting and brewing seriously and we’re glad to pass that
-    knowledge to anyone. This is an edit via identity...
+  heading: Agencies & Startups
+  description: >-
+    Earlier in my career, I have done my fair share of hustling with startups
+    wearing many hats, doing design & frontend development.
 main:
   heading: Great coffee with no compromises
   description: >
@@ -61,14 +54,8 @@ main:
     alt: Coffee beans
     image: /img/products-grid1.jpg
 testimonials:
-  - author: Elisabeth Kaurismäki
-    quote: >-
-      The first time I tried Kaldi’s coffee, I couldn’t even believe that was
-      the same thing I’ve been drinking every morning.
-  - author: Philipp Trommler
-    quote: >-
-      Kaldi is the place to go if you want the best quality coffee. I love their
-      stance on empowering farmers and transparency.
+  - author: random
+    quote: Success comes after that last try
 full_image: /img/products-full-width.jpg
 pricing:
   heading: Monthly subscriptions
@@ -99,3 +86,4 @@ pricing:
       plan: Custom
       price: '??'
 ---
+
