@@ -77,6 +77,16 @@ render() {
             Blog
           </StyledLink>
         </List>
+        <List>
+          <StyledLink to="/products/"
+          activeStyle={{
+            color: '#05f',
+            fontWeight: 600
+          }}
+          >
+            Products
+          </StyledLink>
+        </List>
       </UnorderedList>
     </Nav>
   </Header>
