@@ -42,7 +42,7 @@ export const ExperiencePageTemplate = ({ title, content, contentComponent }) => 
         <SectionContent>
           <p>I have extensive working experience with diversed teammates in recent years, and worked with multiple startups & agencies for almost 6 years in the past.</p>
         </SectionContent>
-        <PageContent className="content" content={content} />
+        <PageContent className="content lh-copy" content={content} />
       </Article>
     </Section>
   )
