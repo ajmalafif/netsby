@@ -28,8 +28,7 @@ mt0 lh-copy
 const FeatureGrid = ({ gridItems }) => (
   <SectionFeatures>
     {gridItems.map(item => (
-      <div key={item.text}>
-        <ContainerFeature>
+        <ContainerFeature key={item.text}>
           <ContainerFeatureImage>
             <PreviewFixedImage imageInfo={item} />
           </ContainerFeatureImage>
@@ -42,7 +41,6 @@ const FeatureGrid = ({ gridItems }) => (
             </FeatureDescription>
           </ContainerFeatureContent>
         </ContainerFeature>
-      </div>
     ))}
   </SectionFeatures>
 )

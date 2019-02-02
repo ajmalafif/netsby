@@ -4,8 +4,8 @@ import { graphql } from 'gatsby'
 import Layout from '../components/Layout'
 import Features from '../components/Features'
 import PreviewCompatibleImage from '../components/PreviewCompatibleImage'
-// import PreviewFixedImage from '../components/PreviewFixedImage'
 import tachyons from 'tachyons-components'
+import Content, { HTMLContent } from '../components/Content'
 
 const SectionHeader = tachyons('h2')`
 f2 fw6 dark-gray mb1 mt0
@@ -50,7 +50,12 @@ export const ProductPageTemplate = ({
   description,
   intro,
   main,
-}) => (
+  content,
+  contentComponent,
+}) => {
+const PageContent = contentComponent || Content
+
+return (
   <div className="w-100">
     <SectionIntro>
       <ContainerIntroHeadings>
@@ -62,22 +67,23 @@ export const ProductPageTemplate = ({
         </SectionSubHeader>
       </ContainerIntroHeadings>
       <ContainerIntroDescriptions>
-        <SectionSubHeader>
-          {description}
-        </SectionSubHeader>
+        {description}
       </ContainerIntroDescriptions>
     </SectionIntro>
-    
-    <Features gridItems={intro.blurbs} />
 
     <SectionMainContent>
       <ContainerMainContent>
       <MainContentHeader>
         {main.heading}
       </MainContentHeader>
-      <MainContent>{main.description}</MainContent>
+      <MainContent>
+      {main.description}
+      <PageContent className="content" content={content} />
+      </MainContent>
       </ContainerMainContent>
     </SectionMainContent>
+
+    <Features gridItems={intro.blurbs} />
 
     <div className="tile is-parent is-vertical">
       <article className="tile is-child">
@@ -89,14 +95,12 @@ export const ProductPageTemplate = ({
         <PreviewCompatibleImage imageInfo={main.image2} />
       </article>
     </div>
-    
     <article className="tile is-child">
       <PreviewCompatibleImage imageInfo={main.image3} />
     </article>
     </div>
-
-)
-
+  )
+}
 ProductPageTemplate.propTypes = {
   image: PropTypes.oneOfType([PropTypes.object, PropTypes.string]),
   title: PropTypes.string,
@@ -112,6 +116,8 @@ ProductPageTemplate.propTypes = {
     image2: PropTypes.oneOfType([PropTypes.object, PropTypes.string]),
     image3: PropTypes.oneOfType([PropTypes.object, PropTypes.string]),
   }),
+  content: PropTypes.string,
+  contentComponent: PropTypes.func,
 }
 
 const ProductPage = ({ data }) => {
@@ -120,11 +126,13 @@ const ProductPage = ({ data }) => {
   return (
     <Layout>
       <ProductPageTemplate
+        contentComponent={HTMLContent}
         title={frontmatter.title}
         heading={frontmatter.heading}
         description={frontmatter.description}
         intro={frontmatter.intro}
         main={frontmatter.main}
+        content={frontmatter.html}
       />
     </Layout>
   )
@@ -143,6 +151,7 @@ export default ProductPage
 export const productPageQuery = graphql`
   query ProductPage($id: String!) {
     markdownRemark(id: { eq: $id }) {
+      html
       frontmatter {
         title
         heading
