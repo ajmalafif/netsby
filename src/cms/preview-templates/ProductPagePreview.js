@@ -44,6 +44,7 @@ ProductPagePreview.propTypes = {
     getIn: PropTypes.func,
   }),
   getAsset: PropTypes.func,
+  widgetFor: PropTypes.func,
 }
 
 export default ProductPagePreview
