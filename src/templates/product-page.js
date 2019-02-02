@@ -3,15 +3,28 @@ import PropTypes from 'prop-types'
 import { graphql } from 'gatsby'
 import Layout from '../components/Layout'
 import Features from '../components/Features'
-import PreviewCompatibleImage from '../components/PreviewCompatibleImage'
+// import PreviewCompatibleImage from '../components/PreviewCompatibleImage'
+// import PreviewFixedImage from '../components/PreviewFixedImage'
 import tachyons from 'tachyons-components'
 
 const SectionHeader = tachyons('h2')`
 f2
 `
 
-const SectionSubHeader = tachyons("p")`
+const SectionSubHeader = tachyons('p')`
   gray mt0
+`
+
+const SectionIntro = tachyons('article')`
+db wrap pt4 pt5-ns
+`
+
+const SectionIntroHeadings = tachyons('div')`
+fl w-100 w-50-ns tc tl-ns pb0 pb4-ns
+`
+
+const SectionIntroDescriptions = tachyons('div')`
+fl w-100 w-50-ns ph4 ph0-ns lh-copy mb3 mb0-ns
 `
 
 export const ProductPageTemplate = ({
@@ -21,24 +34,27 @@ export const ProductPageTemplate = ({
   description,
   intro,
   main,
-  fullImage,
 }) => (
-  <div className="w-100 db wrap">
-    <SectionHeader>
-      {title}
-      {heading}
-    </SectionHeader>
-      <h2 className="has-text-weight-semibold is-size-2">
-        test
-      </h2>
-      <SectionSubHeader>
-        {description}
-      </SectionSubHeader>
+  <div className="w-100">
+    <SectionIntro>
+      <SectionIntroHeadings>
+        <SectionHeader>
+          {title}
+        </SectionHeader>
+        <SectionSubHeader>
+        {heading}
+        </SectionSubHeader>
+      </SectionIntroHeadings>
+      <SectionIntroDescriptions>
+        <SectionSubHeader>
+          {description}
+        </SectionSubHeader>
+      </SectionIntroDescriptions>
+    </SectionIntro>
+    
     <Features gridItems={intro.blurbs} />
 
-    <h1>
-      {main.heading}
-    </h1>
+    <h1>{main.heading}</h1>
     <p>{main.description}</p>
 
     {/* <div className="tile is-parent is-vertical">
@@ -52,20 +68,11 @@ export const ProductPageTemplate = ({
       </article>
     </div> */}
     
-    <article className="tile is-child">
+    {/* <article className="tile is-child">
       <PreviewCompatibleImage imageInfo={main.image3} />
-    </article>
-    <div
-      className="full-width-image-container"
-      style={{
-        backgroundImage: `url(${
-          fullImage.childImageSharp
-            ? fullImage.childImageSharp.fluid.src
-            : fullImage
-        })`,
-      }}
-    />
-  </div>
+    </article> */}
+    </div>
+
 )
 
 ProductPageTemplate.propTypes = {
@@ -83,7 +90,6 @@ ProductPageTemplate.propTypes = {
     image2: PropTypes.oneOfType([PropTypes.object, PropTypes.string]),
     image3: PropTypes.oneOfType([PropTypes.object, PropTypes.string]),
   }),
-  fullImage: PropTypes.oneOfType([PropTypes.object, PropTypes.string]),
 }
 
 const ProductPage = ({ data }) => {
@@ -97,7 +103,6 @@ const ProductPage = ({ data }) => {
         description={frontmatter.description}
         intro={frontmatter.intro}
         main={frontmatter.main}
-        fullImage={frontmatter.full_image}
       />
     </Layout>
   )
@@ -124,11 +129,12 @@ export const productPageQuery = graphql`
           blurbs {
             image {
               childImageSharp {
-                fluid(maxWidth: 240, quality: 64) {
-                  ...GatsbyImageSharpFluid
+                fixed(width: 200, height: 200) {
+                  ...GatsbyImageSharpFixed
                 }
               }
             }
+            heading
             text
           }
           heading
@@ -165,13 +171,6 @@ export const productPageQuery = graphql`
                   ...GatsbyImageSharpFluid
                 }
               }
-            }
-          }
-        }
-        full_image {
-          childImageSharp {
-            fluid(maxWidth: 2048, quality: 100) {
-              ...GatsbyImageSharpFluid
             }
           }
         }

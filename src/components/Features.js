@@ -1,27 +1,50 @@
 import React from 'react'
 import PropTypes from 'prop-types'
-import PreviewCompatibleImage from '../components/PreviewCompatibleImage'
+import PreviewFixedImage from '../components/PreviewFixedImage'
+import tachyons from 'tachyons-components'
+
+const SectionFeatures = tachyons('div')`
+w-100 mt4
+`
+const ContainerFeature = tachyons('div')`
+wrap pt4 pb5-ns cf
+`
+const ContainerFeatureImage = tachyons('div')`
+fr w-100 w-50-ns tc
+`
+
+const ContainerFeatureContent = tachyons('div')`
+fl w-100 w-50-ns ph4 ph0-ns
+`
+
+const FeatureTitle = tachyons('h3')`
+f4 mt1 mb3 mt4-ns pt3 fw6
+`
+
+const FeatureDescription = tachyons('p')`
+mt0 lh-copy
+`
 
 const FeatureGrid = ({ gridItems }) => (
-  <div className="columns is-multiline">
+  <SectionFeatures>
     {gridItems.map(item => (
-      <div key={item.text} className="column is-6">
-        <section className="section">
-          <div className="has-text-centered">
-            <div
-              style={{
-                width: '240px',
-                display: 'inline-block',
-              }}
-            >
-              <PreviewCompatibleImage imageInfo={item} />
-            </div>
-          </div>
-          <p>{item.text}</p>
-        </section>
+      <div key={item.text}>
+        <ContainerFeature>
+          <ContainerFeatureImage>
+            <PreviewFixedImage imageInfo={item} />
+          </ContainerFeatureImage>
+          <ContainerFeatureContent>
+            <FeatureTitle>
+              {item.heading}
+            </FeatureTitle>
+            <FeatureDescription>
+              {item.text}
+            </FeatureDescription>
+          </ContainerFeatureContent>
+        </ContainerFeature>
       </div>
     ))}
-  </div>
+  </SectionFeatures>
 )
 
 FeatureGrid.propTypes = {

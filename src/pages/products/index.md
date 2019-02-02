@@ -9,41 +9,26 @@ intro:
     Earlier in my career, I have done my fair share of hustling with startups
     wearing many hats, doing design & frontend development.
   blurbs:
-    - image: /img/coffee.png
+    - image: /img/labs@3x.png
       heading: >
         VLT Labs
       text: >
-        We sell green and roasted coffee beans that are sourced directly from
-        independent farmers and farm cooperatives. We’re proud to offer a
-        variety of coffee beans grown with great care for the environment and
-        local communities. Check our post or contact us directly for current
-        availability.
-    - image: /img/coffee-gear.png
+        VLT Labs is a startup studio focusing on kickstarting new startups in South East Asia region.
+    - image: /img/tsuwave@3x.png
       heading: >
         Tsuwave Studio
       text: >
-        We offer a small, but carefully curated selection of brewing gear and
-        tools for every taste and experience level. No matter if you roast your
-        own beans or just bought your first french press, you’ll find a gadget
-        to fall in love with in our shop.
-    - image: /img/tutorials.png
+        Tsuwave Studio is a design agency that specializes in eCommerce custom design & development on Shopify platform and WordPress custom design & frontend development.
+    - image: /img/kaodim@3x.png
       heading: >
         Kaodim
       text: >
-        Love a great cup of coffee, but never knew how to make one? Bought a
-        fancy new Chemex but have no clue how to use it? Don't worry, we’re here
-        to help. You can schedule a custom 1-on-1 consultation with our baristas
-        to learn anything you want to know about coffee roasting and brewing.
-        Email us or call the store for details.
-    - image: /img/meeting-space.png
+        Kaodim is a “Marketplace for Servicing” SaaS app. I was leading a team of designers (of two haha) and was responsible for the web app design, and customer & vendor mobile apps (both iOS and Android).
+    - image: /img/billplz@3x.png
       heading: >
         Billplz
       text: >
-        We believe that good coffee has the power to bring people together.
-        That’s why we decided to turn a corner of our shop into a cozy meeting
-        space where you can hang out with fellow coffee lovers and learn about
-        coffee making techniques. All of the artwork on display there is for
-        sale. The full price you pay goes to the artist.
+        Billplz is a “billing and payment collection” SaaS app. I was the only designer and was responsible for the customer-facing and internal tools web app design.
 main:
   heading: Great coffee with no compromises
   description: >
