@@ -3,12 +3,12 @@ import PropTypes from 'prop-types'
 import { graphql } from 'gatsby'
 import Layout from '../components/Layout'
 import Features from '../components/Features'
-// import PreviewCompatibleImage from '../components/PreviewCompatibleImage'
+import PreviewCompatibleImage from '../components/PreviewCompatibleImage'
 // import PreviewFixedImage from '../components/PreviewFixedImage'
 import tachyons from 'tachyons-components'
 
 const SectionHeader = tachyons('h2')`
-f2
+f2 fw6 dark-gray mb1 mt0
 `
 
 const SectionSubHeader = tachyons('p')`
@@ -19,12 +19,28 @@ const SectionIntro = tachyons('article')`
 db wrap pt4 pt5-ns
 `
 
-const SectionIntroHeadings = tachyons('div')`
+const ContainerIntroHeadings = tachyons('div')`
 fl w-100 w-50-ns tc tl-ns pb0 pb4-ns
 `
 
-const SectionIntroDescriptions = tachyons('div')`
+const ContainerIntroDescriptions = tachyons('div')`
 fl w-100 w-50-ns ph4 ph0-ns lh-copy mb3 mb0-ns
+`
+
+const SectionMainContent = tachyons('section')`
+w-100 mt4
+`
+
+const ContainerMainContent = tachyons('div')`
+dt-ns dt--fixed-ns wrap ph4 ph0-ns
+`
+
+const MainContentHeader = tachyons('h1')`
+lh-solid mb0
+`
+
+const MainContent = tachyons('p')`
+lh-solid mb0
 `
 
 export const ProductPageTemplate = ({
@@ -37,27 +53,33 @@ export const ProductPageTemplate = ({
 }) => (
   <div className="w-100">
     <SectionIntro>
-      <SectionIntroHeadings>
+      <ContainerIntroHeadings>
         <SectionHeader>
           {title}
         </SectionHeader>
         <SectionSubHeader>
         {heading}
         </SectionSubHeader>
-      </SectionIntroHeadings>
-      <SectionIntroDescriptions>
+      </ContainerIntroHeadings>
+      <ContainerIntroDescriptions>
         <SectionSubHeader>
           {description}
         </SectionSubHeader>
-      </SectionIntroDescriptions>
+      </ContainerIntroDescriptions>
     </SectionIntro>
     
     <Features gridItems={intro.blurbs} />
 
-    <h1>{main.heading}</h1>
-    <p>{main.description}</p>
+    <SectionMainContent>
+      <ContainerMainContent>
+      <MainContentHeader>
+        {main.heading}
+      </MainContentHeader>
+      <MainContent>{main.description}</MainContent>
+      </ContainerMainContent>
+    </SectionMainContent>
 
-    {/* <div className="tile is-parent is-vertical">
+    <div className="tile is-parent is-vertical">
       <article className="tile is-child">
         <PreviewCompatibleImage imageInfo={main.image1} />
       </article>
@@ -66,11 +88,11 @@ export const ProductPageTemplate = ({
       <article className="tile is-child">
         <PreviewCompatibleImage imageInfo={main.image2} />
       </article>
-    </div> */}
+    </div>
     
-    {/* <article className="tile is-child">
+    <article className="tile is-child">
       <PreviewCompatibleImage imageInfo={main.image3} />
-    </article> */}
+    </article>
     </div>
 
 )
@@ -130,7 +152,7 @@ export const productPageQuery = graphql`
             image {
               childImageSharp {
                 fixed(width: 200, height: 200) {
-                  ...GatsbyImageSharpFixed
+                  ...GatsbyImageSharpFixed_tracedSVG
                 }
               }
             }
@@ -148,7 +170,7 @@ export const productPageQuery = graphql`
             image {
               childImageSharp {
                 fluid(maxWidth: 526, quality: 92) {
-                  ...GatsbyImageSharpFluid
+                  ...GatsbyImageSharpFluid_tracedSVG
                 }
               }
             }
@@ -158,7 +180,7 @@ export const productPageQuery = graphql`
             image {
               childImageSharp {
                 fluid(maxWidth: 526, quality: 92) {
-                  ...GatsbyImageSharpFluid
+                  ...GatsbyImageSharpFluid_tracedSVG
                 }
               }
             }
@@ -168,7 +190,7 @@ export const productPageQuery = graphql`
             image {
               childImageSharp {
                 fluid(maxWidth: 1075, quality: 72) {
-                  ...GatsbyImageSharpFluid
+                  ...GatsbyImageSharpFluid_tracedSVG
                 }
               }
             }

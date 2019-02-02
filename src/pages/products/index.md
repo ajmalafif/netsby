@@ -1,8 +1,8 @@
 ---
 templateKey: product-page
 title: Experience
-heading: Experience
-description: subtitle
+heading: Featured work & past experiences
+description: I have extensive working experience with diversed teammates in recent years, and worked with multiple startups & agencies for almost 6 years in the past.
 intro:
   heading: Agencies & Startups
   description: >-
@@ -30,12 +30,9 @@ intro:
       text: >
         Billplz is a “billing and payment collection” SaaS app. I was the only designer and was responsible for the customer-facing and internal tools web app design.
 main:
-  heading: Great coffee with no compromises
+  heading: UX Designer at Grab
   description: >
-    We hold our coffee to the highest standards from the shrub to the cup.
-    That’s why we’re meticulous and transparent about each step of the coffee’s
-    journey. We personally visit each farm to make sure the conditions are
-    optimal for the plants, farmers and the local environment.
+    I am a UX Designer in the Economics team at Grab. I work closely with Project Managers and Behavioral Scientists realizing our ideas by creating a library of use cases through prototypes. This role empowers me to contribute to scoping features and influence product roadmaps.
   image1:
     alt: A close-up of a paper filter filled with ground coffee
     image: /img/products-grid3.jpg

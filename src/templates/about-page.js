@@ -18,11 +18,11 @@ const SectionAside = tachyons("div")`
 `
 
 const SectionSubTitle = tachyons("p")`
-  gray mt0
+  mid-gray mt0
 `
 
 const SectionTitle = tachyons("h1")`
-  mb1 mt0
+f2 fw6 dark-gray mb1 mt0
 `
 
 const SectionContent = tachyons("div")`
