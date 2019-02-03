@@ -3,6 +3,12 @@ templateKey: experience-page
 title: Experience
 heading: Featured work & past experiences
 description: I have extensive working experience with diversed teammates in recent years, and worked with multiple startups & agencies for almost 6 years in the past.
+main:
+  heading: UX Designer at Grab
+  description: >
+  image3:
+    alt: Ajmal Afif's portrait at Grab
+    image: /img/products-grid1.jpg
 intro:
   heading: Agencies & Startups
   description: >-
@@ -29,19 +35,6 @@ intro:
         Billplz
       text: >
         Billplz is a “billing and payment collection” SaaS app. I was the only designer and was responsible for the customer-facing and internal tools web app design.
-main:
-  heading: UX Designer at Grab
-  description: >
-  image1:
-    alt: A close-up of a paper filter filled with ground coffee
-    image: /img/products-grid3.jpg
-  image2:
-    alt: A green cup of a coffee on a wooden table
-    image: /img/products-grid2.jpg
-  image3:
-    alt: Coffee beans
-    image: /img/products-grid1.jpg
-full_image: /img/products-full-width.jpg
 ---
 I am a UX Designer in the **Economics team** at Grab. I work closely with Project Managers and Behavioral Scientists realizing our ideas by creating a library of use cases through prototypes. This role empowers me to contribute to scoping features and influence product roadmaps.
 

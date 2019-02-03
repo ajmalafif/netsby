@@ -126,17 +126,7 @@ return (
     </SectionContainer>
     <Features gridItems={intro.blurbs} />
 
-    <div className="tile is-parent is-vertical">
-      <article className="tile is-child">
-        <PreviewCompatibleImage imageInfo={main.image1} />
-      </article>
-    </div>
-    <div className="tile is-parent">
-      <article className="tile is-child">
-        <PreviewCompatibleImage imageInfo={main.image2} />
-      </article>
-    </div>
-    <article className="tile is-child">
+    <article className="wrap w-100">
       <PreviewCompatibleImage imageInfo={main.image3} />
     </article>
     </div>
@@ -216,26 +206,6 @@ export const ExperiencePageQuery = graphql`
         main {
           heading
           description
-          image1 {
-            alt
-            image {
-              childImageSharp {
-                fluid(maxWidth: 526, quality: 92) {
-                  ...GatsbyImageSharpFluid_tracedSVG
-                }
-              }
-            }
-          }
-          image2 {
-            alt
-            image {
-              childImageSharp {
-                fluid(maxWidth: 526, quality: 92) {
-                  ...GatsbyImageSharpFluid_tracedSVG
-                }
-              }
-            }
-          }
           image3 {
             alt
             image {
