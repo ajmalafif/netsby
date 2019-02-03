@@ -191,12 +191,9 @@ export const ExperiencePageQuery = graphql`
         intro {
           blurbs {
             image {
-              alt
-              image {
-                childImageSharp {
-                  fixed(width: 200, height: 200) {
-                    ...GatsbyImageSharpFixed_tracedSVG
-                  }
+              childImageSharp {
+                fixed(width: 200, height: 200) {
+                  ...GatsbyImageSharpFixed_tracedSVG
                 }
               }
             }

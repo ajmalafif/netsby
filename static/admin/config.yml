@@ -55,14 +55,9 @@ collections:
                 name: blurbs
                 widget: list
                 fields:
+                  - {label: Image, name: image, widget: image}
                   - {label: "Company's name", name: heading, widget: string}
                   - {label: "Company's details", name: text, widget: text}
-                  - label: "Image"
-                    name: "image"
-                    widget: object
-                    fields:
-                      - {label: Image, name: image, widget: image}
-                      - {label: Alt, name: alt, widget: string}
       - file: "src/pages/about/index.md"
         label: "About"
         name: "about"
