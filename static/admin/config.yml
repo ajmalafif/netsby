@@ -44,9 +44,9 @@ collections:
         name: "experience"
         fields:
           - {label: "Template Key", name: "templateKey", widget: "hidden", default: "experience-page"}
-          - {label: Title, name: title, widget: string}
-          - {label: Heading, name: heading, widget: string}
-          - {label: "Body", name: "body", widget: "markdown"}
-          - {label: Description, name: description, widget: string}
-          - {label: Intro, name: intro, widget: object, fields: [{label: Heading, name: heading, widget: string}, {label: Description, name: description, widget: text}, {label: Blurbs, name: blurbs, widget: list, fields: [{label: Image, name: image, widget: image}, {label: Text, name: text, widget: text}]}]}
-          - {label: Main, name: main, widget: object, fields: [{label: Heading, name: heading, widget: string}, {label: Description, name: description, widget: text}, {label: Image3, name: image3, widget: object, fields: [{label: Image, name: image, widget: image}, {label: Alt, name: alt, widget: string}]}]}
+          - {label: "Page title", name: "title", widget: "string"}
+          - {label: "Subtitle", name: "heading", widget: "string"}
+          - {label: "H2 Description", name: "description", widget: "string"}
+          - {label: "Content title", name: "main", widget: "object", fields: [{label: Heading, name: heading, widget: string}, {label: Description, name: description, widget: text}, {label: Image3, name: image3, widget: object, fields: [{label: Image, name: image, widget: image}, {label: Alt, name: alt, widget: string}]}]}
+          - {label: "Content", name: "body", widget: "markdown"}
+          - {label: "Past Experience", name: "intro", widget: "object", fields: [{label: "Section title", name: heading, widget: string}, {label: "Section description", name: description, widget: text}, {label: "Companies", name: blurbs, widget: list, fields: [{label: Image, name: image, widget: image}, {label: Text, name: text, widget: text}]}]}
