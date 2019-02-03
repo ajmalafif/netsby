@@ -2,39 +2,48 @@
 templateKey: experience-page
 title: Experience
 heading: Featured work & past experiences
-description: I have extensive working experience with diversed teammates in recent years, and worked with multiple startups & agencies for almost 6 years in the past.
+description: >-
+  I have extensive working experience with diversed teammates in recent years,
+  and worked with multiple startups & agencies for almost 6 years in the past.
 main:
   heading: UX Designer at Grab
-  description: >
+  description: ''
   image3:
-    image: /img/labs@3x.png
-    alt: >
+    alt: ''
+    image: ''
 intro:
+  blurbs:
+    - alt: VLT Labs logo
+      heading: VLT Labs
+      image: /img/labs@3x.png
+      text: >
+        VLT Labs is a startup studio focusing on kickstarting new startups in
+        South East Asia region.
+    - alt: Tsuwave logo
+      heading: Tsuwave Studio
+      image: /img/tsuwave@3x.png
+      text: >
+        Tsuwave Studio is a design agency that specializes in eCommerce custom
+        design & development on Shopify platform and WordPress custom design &
+        frontend development.
+    - alt: Kaodim logo
+      heading: Kaodim
+      image: /img/kaodim@3x.png
+      text: >
+        Kaodim is a “Marketplace for Servicing” SaaS app. I was leading a team
+        of designers (of two haha) and was responsible for the web app design,
+        and customer & vendor mobile apps (both iOS and Android).
+    - alt: Billplz logo
+      heading: Billplz
+      image: /img/billplz@3x.png
+      text: >
+        Billplz is a “billing and payment collection” SaaS app. I was the only
+        designer and was responsible for the customer-facing and internal tools
+        web app design.
   heading: Agencies & Startups
   description: >-
     Earlier in my career, I have done my fair share of hustling with startups
     wearing many hats, doing design & frontend development.
-  blurbs:
-    - heading: VLT Labs
-      text: >
-        VLT Labs is a startup studio focusing on kickstarting new startups in South East Asia region.
-      image: /img/labs@3x.png
-      alt: VLT Labs logo
-    - heading: Tsuwave Studio
-      text: >
-        Tsuwave Studio is a design agency that specializes in eCommerce custom design & development on Shopify platform and WordPress custom design & frontend development.
-      image: /img/tsuwave@3x.png
-      alt: Tsuwave logo
-    - heading: Kaodim
-      text: >
-        Kaodim is a “Marketplace for Servicing” SaaS app. I was leading a team of designers (of two haha) and was responsible for the web app design, and customer & vendor mobile apps (both iOS and Android).
-      image: /img/kaodim@3x.png
-      alt: Kaodim logo
-    - heading: Billplz
-      text: >
-        Billplz is a “billing and payment collection” SaaS app. I was the only designer and was responsible for the customer-facing and internal tools web app design.
-      image: /img/billplz@3x.png
-      alt: Billplz logo
 ---
 I am a UX Designer in the **Economics team** at Grab. I work closely with Project Managers and Behavioral Scientists realizing our ideas by creating a library of use cases through prototypes. This role empowers me to contribute to scoping features and influence product roadmaps.
 
