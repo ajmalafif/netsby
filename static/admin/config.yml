@@ -21,24 +21,9 @@ collections:
       - {label: "Description", name: "description", widget: "text"}
       - {label: "Body", name: "body", widget: "markdown"}
       - {label: "Tags", name: "tags", widget: "list"}
-
   - name: "pages"
     label: "Pages"
     files:
-      - file: "src/pages/work/index.md"
-        label: "Work"
-        name: "work"
-        fields:
-          - {label: "Template Key", name: "templateKey", widget: "hidden", default: "work-page"}
-          - {label: "Title", name: "title", widget: "string"}
-          - {label: "Body", name: "body", widget: "markdown"}
-      - file: "src/pages/about/index.md"
-        label: "About"
-        name: "about"
-        fields:
-          - {label: "Template Key", name: "templateKey", widget: "hidden", default: "about-page"}
-          - {label: "Title", name: "title", widget: "string"}
-          - {label: "Body", name: "body", widget: "markdown"}
       - file: "src/pages/experience/index.md"
         label: "Experience"
         name: "experience"
@@ -73,3 +58,17 @@ collections:
                   - {label: Image, name: image, widget: image}
                   - {label: "Company's name", name: heading, widget: string}
                   - {label: "Company's details", name: text, widget: text}
+      - file: "src/pages/about/index.md"
+        label: "About"
+        name: "about"
+        fields:
+          - {label: "Template Key", name: "templateKey", widget: "hidden", default: "about-page"}
+          - {label: "Title", name: "title", widget: "string"}
+          - {label: "Body", name: "body", widget: "markdown"}
+      - file: "src/pages/work/index.md"
+        label: "Work"
+        name: "work"
+        fields:
+          - {label: "Template Key", name: "templateKey", widget: "hidden", default: "work-page"}
+          - {label: "Title", name: "title", widget: "string"}
+          - {label: "Body", name: "body", widget: "markdown"}
