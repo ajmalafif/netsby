@@ -18,7 +18,7 @@ fl w-100 w-50-ns ph4 ph0-ns
 `
 
 const FeatureTitle = tachyons('h3')`
-f4 mt1 mb3 mt4-ns pt3 fw6
+f4 mt1 mb2 lh-solid mt4-ns pt3 fw6
 `
 
 const FeatureDescription = tachyons('p')`

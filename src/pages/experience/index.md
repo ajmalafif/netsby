@@ -1,5 +1,5 @@
 ---
-templateKey: product-page
+templateKey: experience-page
 title: Experience
 heading: Featured work & past experiences
 description: I have extensive working experience with diversed teammates in recent years, and worked with multiple startups & agencies for almost 6 years in the past.
@@ -47,8 +47,8 @@ I am a UX Designer in the **Economics team** at Grab. I work closely with Projec
 
 Besides that, for each project that I am involved in, I work closely with our User Experience Research team (UER). Depending on the stage of the project, together with other members of the working group, most of the time we'll be involved in either the Fundamental User Research, Product Related Research or Design Related Research that is run by UER team.
 
-<h3 class="f4 mt4 mb1 fw6">Design Systems</h3>
+<h3 class="f4 mt4 mb2 fw6 lh-solid">Design Systems</h3>
 Outside of my official role, I am involved as a committee member of Grab Design Systems (GDS). I help to maintain our official Sketch Libraries, shape contribution processes, and teach fellow designers how they can consume and contribute to GDS through informal training sessions.
 
-<h3 class="f4 mt4 mb1 fw6">Design Tools Advocate</h3>
+<h3 class="f4 mt4 mb2 fw6 lh-solid">Design Tools Advocate</h3>
 I record bitesized screencasts sharing tips & tricks for using design tools like Sketch, Invision & Abstract and shared them in our Slack channels.

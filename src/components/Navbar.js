@@ -20,7 +20,7 @@ const List = tachyons("li")`
 f5 dib mr4 mr4-ns
 `
 const HeaderLogo = tachyons("h1")`
-f4 mb0 mt3 dib w-100 w-25-ns tl-ns tc
+fw7 f4 mb0 mt3 dib w-100 w-25-ns tl-ns tc
 `
 const Header = tachyons("header")`
 w-100
@@ -47,14 +47,14 @@ render() {
         </StyledLink>
       </HeaderLogo>
       <UnorderedList>
-        <List>
-          <StyledLink to="/work/"
+      <List>
+          <StyledLink to="/experience/"
           activeStyle={{
             color: '#05f',
             fontWeight: 600
           }}
           >
-            Work
+            Experience
           </StyledLink>
         </List>
         <List>
@@ -75,16 +75,6 @@ render() {
           }}
           >
             Blog
-          </StyledLink>
-        </List>
-        <List>
-          <StyledLink to="/products/"
-          activeStyle={{
-            color: '#05f',
-            fontWeight: 600
-          }}
-          >
-            Products
           </StyledLink>
         </List>
       </UnorderedList>

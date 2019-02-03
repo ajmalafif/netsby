@@ -39,12 +39,8 @@ const SectionContainer = tachyons('section')`
 w-100 mt4
 `
 
-const SectionIntroContainer = tachyons('section')`
-w-100 mt5
-`
-
 const MainContentHeader = tachyons('h1')`
-fw6 lh-solid mb0 mt4 f3 f2-ns
+fw6 lh-solid mb0 mt0 f3 f2-ns
 `
 
 const ContainerMainContent = tachyons('div')`
@@ -71,7 +67,7 @@ const IntroDescription = tachyons('p')`
 mt0
 `
 
-export const ProductPageTemplate = ({
+export const ExperiencePageTemplate = ({
   image,
   title,
   heading,
@@ -112,7 +108,7 @@ return (
       </ContainerMainContent>
     </SectionContainer>
 
-    <SectionIntroContainer>
+    <SectionContainer>
       <ContainerIntro>
         <ContainerIntroHeading>
           <IntroHeading>
@@ -127,7 +123,7 @@ return (
           </IntroDescription>
         </ContainerIntroDescription>
       </ContainerIntro>
-    </SectionIntroContainer>
+    </SectionContainer>
     <Features gridItems={intro.blurbs} />
 
     <div className="tile is-parent is-vertical">
@@ -146,7 +142,7 @@ return (
     </div>
   )
 }
-ProductPageTemplate.propTypes = {
+ExperiencePageTemplate.propTypes = {
   image: PropTypes.oneOfType([PropTypes.object, PropTypes.string]),
   title: PropTypes.string,
   heading: PropTypes.string,
@@ -165,13 +161,13 @@ ProductPageTemplate.propTypes = {
   contentComponent: PropTypes.func,
 }
 
-const ProductPage = ({ data }) => {
+const ExperiencePage = ({ data }) => {
   const { frontmatter } = data.markdownRemark
   const { markdownRemark: post } = data
 
   return (
     <Layout>
-      <ProductPageTemplate
+      <ExperiencePageTemplate
         contentComponent={HTMLContent}
         title={frontmatter.title}
         heading={frontmatter.heading}
@@ -184,7 +180,7 @@ const ProductPage = ({ data }) => {
   )
 }
 
-ProductPage.propTypes = {
+ExperiencePage.propTypes = {
   data: PropTypes.shape({
     markdownRemark: PropTypes.shape({
       frontmatter: PropTypes.object,
@@ -192,10 +188,10 @@ ProductPage.propTypes = {
   }),
 }
 
-export default ProductPage
+export default ExperiencePage
 
-export const productPageQuery = graphql`
-  query ProductPage($id: String!) {
+export const ExperiencePageQuery = graphql`
+  query ExperiencePage($id: String!) {
     markdownRemark(id: { eq: $id }) {
       html
       frontmatter {
