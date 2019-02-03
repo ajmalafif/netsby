@@ -25,7 +25,7 @@ const FeatureDescription = tachyons('p')`
 mt0 lh-copy
 `
 
-const FeatureGrid = ({ gridItems }) => (
+const Features = ({ gridItems }) => (
   <SectionFeatures>
     {gridItems.map(item => (
         <ContainerFeature key={item.text}>
@@ -45,7 +45,7 @@ const FeatureGrid = ({ gridItems }) => (
   </SectionFeatures>
 )
 
-FeatureGrid.propTypes = {
+Features.propTypes = {
   gridItems: PropTypes.arrayOf(
     PropTypes.shape({
       image: PropTypes.oneOfType([PropTypes.object, PropTypes.string]),
@@ -54,4 +54,4 @@ FeatureGrid.propTypes = {
   ),
 }
 
-export default FeatureGrid
+export default Features
