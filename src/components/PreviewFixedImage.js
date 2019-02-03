@@ -2,7 +2,7 @@ import React from 'react'
 import PropTypes from 'prop-types'
 import Img from 'gatsby-image'
 
-const PreviewCompatibleImage = ({ imageInfo }) => {
+const PreviewFixedImage = ({ imageInfo }) => {
   const imageStyle = { borderRadius: '5px' }
   const { alt = '', childImageSharp, image } = imageInfo
 
@@ -22,7 +22,7 @@ const PreviewCompatibleImage = ({ imageInfo }) => {
   return null
 }
 
-PreviewCompatibleImage.propTypes = {
+PreviewFixedImage.propTypes = {
   imageInfo: PropTypes.shape({
     alt: PropTypes.string,
     childImageSharp: PropTypes.object,
@@ -31,4 +31,4 @@ PreviewCompatibleImage.propTypes = {
   }).isRequired,
 }
 
-export default PreviewCompatibleImage
+export default PreviewFixedImage
