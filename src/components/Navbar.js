@@ -48,13 +48,13 @@ render() {
       </HeaderLogo>
       <UnorderedList>
         <List>
-          <StyledLink to="/experience/"
+          <StyledLink to="/work/"
           activeStyle={{
             color: '#05f',
             fontWeight: 600
           }}
           >
-            Experience
+            Work
           </StyledLink>
         </List>
         <List>

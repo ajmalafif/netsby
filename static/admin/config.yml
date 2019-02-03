@@ -25,11 +25,11 @@ collections:
   - name: "pages"
     label: "Pages"
     files:
-      - file: "src/pages/experience/index.md"
-        label: "Experience"
-        name: "experience"
+      - file: "src/pages/work/index.md"
+        label: "Work"
+        name: "work"
         fields:
-          - {label: "Template Key", name: "templateKey", widget: "hidden", default: "experience-page"}
+          - {label: "Template Key", name: "templateKey", widget: "hidden", default: "work-page"}
           - {label: "Title", name: "title", widget: "string"}
           - {label: "Body", name: "body", widget: "markdown"}
       - file: "src/pages/about/index.md"

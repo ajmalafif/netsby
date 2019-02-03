@@ -1,6 +1,6 @@
 ---
-templateKey: experience-page
-title: Experience
+templateKey: work-page
+title: Work
 ---
 # UX Designer at Grab
 I am a UX Designer in the Economics team at Grab. I work closely with Project Managers and Behavioral Scientists realizing our ideas by creating a library of use cases through prototypes. This role empowers me to contribute to scoping features and influence product roadmaps.

@@ -32,7 +32,7 @@ f2 fw6 dark-gray mb1 mt0
 `
 
 const SectionSubHeader = tachyons('p')`
-  gray mt0
+  mid-gray mt0
 `
 
 const SectionContainer = tachyons('section')`
@@ -44,7 +44,7 @@ w-100 mt5
 `
 
 const MainContentHeader = tachyons('h1')`
-fw6 lh-solid mb0 f3 f2-ns
+fw6 lh-solid mb0 mt4 f3 f2-ns
 `
 
 const ContainerMainContent = tachyons('div')`

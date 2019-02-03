@@ -29,7 +29,7 @@ const SectionContent = tachyons("div")`
   fl w-100 w-50-ns ph4 ph0-ns lh-copy mb6
 `
 
-export const ExperiencePageTemplate = ({ title, content, contentComponent }) => {
+export const WorkPageTemplate = ({ title, content, contentComponent }) => {
   const PageContent = contentComponent || Content
 
   return (
@@ -48,18 +48,18 @@ export const ExperiencePageTemplate = ({ title, content, contentComponent }) => 
   )
 }
 
-ExperiencePageTemplate.propTypes = {
+WorkPageTemplate.propTypes = {
   title: PropTypes.string.isRequired,
   content: PropTypes.string,
   contentComponent: PropTypes.func,
 }
 
-const ExperiencePage = ({ data }) => {
+const WorkPage = ({ data }) => {
   const { markdownRemark: post } = data
 
   return (
     <Layout>
-      <ExperiencePageTemplate
+      <WorkPageTemplate
         contentComponent={HTMLContent}
         title={post.frontmatter.title}
         content={post.html}
@@ -68,14 +68,14 @@ const ExperiencePage = ({ data }) => {
   )
 }
 
-ExperiencePage.propTypes = {
+WorkPage.propTypes = {
   data: PropTypes.object.isRequired,
 }
 
-export default ExperiencePage
+export default WorkPage
 
-export const ExperiencePageQuery = graphql`
-  query ExperiencePage($id: String!) {
+export const WorkPageQuery = graphql`
+  query WorkPage($id: String!) {
     markdownRemark(id: { eq: $id }) {
       html
       frontmatter {

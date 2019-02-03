@@ -43,7 +43,7 @@ main:
     image: /img/products-grid1.jpg
 full_image: /img/products-full-width.jpg
 ---
-I am a UX Designer in the Economics team at Grab. I work closely with Project Managers and Behavioral Scientists realizing our ideas by creating a library of use cases through prototypes. This role empowers me to contribute to scoping features and influence product roadmaps.
+I am a UX Designer in the **Economics team** at Grab. I work closely with Project Managers and Behavioral Scientists realizing our ideas by creating a library of use cases through prototypes. This role empowers me to contribute to scoping features and influence product roadmaps.
 
 Besides that, for each project that I am involved in, I work closely with our User Experience Research team (UER). Depending on the stage of the project, together with other members of the working group, most of the time we'll be involved in either the Fundamental User Research, Product Related Research or Design Related Research that is run by UER team.
 
