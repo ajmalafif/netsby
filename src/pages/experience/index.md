@@ -5,10 +5,10 @@ heading: Featured work & past experiences
 description: I have extensive working experience with diversed teammates in recent years, and worked with multiple startups & agencies for almost 6 years in the past.
 main:
   heading: UX Designer at Grab
-  description: ' '
+  description: >
   image3:
-    alt: ' '
-    image: ' '
+    alt: >
+    image: /img/labs@3x.png
 intro:
   heading: Agencies & Startups
   description: >-

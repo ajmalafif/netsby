@@ -192,7 +192,6 @@ export const ExperiencePageQuery = graphql`
           blurbs {
             heading
             text
-            alt
             image {
               childImageSharp {
                 fixed(width: 200, height: 200) {
