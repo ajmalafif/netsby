@@ -7,6 +7,26 @@ import PreviewCompatibleImage from '../components/PreviewCompatibleImage'
 import tachyons from 'tachyons-components'
 import Content, { HTMLContent } from '../components/Content'
 
+const ArticleContainer = tachyons('article')`
+db wrap pt4 pt5-ns
+`
+
+const ArticleContainerHeadings = tachyons('div')`
+fl w-100 w-50-ns tc tl-ns pb0 pb4-ns
+`
+
+const ArticleContainerDescriptions = tachyons('div')`
+fl w-100 w-50-ns ph4 ph0-ns lh-copy mb3 mb0-ns
+`
+
+const SectionDivider = tachyons('section')`
+w-100 dt
+`
+
+const Divider = tachyons('div')`
+wrap bt b--light-gray
+`
+
 const SectionHeader = tachyons('h2')`
 f2 fw6 dark-gray mb1 mt0
 `
@@ -15,32 +35,40 @@ const SectionSubHeader = tachyons('p')`
   gray mt0
 `
 
-const SectionIntro = tachyons('article')`
-db wrap pt4 pt5-ns
-`
-
-const ContainerIntroHeadings = tachyons('div')`
-fl w-100 w-50-ns tc tl-ns pb0 pb4-ns
-`
-
-const ContainerIntroDescriptions = tachyons('div')`
-fl w-100 w-50-ns ph4 ph0-ns lh-copy mb3 mb0-ns
-`
-
-const SectionMainContent = tachyons('section')`
+const SectionContainer = tachyons('section')`
 w-100 mt4
+`
+
+const SectionIntroContainer = tachyons('section')`
+w-100 mt5
+`
+
+const MainContentHeader = tachyons('h1')`
+fw6 lh-solid mb0 f3 f2-ns
 `
 
 const ContainerMainContent = tachyons('div')`
 dt-ns dt--fixed-ns wrap ph4 ph0-ns
 `
 
-const MainContentHeader = tachyons('h1')`
-lh-solid mb0
+const ContainerIntro = tachyons('div')`
+wrap pt4 pb6-ns bt b--light-gray
 `
 
-const MainContent = tachyons('p')`
-lh-solid mb0
+const ContainerIntroHeading = tachyons('div')`
+fl w-100 w-50-ns tc tl-ns pb4 mid-gray
+`
+
+const ContainerIntroDescription = tachyons('div')`
+w-100 w-50-ns ph4 ph0-ns fl lh-copy
+`
+
+const IntroHeading = tachyons('h2')`
+mb1 mt0 fw4
+`
+
+const IntroDescription = tachyons('p')`
+mt0
 `
 
 export const ProductPageTemplate = ({
@@ -57,32 +85,49 @@ const PageContent = contentComponent || Content
 
 return (
   <div className="w-100">
-    <SectionIntro>
-      <ContainerIntroHeadings>
+    <ArticleContainer>
+      <ArticleContainerHeadings>
         <SectionHeader>
           {title}
         </SectionHeader>
         <SectionSubHeader>
         {heading}
         </SectionSubHeader>
-      </ContainerIntroHeadings>
-      <ContainerIntroDescriptions>
+      </ArticleContainerHeadings>
+      <ArticleContainerDescriptions>
         {description}
-      </ContainerIntroDescriptions>
-    </SectionIntro>
+      </ArticleContainerDescriptions>
+    </ArticleContainer>
 
-    <SectionMainContent>
+    <SectionDivider>
+      <Divider />
+    </SectionDivider>
+
+    <SectionContainer>
       <ContainerMainContent>
       <MainContentHeader>
         {main.heading}
       </MainContentHeader>
-      <MainContent>
-      {main.description}
-      <PageContent className="content" content={content} />
-      </MainContent>
+      <PageContent className="content lh-copy" content={content} />
       </ContainerMainContent>
-    </SectionMainContent>
+    </SectionContainer>
 
+    <SectionIntroContainer>
+      <ContainerIntro>
+        <ContainerIntroHeading>
+          <IntroHeading>
+            {intro.heading}
+          </IntroHeading>
+        </ContainerIntroHeading>
+        <ContainerIntroDescription>
+          <IntroDescription>
+            <IntroDescription>
+              {intro.description}
+            </IntroDescription>
+          </IntroDescription>
+        </ContainerIntroDescription>
+      </ContainerIntro>
+    </SectionIntroContainer>
     <Features gridItems={intro.blurbs} />
 
     <div className="tile is-parent is-vertical">
@@ -122,6 +167,7 @@ ProductPageTemplate.propTypes = {
 
 const ProductPage = ({ data }) => {
   const { frontmatter } = data.markdownRemark
+  const { markdownRemark: post } = data
 
   return (
     <Layout>
@@ -132,7 +178,7 @@ const ProductPage = ({ data }) => {
         description={frontmatter.description}
         intro={frontmatter.intro}
         main={frontmatter.main}
-        content={frontmatter.html}
+        content={post.html}
       />
     </Layout>
   )

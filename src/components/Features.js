@@ -4,7 +4,7 @@ import PreviewFixedImage from '../components/PreviewFixedImage'
 import tachyons from 'tachyons-components'
 
 const SectionFeatures = tachyons('div')`
-w-100 mt4
+w-100 mt0
 `
 const ContainerFeature = tachyons('div')`
 wrap pt4 pb5-ns cf
