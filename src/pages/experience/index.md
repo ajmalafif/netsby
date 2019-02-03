@@ -34,7 +34,7 @@ main:
   heading: UX Designer at Grab
   description: ''
   image3:
-    alt: Ajmal Afif's portrait at Grab
+    alt: ''
     image: ''
 ---
 I am a UX Designer in the **Economics team** at Grab. I work closely with Project Managers and Behavioral Scientists realizing our ideas by creating a library of use cases through prototypes. This role empowers me to contribute to scoping features and influence product roadmaps.
