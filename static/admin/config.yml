@@ -47,7 +47,18 @@ collections:
           - {label: "Page title", name: "title", widget: "string"}
           - {label: "Subtitle", name: "heading", widget: "string"}
           - {label: "H2 Description", name: "description", widget: "string"}
-          - {label: "Content title", name: "main", widget: "object", fields: [{label: Heading, name: heading, widget: string}, {label: Description, name: description, widget: text}, {label: Image3, name: image3, widget: object, fields: [{label: Image, name: image, widget: image}, {label: Alt, name: alt, widget: string}]}]}
+          - label: "Content title"
+            name: "main"
+            widget: "object"
+            fields:
+              - {label: Heading, name: heading, widget: string}
+              - {label: Description, name: description, widget: text}
+              - label: Image3
+                name: image3
+                widget: object
+                fields:
+                  - {label: Image, name: image, widget: image}
+                  - {label: Alt, name: alt, widget: string}
           - {label: "Content", name: "body", widget: "markdown"}
           - label: "Past Experience"
             name: "intro"
@@ -59,6 +70,6 @@ collections:
                 name: blurbs
                 widget: list
                 fields:
-                  - {label: Image, name: image, widget: image},
+                  - {label: Image, name: image, widget: image}
                   - {label: "Company's name", name: heading, widget: string}
                   - {label: "Company's details", name: text, widget: text}
