@@ -3,7 +3,6 @@ import PropTypes from 'prop-types'
 import { graphql } from 'gatsby'
 import Layout from '../components/Layout'
 import Features from '../components/Features'
-import PreviewCompatibleImage from '../components/PreviewCompatibleImage'
 import tachyons from 'tachyons-components'
 import Content, { HTMLContent } from '../components/Content'
 
@@ -125,10 +124,6 @@ return (
       </ContainerIntro>
     </SectionContainer>
     <Features gridItems={intro.blurbs} />
-
-    <article className="wrap w-100">
-      <PreviewCompatibleImage imageInfo={main.image3} />
-    </article>
     </div>
   )
 }
