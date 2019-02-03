@@ -190,6 +190,8 @@ export const ExperiencePageQuery = graphql`
         description
         intro {
           blurbs {
+            heading
+            text
             image {
               childImageSharp {
                 fixed(width: 200, height: 200) {
@@ -197,8 +199,6 @@ export const ExperiencePageQuery = graphql`
                 }
               }
             }
-            heading
-            text
           }
           heading
           description
