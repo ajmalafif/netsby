@@ -7,8 +7,8 @@ main:
   heading: UX Designer at Grab
   description: >
   image3:
+    image: >
     alt: >
-    image: /img/labs@3x.png
 intro:
   heading: Agencies & Startups
   description: >-

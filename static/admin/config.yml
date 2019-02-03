@@ -32,13 +32,12 @@ collections:
           - {label: "Page title", name: "title", widget: "string"}
           - {label: "Subtitle", name: "heading", widget: "string"}
           - {label: "H2 Description", name: "description", widget: "string"}
-          - label: "Content title"
+          - label: "Main Content"
             name: "main"
             widget: "object"
             fields:
               - {label: Heading, name: heading, widget: string}
-              - {label: Description, name: description, widget: text}
-              - label: Image3
+              - label: "Hero image"
                 name: image3
                 widget: object
                 fields:
