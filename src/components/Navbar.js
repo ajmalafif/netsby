@@ -20,7 +20,7 @@ const List = tachyons("li")`
 f5 dib mr4 mr4-ns
 `
 const HeaderLogo = tachyons("h1")`
-fw7 f4 mb0 mt3 dib w-100 w-25-ns tl-ns tc
+fw6 f4 mb0 mt3 dib w-100 w-25-ns tl-ns tc
 `
 const Header = tachyons("header")`
 w-100
