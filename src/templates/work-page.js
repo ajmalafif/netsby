@@ -6,7 +6,7 @@ import Layout from '../components/Layout'
 import Content, { HTMLContent } from '../components/Content'
 
 const Section = tachyons("section")`
-  w-100 mt4 pt5-ns
+  w-100 pt4 pt5-ns
 `
 
 const Article = tachyons("article")`

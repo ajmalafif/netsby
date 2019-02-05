@@ -7,7 +7,7 @@ import tachyons from 'tachyons-components'
 import Content, { HTMLContent } from '../components/Content'
 
 const ArticleContainer = tachyons('article')`
-db wrap mt4 pt5-ns
+db wrap pt4 pt5-ns
 `
 
 const ArticleContainerHeadings = tachyons('div')`
