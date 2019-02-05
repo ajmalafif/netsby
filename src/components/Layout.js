@@ -13,12 +13,12 @@ ph4-ns
 
 const GlobalStyle = createGlobalStyle`
   body {
-  font-family: "Inter UI", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
-    Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji",
-    "Segoe UI Symbol";
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-  text-rendering: optimizeLegibility;
+    font-family: "Inter UI", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
+      Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji",
+      "Segoe UI Symbol";
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    text-rendering: optimizeLegibility;
   }
 
   h1,h2,h3,h4,h5,h6 {
@@ -99,7 +99,7 @@ const GlobalStyle = createGlobalStyle`
     margin-right: 0;
   }
 
-  @media screen and (max-width: 48em) {
+  @media screen and (max-width: 30em) {
     nav li:last-child {
       margin-right: 0.5rem;
     }
