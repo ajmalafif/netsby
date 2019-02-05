@@ -10,7 +10,7 @@ const Section = tachyons("section")`
 `
 
 const Article = tachyons("article")`
-  mt6 db wrap
+  db wrap
 `
 
 const SectionAside = tachyons("div")`

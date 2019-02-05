@@ -7,15 +7,15 @@ import tachyons from 'tachyons-components'
 import Content, { HTMLContent } from '../components/Content'
 
 const ArticleContainer = tachyons('article')`
-db wrap pt4 pt5-ns
+dt wrap pt4 pt5-ns pb4
 `
 
 const ArticleContainerHeadings = tachyons('div')`
-fl w-100 w-50-ns tc tl-ns pb0 pb4-ns
+fl w-100 w-50-ns tc tl-ns
 `
 
 const ArticleContainerDescriptions = tachyons('div')`
-fl w-100 w-50-ns ph4 ph0-ns lh-copy mb3 mb0-ns
+fl w-100 w-50-ns ph4 ph0-ns lh-copy
 `
 
 const SectionDivider = tachyons('section')`
@@ -27,7 +27,7 @@ wrap bt b--light-gray
 `
 
 const SectionHeader = tachyons('h2')`
-f2 fw6 dark-gray mb1 mt0
+f2 f3-ns fw6 dark-gray mb1 mt0
 `
 
 const SectionSubHeader = tachyons('p')`
