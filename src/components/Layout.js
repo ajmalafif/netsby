@@ -132,7 +132,7 @@ const TemplateWrapper = ({ children }) => (
         </Helmet>
         <GlobalStyle />
         <Navbar />
-        <div>{children}</div>
+        {children}
       </StyledBody>
     )}
   />
