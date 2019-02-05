@@ -68,13 +68,13 @@ const GlobalStyle = createGlobalStyle`
   }
 
   .logo {
-    font-size: 16px;
+    font-size: 1rem;
   }
 
   input[type="text"]:focus,
   input[type="email"]:focus,
   textarea:focus {
-    box-shadow: 0 0 2px rgb(0, 85, 255, 0.5);
+    box-shadow: 0 0 2px rgba(0, 85, 255, 0.5);
     border: 1px solid rgba(0, 85, 255, 0.03);
     outline: none;
   }
@@ -92,7 +92,7 @@ const GlobalStyle = createGlobalStyle`
 
   a.bg-secondary:focus,
   a.bg-secondary:hover {
-    background-color: rgb(0, 85, 255, 0.09);
+    background-color: rgba(0, 85, 255, 0.09);
   }
 
   nav li:last-child {
@@ -102,6 +102,9 @@ const GlobalStyle = createGlobalStyle`
   @media screen and (max-width: 48em) {
     nav li:last-child {
       margin-right: 0.5rem;
+    }
+    .logo {
+      font-size: 1.125rem;
     }
   }
 `;

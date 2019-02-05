@@ -22,7 +22,7 @@ const List = tachyons("li")`
 f5 dib mr4
 `
 const HeaderLogo = tachyons("h1")`
-fw6 f4 mb0 mt2 mt3-ns dib w-100 w-25-ns tl-ns tc
+f4 f5-ns fw6 mb0 mt3 dib w-100 w-25-ns tl-ns tc
 `
 const Header = tachyons("header")`
 w-100
@@ -43,7 +43,6 @@ render() {
       <HeaderLogo>
         <StyledLink
         to="/"
-        style={{ fontSize: '16px' }}
         title="Ajmal Afif">
           @ajmalafif
         </StyledLink>
