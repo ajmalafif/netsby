@@ -30,7 +30,7 @@ const SectionHeader = tachyons('h2')`
 f2 f3-ns fw6 dark-gray mb1 mt0
 `
 
-const SectionSubHeader = tachyons('p')`
+const SectionSubHeader = tachyons('div')`
   mid-gray mt0
 `
 

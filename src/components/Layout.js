@@ -35,10 +35,6 @@ const GlobalStyle = createGlobalStyle`
     font-weight: normal;
   }
 
-  nav li:last-child {
-    margin-right: 0;
-  }
-
   ul {
     padding: 0;
   }
@@ -68,6 +64,7 @@ const GlobalStyle = createGlobalStyle`
   .blog article .link,
   .blog article .link:visited {
     color: #000;
+    background-color: rgba(0, 0, 0, 0.03);
   }
 
   .logo {
@@ -96,6 +93,12 @@ const GlobalStyle = createGlobalStyle`
   a.bg-secondary:focus,
   a.bg-secondary:hover {
     background-color: rgb(0, 85, 255, 0.09);
+  }
+
+  @media screen and (max-width: 48em) {
+    nav li:last-child {
+      margin-right: 0;
+    }
   }
 `;
 

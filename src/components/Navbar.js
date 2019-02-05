@@ -10,11 +10,12 @@ const StyledLink = styled(Link)`
 
   &:hover {
     color: #05f;
+    background-color: rgba(0,85,255,.03);
   }
 `
 
 const UnorderedList = tachyons("ul")`
-dib w-100 w-75-ns tc tr-ns mt4 mt0-ns ph0
+dib w-100 w-75-ns tc tr-ns mt3 mt0-ns ph0
 `
 const List = tachyons("li")`
 f5 dib mr4 mr4-ns
@@ -51,7 +52,8 @@ render() {
           <StyledLink to="/experience/"
           activeStyle={{
             color: '#05f',
-            fontWeight: 600
+            fontWeight: 600,
+            backgroundColor: 'rgba(0,85,255,.03)'
           }}
           >
             Experience
@@ -61,7 +63,8 @@ render() {
           <StyledLink to="/about/"
           activeStyle={{
             color: '#05f',
-            fontWeight: 600
+            fontWeight: 600,
+            backgroundColor: 'rgba(0,85,255,.03)'
           }}
           >
             About
@@ -71,7 +74,8 @@ render() {
           <StyledLink to="/contact/examples/"
           activeStyle={{
             color: '#05f',
-            fontWeight: 600
+            fontWeight: 600,
+            backgroundColor: 'rgba(0,85,255,.03)'
           }}
           >
             Blog
