@@ -95,9 +95,13 @@ const GlobalStyle = createGlobalStyle`
     background-color: rgb(0, 85, 255, 0.09);
   }
 
+  nav li:last-child {
+    margin-right: 0;
+  }
+
   @media screen and (max-width: 48em) {
     nav li:last-child {
-      margin-right: 0;
+      margin-right: 0.5rem;
     }
   }
 `;

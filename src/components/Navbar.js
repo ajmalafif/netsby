@@ -11,6 +11,7 @@ const StyledLink = styled(Link)`
   &:hover {
     color: #05f;
     background-color: rgba(0,85,255,.03);
+
   }
 `
 
@@ -18,10 +19,10 @@ const UnorderedList = tachyons("ul")`
 dib w-100 w-75-ns tc tr-ns mt3 mt0-ns ph0
 `
 const List = tachyons("li")`
-f5 dib mr4 mr4-ns
+f5 dib mr4
 `
 const HeaderLogo = tachyons("h1")`
-fw6 f4 mb0 mt3 dib w-100 w-25-ns tl-ns tc
+fw6 f4 mb0 mt2 mt3-ns dib w-100 w-25-ns tl-ns tc
 `
 const Header = tachyons("header")`
 w-100
@@ -49,25 +50,27 @@ render() {
       </HeaderLogo>
       <UnorderedList>
       <List>
-          <StyledLink to="/experience/"
-          activeStyle={{
-            color: '#05f',
-            fontWeight: 600,
-            backgroundColor: 'rgba(0,85,255,.03)'
-          }}
-          >
-            Experience
-          </StyledLink>
-        </List>
-        <List>
           <StyledLink to="/about/"
           activeStyle={{
             color: '#05f',
             fontWeight: 600,
-            backgroundColor: 'rgba(0,85,255,.03)'
+            backgroundColor: 'rgba(0,85,255,.03)',
+            borderBottom: '1px solid rgba(0,85,255, 0.1)'
           }}
           >
             About
+          </StyledLink>
+        </List>
+      <List>
+          <StyledLink to="/experience/"
+          activeStyle={{
+            color: '#05f',
+            fontWeight: 600,
+            backgroundColor: 'rgba(0,85,255,.03)',
+            borderBottom: '1px solid rgba(0,85,255, 0.1)'
+          }}
+          >
+            Experience
           </StyledLink>
         </List>
         <List>
@@ -75,7 +78,8 @@ render() {
           activeStyle={{
             color: '#05f',
             fontWeight: 600,
-            backgroundColor: 'rgba(0,85,255,.03)'
+            backgroundColor: 'rgba(0,85,255,.03)',
+            borderBottom: '1px solid rgba(0,85,255, 0.1)'
           }}
           >
             Blog
