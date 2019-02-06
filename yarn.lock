@@ -4742,9 +4742,9 @@ gatsby-plugin-purgecss@^3.1.0:
     loader-utils "^1.1.0"
     purgecss "^1.0.1"
 
-gatsby-plugin-react-helmet@^3.0.4:
-  version "3.0.5"
-  resolved "https://registry.yarnpkg.com/gatsby-plugin-react-helmet/-/gatsby-plugin-react-helmet-3.0.5.tgz#eaeca7c83c6c273d31454598949dd0d3b4ff5f31"
+gatsby-plugin-react-helmet@^3.0.6:
+  version "3.0.6"
+  resolved "https://registry.yarnpkg.com/gatsby-plugin-react-helmet/-/gatsby-plugin-react-helmet-3.0.6.tgz#552d04e4e3a99562bae950a8cdfab672987158fb"
   dependencies:
     "@babel/runtime" "^7.0.0"
 
