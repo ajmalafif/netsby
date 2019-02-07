@@ -16,19 +16,19 @@ const StyledLink = styled(Link)`
 `
 
 const UnorderedList = tachyons("ul")`
-dib w-100 w-75-ns tc tr-ns mt3 mt0-ns ph0
+dib w-100 w-75-ns tr-ns tc mt3 mt0-ns
 `
 const List = tachyons("li")`
 f5 dib mr4
 `
 const HeaderLogo = tachyons("h1")`
-f4 fw6 mb0 mt3 dib w-100 w-25-ns tl-ns tc
+f5 mb0 mt3 dib w-100 w-25-ns tl-ns tc fw6
 `
 const Header = tachyons("header")`
-w-100
+w-100 fixed-ns left-0 ph4-ns left-0 top-0 right-0 z-2 bb b--light-gray bg-white o-90
 `
 const Nav = tachyons("nav")`
-dt w-100 border-box pv3 wrap
+dt w-100 border-box pv1 wrap
 `
 // const ContainerLogo = tachyons("div")`
 

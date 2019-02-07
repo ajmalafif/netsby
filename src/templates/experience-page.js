@@ -67,7 +67,6 @@ mt0
 `
 
 export const ExperiencePageTemplate = ({
-  image,
   title,
   heading,
   description,
