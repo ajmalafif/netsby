@@ -16,7 +16,7 @@ const StyledLink = styled(Link)`
 `
 
 const UnorderedList = tachyons("ul")`
-dib w-100 w-75-ns tr-ns tc mt3 mt0-ns
+dib w-100 w-75-ns tc tr-ns mt3 mt0-ns
 `
 const List = tachyons("li")`
 f5 dib mr4
