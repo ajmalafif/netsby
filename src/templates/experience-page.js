@@ -78,7 +78,7 @@ export const ExperiencePageTemplate = ({
 const PageContent = contentComponent || Content
 
 return (
-  <div className="w-100">
+  <div className="w-100 pv4-ns">
     <ArticleContainer>
       <ArticleContainerHeadings>
         <SectionHeader>
