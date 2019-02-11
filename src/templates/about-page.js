@@ -6,11 +6,11 @@ import tachyons from 'tachyons-components'
 import Content, { HTMLContent } from '../components/Content'
 
 const Section = tachyons("section")`
-  w-100 pt4 pt5-ns
+ph3 ph0-ns pv4-ns
 `
 
-const Article = tachyons("article")`
-  db wrap
+const Article = tachyons("section")`
+mt6 dt wrap pt4 pt5-ns
 `
 
 const SectionAside = tachyons("div")`
@@ -22,7 +22,7 @@ const SectionSubTitle = tachyons("p")`
 `
 
 const SectionTitle = tachyons("h1")`
-f2 fw6 dark-gray mb1 mt0
+f3 fw6 dark-gray mb1 mt0
 `
 
 const SectionContent = tachyons("div")`
