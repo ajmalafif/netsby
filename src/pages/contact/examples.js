@@ -1,5 +1,6 @@
 import React from "react";
-import Link from "gatsby-link";
+import PropTypes from 'prop-types'
+import { Link, graphql } from 'gatsby'
 import Layout from '../../components/Layout'
 
 export default class Index extends React.Component {
@@ -9,7 +10,7 @@ export default class Index extends React.Component {
         <section className="section">
           <div className="container">
             <div className="content">
-              <h1>Hi people</h1>
+              <h1>Blog to be put here</h1>
               <p>
                 This is an example site integrating Netlify’s form handling with Gatsby
               </p>
