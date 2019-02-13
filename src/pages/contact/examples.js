@@ -1,33 +1,75 @@
-import React from "react";
+import React from 'react'
 import PropTypes from 'prop-types'
 import { Link, graphql } from 'gatsby'
-import Layout from '../../components/Layout'
+import Layout from '../components/Layout'
 
-export default class Index extends React.Component {
+export default class IndexPage extends React.Component {
   render() {
+    const { data } = this.props
+    const { edges: posts } = data.allMarkdownRemark
+
     return (
       <Layout>
         <section className="section">
           <div className="container">
-            <div className="content">
-              <h1>Blog to be put here</h1>
-              <p>
-                This is an example site integrating Netlify’s form handling with Gatsby
-              </p>
-              <ul>
-                <li><Link to="/contact">Basic contact form</Link></li>
-                <li><Link to="/contact/file-upload/">Form with file upload</Link></li>
-              </ul>
-
-              <h2>Troubleshooting</h2>
-              <h3>Forms stop working after upgrading to Gatsby v2</h3>
-              <p>This can be caused by the offline-plugin. <a href="https://github.com/gatsbyjs/gatsby/issues/7997#issuecomment-419749232">Workaround</a> is to use <code>?no-cache=1</code> in the POST url to prevent the service worker from handling form submissions</p>
-              <h3>Adding reCAPTCHA</h3>
-              <p>If you are planning to add reCAPTCHA please go to <a href="https://github.com/imorente/gatsby-netlify-form-example">imorente/gatsby-netlify-form-example</a> for a working example.</p>
-            </div>
+            {posts
+              .map(({ node: post }) => (
+                <div
+                  className="b1"
+                  key={post.id}
+                >
+                  <p>
+                    <Link className="has-text-primary" to={post.fields.slug}>
+                      {post.frontmatter.title}
+                    </Link>
+                    <span> &bull; </span>
+                    <small>{post.frontmatter.date}</small>
+                  </p>
+                  <p>
+                    {post.excerpt}
+                    <br />
+                    <br />
+                    <Link className="button is-small" to={post.fields.slug}>
+                      Keep Reading →
+                    </Link>
+                  </p>
+                </div>
+              ))}
           </div>
         </section>
       </Layout>
-    );
+    )
   }
 }
+
+IndexPage.propTypes = {
+  data: PropTypes.shape({
+    allMarkdownRemark: PropTypes.shape({
+      edges: PropTypes.array,
+    }),
+  }),
+}
+
+export const pageQuery = graphql`
+  query IndexQuery {
+    allMarkdownRemark(
+      sort: { order: DESC, fields: [frontmatter___date] },
+      filter: { frontmatter: { templateKey: { eq: "blog-post" } }}
+    ) {
+      edges {
+        node {
+          excerpt(pruneLength: 400)
+          id
+          fields {
+            slug
+          }
+          frontmatter {
+            title
+            templateKey
+            date(formatString: "MMMM DD, YYYY")
+          }
+        }
+      }
+    }
+  }
+`
