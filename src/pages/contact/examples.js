@@ -2,6 +2,11 @@ import React from 'react'
 import PropTypes from 'prop-types'
 import { Link, graphql } from 'gatsby'
 import Layout from '../../components/Layout'
+import tachyons from 'tachyons-components'
+
+const SectionContainer = tachyons('div')`
+w-100 pv4-ns
+`
 
 export default class IndexPage extends React.Component {
   render() {
@@ -10,7 +15,7 @@ export default class IndexPage extends React.Component {
 
     return (
       <Layout>
-        <section className="section">
+        <SectionContainer>
           <div className="container">
             {posts
               .map(({ node: post }) => (
@@ -36,7 +41,7 @@ export default class IndexPage extends React.Component {
                 </div>
               ))}
           </div>
-        </section>
+        </SectionContainer>
       </Layout>
     )
   }
