@@ -1,4 +1,7 @@
-# Gatsby + Netlify CMS Starter
+# Gatsby + Netlify CMS
+
+## todo list
+- [ ] Homepage editable on backend
 
 **Note:** This starter uses the [Gatsby v2 Beta](https://www.gatsbyjs.org/blog/2018-06-16-announcing-gatsby-v2-beta-launch/).
 
