@@ -27,6 +27,14 @@ const PageDescriptions = tachyons('div')`
 fl w-100 w-50-ns lh-copy mb0
 `
 
+const SectionArticles = tachyons('div')`
+w-100 dt mt4
+`
+
+const ArticleWrapper = tachyons('div')`
+wrap
+`
+
 export default class IndexPage extends React.Component {
   render() {
     const { data } = this.props
@@ -48,31 +56,30 @@ export default class IndexPage extends React.Component {
               I enjoy writing down and reflect on my experience. My goal is to write more about design, frontend and anything in between.
             </PageDescriptions>
           </PageHeaderContainer>
-          <div className="container">
-            {posts
-              .map(({ node: post }) => (
-                <div
-                  className="b1"
-                  key={post.id}
-                >
-                  <p>
-                    <Link className="has-text-primary" to={post.fields.slug}>
-                      {post.frontmatter.title}
-                    </Link>
-                    <span> &bull; </span>
-                    <small>{post.frontmatter.date}</small>
-                  </p>
-                  <p>
-                    {post.excerpt}
-                    <br />
-                    <br />
-                    <Link className="button is-small" to={post.fields.slug}>
-                      Keep Reading →
-                    </Link>
-                  </p>
-                </div>
-              ))}
-          </div>
+          <SectionArticles>
+            <ArticleWrapper>
+              {posts
+                .map(({ node: post }) => (
+                  <div className="w-70-ns mb4 mb5-ns" key={post.id}>
+                    <p>
+                      <Link className="has-text-primary" to={post.fields.slug}>
+                        {post.frontmatter.title}
+                      </Link>
+                      <span> &bull; </span>
+                      <small>{post.frontmatter.date}</small>
+                    </p>
+                    <p>
+                      {post.excerpt}
+                      <br />
+                      <br />
+                      <Link className="button is-small" to={post.fields.slug}>
+                        Keep Reading →
+                      </Link>
+                    </p>
+                  </div>
+                ))}
+            </ArticleWrapper>
+          </SectionArticles>
         </PageContainer>
       </Layout>
     )
