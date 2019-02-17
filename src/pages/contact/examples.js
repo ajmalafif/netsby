@@ -4,8 +4,27 @@ import { Link, graphql } from 'gatsby'
 import Layout from '../../components/Layout'
 import tachyons from 'tachyons-components'
 
-const SectionContainer = tachyons('div')`
-w-100 pv4-ns
+const PageContainer = tachyons('div')`
+ph3 ph0-ns pv4-ns
+`
+
+const PageHeaderContainer = tachyons('div')`
+wrap dt bb b--light-gray pb4 pt4 pt5-ns
+`
+
+const PageHeadingsContainer = tachyons('div')`
+fl w-100 w-50-ns tl
+`
+
+const PageHeadings = tachyons('h2')`
+f3 fw6 dark-gray mb1 mt0
+`
+
+const PageSubHeadings = tachyons('p')`
+mid-gray mt0
+`
+const PageDescriptions = tachyons('div')`
+fl w-100 w-50-ns lh-copy mb0
 `
 
 export default class IndexPage extends React.Component {
@@ -15,7 +34,20 @@ export default class IndexPage extends React.Component {
 
     return (
       <Layout>
-        <SectionContainer>
+        <PageContainer>
+          <PageHeaderContainer>
+            <PageHeadingsContainer>
+              <PageHeadings>
+                Blog
+              </PageHeadings>
+              <PageSubHeadings>
+                Personal learnings & thoughts
+              </PageSubHeadings>
+            </PageHeadingsContainer>
+            <PageDescriptions>
+              I enjoy writing down and reflect on my experience. My goal is to write more about design, frontend and anything in between.
+            </PageDescriptions>
+          </PageHeaderContainer>
           <div className="container">
             {posts
               .map(({ node: post }) => (
@@ -41,7 +73,7 @@ export default class IndexPage extends React.Component {
                 </div>
               ))}
           </div>
-        </SectionContainer>
+        </PageContainer>
       </Layout>
     )
   }
