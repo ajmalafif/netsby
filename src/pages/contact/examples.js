@@ -61,8 +61,8 @@ export default class IndexPage extends React.Component {
               {posts
                 .map(({ node: post }) => (
                   <div className="w-70-ns mb4 mb5-ns" key={post.id}>
-                    <p>
-                      <Link className="has-text-primary" to={post.fields.slug}>
+                    <h3>
+                      <Link className="lh-title mb1 blue mt0" to={h3ost.fields.slug}>
                         {post.frontmatter.title}
                       </Link>
                       <span> &bull; </span>
