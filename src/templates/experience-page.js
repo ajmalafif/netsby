@@ -115,9 +115,7 @@ return (
         </ContainerIntroHeading>
         <ContainerIntroDescription>
           <IntroDescription>
-            <IntroDescription>
               {intro.description}
-            </IntroDescription>
           </IntroDescription>
         </ContainerIntroDescription>
       </ContainerIntro>

@@ -10,7 +10,7 @@ ph3 ph0-ns pv4-ns
 `
 
 const Article = tachyons("section")`
-mt6 dt wrap pt4 pt5-ns
+dt wrap pt4 pt5-ns
 `
 
 const SectionAside = tachyons("div")`

@@ -61,19 +61,15 @@ export default class IndexPage extends React.Component {
               {posts
                 .map(({ node: post }) => (
                   <div className="w-70-ns mb4 mb5-ns" key={post.id}>
-                    <h3>
-                      <Link className="lh-title mb1 blue mt0" to={post.fields.slug}>
+                    <h3 className="lh-title mb1 blue mt0">
+                      <Link className="link fw6" to={post.fields.slug}>
                         {post.frontmatter.title}
                       </Link>
-                      <small>{post.frontmatter.date}</small>
                     </h3>
-                    <p>
+                    <p className="lh-copy mt1 mb2">
                       {post.excerpt}
-                      <br />
-                      <Link className="link" to={post.fields.slug}>
-                        Keep Reading →
-                      </Link>
                     </p>
+                    <small className="mid-gray lh-copy">{post.frontmatter.date}{post.frontmatter.author}</small>
                   </div>
                 ))}
             </ArticleWrapper>
