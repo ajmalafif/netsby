@@ -1,6 +1,7 @@
 import React from 'react'
 import PropTypes from 'prop-types'
 import { graphql } from 'gatsby'
+import Helmet from 'react-helmet'
 import Layout from '../components/Layout'
 import Features from '../components/Features'
 import tachyons from 'tachyons-components'
@@ -74,11 +75,13 @@ export const ExperiencePageTemplate = ({
   main,
   content,
   contentComponent,
+  helmet,
 }) => {
 const PageContent = contentComponent || Content
 
 return (
   <div className="w-100 pv4-ns">
+    {helmet || ''}
     <ArticleContainer>
       <ArticleContainerHeadings>
         <SectionHeader>
@@ -157,12 +160,21 @@ const ExperiencePage = ({ data }) => {
         intro={frontmatter.intro}
         main={frontmatter.main}
         content={post.html}
+        helmet={
+          <Helmet
+            titleTemplate="%s | @ajmalafif"
+          >
+            <title>{`${post.frontmatter.title}`}</title>
+            <meta name="description" content={`${post.frontmatter.description}`} />
+          </Helmet>
+        }
       />
     </Layout>
   )
 }
 
 ExperiencePage.propTypes = {
+  helmet: PropTypes.object,
   data: PropTypes.shape({
     markdownRemark: PropTypes.shape({
       frontmatter: PropTypes.object,
