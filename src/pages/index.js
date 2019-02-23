@@ -17,6 +17,10 @@ export default class IndexPage extends React.Component {
               <p className="mid-gray mt0 f6 f5-ns">Ajmal Afif's personal website</p>
             </div>
             <div className="fl w-100 w-50-ns">
+              <h1 className="f4 mt0 mb0 fw4">Hi, I'm Ajmal 👋🏼</h1>
+              <p className="lh-copy">I am a digital designer by trade. Always trying to make time to code more. I really enjoy learning and naturally feel it's a very rewarding experience.</p>
+              <a className="link br2 ph4 pv3 dib mr3-ns white bg-primary db w-100 w-auto-ns tc">Work experience</a>
+              <a className="link br2 ph4 pv3 mt2 dib blue bg-white w-100 tc w-auto-ns bg-secondary bs-secondary br-secondary">Contact me</a>
             </div>
 
           </div>
