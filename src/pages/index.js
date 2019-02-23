@@ -1,40 +1,24 @@
 import React from 'react'
 import PropTypes from 'prop-types'
-import { Link, graphql } from 'gatsby'
+// import { Link, graphql } from 'gatsby'
 import Layout from '../components/Layout'
 
 export default class IndexPage extends React.Component {
   render() {
     const { data } = this.props
-    const { edges: posts } = data.allMarkdownRemark
+    // const { edges: posts } = data.allMarkdownRemark
 
     return (
       <Layout>
-        <section className="section">
-          <div className="container">
-            {posts
-              .map(({ node: post }) => (
-                <div
-                  className="b1"
-                  key={post.id}
-                >
-                  <p>
-                    <Link className="has-text-primary" to={post.fields.slug}>
-                      {post.frontmatter.title}
-                    </Link>
-                    <span> &bull; </span>
-                    <small>{post.frontmatter.date}</small>
-                  </p>
-                  <p>
-                    {post.excerpt}
-                    <br />
-                    <br />
-                    <Link className="button is-small" to={post.fields.slug}>
-                      Keep Reading →
-                    </Link>
-                  </p>
-                </div>
-              ))}
+        <section className="wrap w-100 vh-100 dt z-1">
+          <div className="cf v-mid dtc ph3 ph0-ns">
+            <div className="dn db-ns fl w-100 w-50-ns tl">
+              <h2 className="f3 fw6 dark-gray mb1 mt0">Welcome</h2>
+              <p className="mid-gray mt0 f6 f5-ns">Ajmal Afif's personal website</p>
+            </div>
+            <div className="fl w-100 w-50-ns">
+            </div>
+
           </div>
         </section>
       </Layout>
