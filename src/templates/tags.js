@@ -7,11 +7,15 @@ class TagRoute extends React.Component {
   render() {
     const posts = this.props.data.allMarkdownRemark.edges
     const postLinks = posts.map(post => (
-      <li key={post.node.fields.slug}>
-        <Link to={post.node.fields.slug}>
-          <h2 className="is-size-2">{post.node.frontmatter.title}</h2>
+      <div className="w-70-ns mb4 mb5-ns" key={post.node.fields.slug}>
+        <h3 className="lh-title mb1 blue mt0">
+        <Link className="link fw6" to={post.node.fields.slug}>
+        {post.node.frontmatter.title}
         </Link>
-      </li>
+          </h3>
+          <p className="lh-copy mt1 mb2">{post.node.excerpt}</p>
+          <small className="mid-gray lh-copy">{post.node.frontmatter.date}</small>
+      </div>
     ))
     const tag = this.props.pageContext.tag
     const title = this.props.data.site.siteMetadata.title
@@ -22,22 +26,13 @@ class TagRoute extends React.Component {
 
     return (
       <Layout>
-        <section className="section">
+        <section className="w-100 wrap mt4 mt5-ns ph3 ph0-ns pt3-ns">
+          <h1 className="f3 fw6 mb4">{tagHeader}</h1>
           <Helmet title={`${tag} | ${title}`} />
-          <div className="container content">
-            <div className="columns">
-              <div
-                className="column is-10 is-offset-1"
-                style={{ marginBottom: '6rem' }}
-              >
-                <h3 className="title is-size-4 is-bold-light">{tagHeader}</h3>
-                <ul className="taglist">{postLinks}</ul>
-                <p>
-                  <Link to="/tags/">Browse all tags</Link>
-                </p>
-              </div>
-            </div>
-          </div>
+          {postLinks}
+          <p>
+            <Link to="/tags/">Browse all tags</Link>
+          </p>
         </section>
       </Layout>
     )
@@ -61,11 +56,14 @@ export const tagPageQuery = graphql`
       totalCount
       edges {
         node {
+          excerpt(pruneLength: 400)
           fields {
             slug
           }
           frontmatter {
+            date(formatString: "MMMM DD, YYYY")
             title
+            description
           }
         }
       }
