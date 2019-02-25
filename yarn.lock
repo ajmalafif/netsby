@@ -4681,9 +4681,9 @@ gatsby-plugin-react-helmet@^3.0.6:
   dependencies:
     "@babel/runtime" "^7.0.0"
 
-gatsby-plugin-remove-trailing-slashes@^2.0.7:
-  version "2.0.7"
-  resolved "https://registry.yarnpkg.com/gatsby-plugin-remove-trailing-slashes/-/gatsby-plugin-remove-trailing-slashes-2.0.7.tgz#1ec073a14f657a1d0b8ea0e15ef285cf89dfd5ef"
+gatsby-plugin-remove-trailing-slashes@^2.0.8:
+  version "2.0.8"
+  resolved "https://registry.yarnpkg.com/gatsby-plugin-remove-trailing-slashes/-/gatsby-plugin-remove-trailing-slashes-2.0.8.tgz#44e7f3aab3f9a40480d310ffcf92d485062d4c7d"
   dependencies:
     "@babel/runtime" "^7.0.0"
 
