@@ -22,10 +22,7 @@ export const IndexPageTemplate = ({
   description,
   content,
   contentComponent,
-  intro,
-  emoji,
-  primaryButton,
-  secondaryButton,
+  primary,
   }) => {
   const PageContent = contentComponent || Content
 
@@ -39,7 +36,8 @@ export const IndexPageTemplate = ({
         <div className="fl w-100 w-50-ns">
           <h1 className="f4 mt0 mb0 fw4">Hi, I'm Ajmal <span role="img" aria-label="emoji">👋🏼</span></h1>
           <p className="lh-copy"><PageContent className="content" content={content} /></p>
-          <Link to="/experience/" className="link br2 ph4 pv3 dib mr3-ns white bg-primary db w-100 w-auto-ns tc">Work Experience</Link>
+          <span>{primary}</span>
+          <Link to="/experience/" className="link br2 ph4 pv3 dib mr3-ns white bg-primary db w-100 w-auto-ns tc"></Link>
           <Link to="/about/" className="link br2 ph4 pv3 mt2 dib blue bg-white w-100 tc w-auto-ns bg-secondary bs-secondary br-secondary">Contact me</Link>
         </div>
       </div>
@@ -89,10 +87,7 @@ export const IndexPageQuery = graphql`
       frontmatter {
         title
         description
-        emoji
-        primaryButton
-        secondaryButton
-      }
+        primary      }
     }
   }
 `
