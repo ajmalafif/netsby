@@ -3,6 +3,7 @@
 - [ ] Navbar on homepage is fixed on mobile too
 - [ ] Next/Prev link?
 - [ ] Footer
+- [ ] BACK button
 
 ## nice to have
 - [ ] Pagination
