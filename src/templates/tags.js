@@ -26,7 +26,7 @@ class TagRoute extends React.Component {
 
     return (
       <Layout>
-        <section className="w-100 wrap mt4 mt5-ns ph3 ph0-ns pt3-ns">
+        <section className="blog w-100 wrap mt4 mt5-ns ph3 ph0-ns pt3-ns">
           <h1 className="f3 fw6 mb4">{tagHeader}</h1>
           <Helmet title={`${tag} | ${title}`} />
           {postLinks}
