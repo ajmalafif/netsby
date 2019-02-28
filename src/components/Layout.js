@@ -99,6 +99,19 @@ const GlobalStyle = createGlobalStyle`
     margin-right: 0;
   }
 
+  .blog a.link:hover,
+  .blog a:hover,
+  .post a:hover,
+  nav a:hover {
+    color: #05f;
+  }
+
+  .blog .link,
+  .blog .link:visited {
+    color: #222;
+    background-color: rgba(0,0,0,.03);
+  }
+
   @media screen and (max-width: 30em) {
     nav li:last-child {
       margin-right: 0.5rem;

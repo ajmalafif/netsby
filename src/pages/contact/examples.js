@@ -5,7 +5,7 @@ import Layout from '../../components/Layout'
 import tachyons from 'tachyons-components'
 
 const PageContainer = tachyons('div')`
-ph3 ph0-ns pv4-ns
+blog ph3 ph0-ns pv4-ns
 `
 
 const PageHeaderContainer = tachyons('div')`
@@ -96,7 +96,7 @@ export const pageQuery = graphql`
     ) {
       edges {
         node {
-          excerpt(pruneLength: 400)
+          excerpt(pruneLength: 250)
           id
           fields {
             slug
