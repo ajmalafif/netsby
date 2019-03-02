@@ -124,12 +124,6 @@ const GlobalStyle = createGlobalStyle`
       font-size: 1.125rem;
     }
   }
-  
-  @media screen and (max-width: 30em) {
-    .w-auto-ns {
-      width: auto;
-    }
-  }
 `;
 
 const TemplateWrapper = ({ children }) => (
