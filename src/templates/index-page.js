@@ -27,6 +27,9 @@ wrap w-100 vh-100 dt z-1
 const Container = tachyons(`div`)`
 cf v-mid dtc ph3 ph0-ns
 `
+const PrimaryButton = tachyons(Link)`
+link br2 ph4 pv3 dib mr3-ns white bg-primary db w-100 w-auto-ns tc
+`
 
 export const IndexPageTemplate = ({
   title,
@@ -53,7 +56,7 @@ export const IndexPageTemplate = ({
         <ContainerMain>
           <Heading>Hi, I‘m Ajmal <span role="img" aria-label="emoji">👋🏼</span></Heading>
           <PageContent className="lh-copy content" content={content} />
-          <Link to="/experience/" className="link br2 ph4 pv3 dib mr3-ns white bg-primary db w-100 w-auto-ns tc">{primaryButton}</Link>
+          <PrimaryButton to="/experience/">{primaryButton}</PrimaryButton>
           <Link to="/about/" className="link br2 ph4 pv3 mt2 dib blue bg-white tc w-100 w-auto-ns bg-secondary bs-secondary br-secondary">{secondaryButton}</Link>
         </ContainerMain>
       </Container>
