@@ -1,10 +1,10 @@
 import React from 'react'
 import PropTypes from 'prop-types'
 import { Link, graphql } from 'gatsby'
-import Layout from '../components/Layout'
-import tachyons from 'tachyons-components'
 import Content, { HTMLContent } from '../components/Content'
+import Layout from '../components/Layout'
 import Helmet from 'react-helmet'
+import tachyons from 'tachyons-components'
 
 const Heading = tachyons(`h1`)`
 f4 mt0 mb0 fw4
