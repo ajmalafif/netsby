@@ -28,7 +28,7 @@ const Container = tachyons(`div`)`
 cf v-mid dtc ph3 ph0-ns
 `
 const ButtonPrimary = tachyons(Link)`
-w-100 w-auto-ns link br2 ph4 pv3 dib mr3-ns white bg-primary db tc
+w-100 w-auto-ns link br2 ph4 pv3 dib mr3-ns white bg-primary tc
 `
 const ButtonSecondary = tachyons(Link)`
 w-100 w-auto-ns link br2 ph4 pv3 mt2 dib blue bg-white tc bg-secondary bs-secondary br-secondary
