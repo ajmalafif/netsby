@@ -24,6 +24,9 @@ fl w-100 w-50-ns
 const Section = tachyons(`div`)`
 wrap w-100 vh-100 dt z-1
 `
+const Container = tachyons(`div`)`
+cf v-mid dtc ph3 ph0-ns
+`
 
 export const IndexPageTemplate = ({
   title,
@@ -42,7 +45,7 @@ export const IndexPageTemplate = ({
             class: 'homepage'
         }}
       />
-      <div className="cf v-mid dtc ph3 ph0-ns">
+      <Container>
         <ContainerTitle>
           <Title>{title}</Title>
           <Description>{description}</Description>
@@ -53,7 +56,7 @@ export const IndexPageTemplate = ({
           <Link to="/experience/" className="link br2 ph4 pv3 dib mr3-ns white bg-primary db w-auto-ns w-100 tc">{primaryButton}</Link>
           <Link to="/about/" className="link br2 ph4 pv3 mt2 dib blue bg-white tc w-auto-ns w-100 bg-secondary bs-secondary br-secondary">{secondaryButton}</Link>
         </ContainerMain>
-      </div>
+      </Container>
     </Section>
   )
 }
