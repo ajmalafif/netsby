@@ -30,9 +30,6 @@ w-100 fixed-ns left-0 ph4-ns left-0 top-0 right-0 z-2 bb b--light-gray bg-white 
 const Nav = tachyons("nav")`
 dt w-100 border-box pv1 wrap
 `
-// const ContainerLogo = tachyons("div")`
-
-// `
 
 const Navbar = class extends React.Component {
 
