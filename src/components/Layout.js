@@ -21,10 +21,6 @@ const GlobalStyle = createGlobalStyle`
     text-rendering: optimizeLegibility;
   }
 
-  .homepage header {
-    position: fixed;
-  }
-
   h1,h2,h3,h4,h5,h6 {
     margin-bottom: 0.5rem;
   }

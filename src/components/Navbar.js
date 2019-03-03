@@ -35,8 +35,11 @@ dt w-100 border-box pv1 wrap
 const HeaderWithMatch = ({ children }) => (
   <Match path="/">
     {props => (
-      <Header home={props.match}>{children}</Header>
-    )}
+      props.match
+      ? <Header home="true">{children}</Header>
+      : <Header>{children}</Header>
+      )
+    }
   </Match>
 )
 
