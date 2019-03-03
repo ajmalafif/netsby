@@ -26,7 +26,7 @@ const HeaderLogo = tachyons("h1")`
 f5 mb0 mt3 dib w-100 w-25-ns tl-ns tc fw6
 `
 const Header = tachyons("header")`
-w-100 left-0 ph4-ns left-0 top-0 right-0 z-2 bb b--light-gray o-90 ${props => props.home ? 'fixed' : 'fixed-ns'}
+w-100 left-0 ph4-ns left-0 top-0 right-0 z-2 bb bg-white b--light-gray o-90 ${props => props.home ? 'fixed' : 'fixed-ns'}
 `
 const Nav = tachyons("nav")`
 dt w-100 border-box pv1 wrap
