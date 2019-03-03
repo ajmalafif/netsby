@@ -12,11 +12,11 @@ dt wrap pt4 pt5-ns pb4
 `
 
 const ArticleContainerHeadings = tachyons('div')`
-fl w-100 w-50-ns tc tl-ns
+fl w-100 w-50-ns tl
 `
 
 const ArticleContainerDescriptions = tachyons('div')`
-fl w-100 w-50-ns ph4 ph0-ns lh-copy
+w-100 w-50-ns ph0-ns fl lh-copy
 `
 
 const SectionDivider = tachyons('section')`
@@ -28,10 +28,10 @@ wrap bt b--light-gray
 `
 
 const SectionHeader = tachyons('h2')`
-f2 f3-ns fw6 dark-gray mb1 mt0
+f3 fw6 dark-gray mb1 mt0
 `
 
-const SectionSubHeader = tachyons('div')`
+const SectionSubHeader = tachyons('p')`
   mid-gray mt0
 `
 
@@ -44,27 +44,27 @@ fw6 lh-solid mb0 mt0 f3 f2-ns
 `
 
 const ContainerMainContent = tachyons('div')`
-dt-ns dt--fixed-ns wrap ph4 ph0-ns
+dt-ns dt--fixed-ns wrap ph0-ns
 `
 
 const ContainerIntro = tachyons('div')`
-wrap pt4 pb6-ns bt b--light-gray
+dt wrap pt4 pb4 bt b--light-gray
 `
 
 const ContainerIntroHeading = tachyons('div')`
-fl w-100 w-50-ns tc tl-ns pb4 mid-gray
+fl w-100 w-50-ns pb3
 `
 
 const ContainerIntroDescription = tachyons('div')`
-w-100 w-50-ns ph4 ph0-ns fl lh-copy
+w-100 w-50-ns fl lh-copy
 `
 
 const IntroHeading = tachyons('h2')`
-mb1 mt0 fw4
+mb1 mt0 f3 fw6 dark-gray
 `
 
 const IntroDescription = tachyons('p')`
-mt0
+mt0 pb0
 `
 
 export const ExperiencePageTemplate = ({
@@ -80,7 +80,7 @@ export const ExperiencePageTemplate = ({
 const PageContent = contentComponent || Content
 
 return (
-  <div className="w-100 pv4-ns">
+  <div className="ph3 ph0-ns pv4-ns">
     {helmet || ''}
     <ArticleContainer>
       <ArticleContainerHeadings>

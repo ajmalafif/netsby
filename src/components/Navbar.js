@@ -82,7 +82,7 @@ render() {
           </StyledLink>
         </List>
         <List>
-          <StyledLink to="/contact/examples/"
+          <StyledLink to="/blog/"
           activeStyle={{
             color: '#05f',
             fontWeight: 600,

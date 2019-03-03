@@ -7,18 +7,18 @@ const SectionFeatures = tachyons('div')`
 w-100 mt0
 `
 const ContainerFeature = tachyons('div')`
-wrap pt4 pb5-ns cf
+wrap pt4 pb4 cf
 `
 const ContainerFeatureImage = tachyons('div')`
 fr w-100 w-50-ns tc
 `
 
 const ContainerFeatureContent = tachyons('div')`
-fl w-100 w-50-ns ph4 ph0-ns
+fl w-100 w-50-ns
 `
 
 const FeatureTitle = tachyons('h3')`
-f4 mt1 mb2 lh-solid mt4-ns pt3 fw6
+f4 mt1 mb2 lh-solid mt4-ns pt3-ns fw6
 `
 
 const FeatureDescription = tachyons('p')`

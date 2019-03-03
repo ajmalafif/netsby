@@ -1,6 +1,6 @@
 ---
 templateKey: experience-page
-title: Experience
+title: Working experience
 heading: Featured work & past experiences
 description: >-
   I have extensive working experience with diversed teammates in recent years,
