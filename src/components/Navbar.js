@@ -1,6 +1,7 @@
 import React from 'react'
 import styled from 'styled-components'
 import { Link } from 'gatsby'
+import { Match } from '@reach/router'
 import tachyons from 'tachyons-components'
 
 const StyledLink = styled(Link)`
@@ -25,17 +26,25 @@ const HeaderLogo = tachyons("h1")`
 f5 mb0 mt3 dib w-100 w-25-ns tl-ns tc fw6
 `
 const Header = tachyons("header")`
-w-100 fixed-ns left-0 ph4-ns left-0 top-0 right-0 z-2 bb b--light-gray bg-white o-90
+w-100 left-0 ph4-ns left-0 top-0 right-0 z-2 bb b--light-gray o-90 ${props => props.home ? 'fixed' : 'fixed-ns'}
 `
 const Nav = tachyons("nav")`
 dt w-100 border-box pv1 wrap
 `
 
+const HeaderWithMatch = ({ children }) => (
+  <Match path="/">
+    {props => (
+      <Header home={props.match}>{children}</Header>
+    )}
+  </Match>
+)
+
 const Navbar = class extends React.Component {
 
 render() {
   return (
-    <Header>
+    <HeaderWithMatch>
     <Nav role="navigation" aria-label="main-navigation">
       <HeaderLogo>
         <StyledLink
@@ -83,7 +92,7 @@ render() {
         </List>
       </UnorderedList>
     </Nav>
-  </Header>
+  </HeaderWithMatch>
   )}
 }
 
