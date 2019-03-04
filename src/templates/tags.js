@@ -5,7 +5,7 @@ import Layout from '../components/Layout'
 import tachyons from 'tachyons-components'
 
 const Section = tachyons('section')`
-blog mt5-ns mt4 w-100 wrap ph3 ph0-ns pt3-ns
+blog mt5-ns mt4 w-100 ph3 ph0-ns pt3-ns
 `
 
 class TagRoute extends React.Component {
@@ -36,7 +36,7 @@ class TagRoute extends React.Component {
     const tagTopic = `related topic`
 
     return (
-      <Layout>
+      <Layout className="wrap">
         <Section>
           <h1 className="f3 mb4">{tagHeader} <span className="fw6">“{tag}”</span> {tagTopic}</h1>
           <Helmet title={`${totalCount === 1 ? 'Article' : 'Articles'} on “${tag}” | ${title}`} />
