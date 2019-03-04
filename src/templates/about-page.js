@@ -4,6 +4,7 @@ import { graphql } from 'gatsby'
 import Layout from '../components/Layout'
 import tachyons from 'tachyons-components'
 import Content, { HTMLContent } from '../components/Content'
+import Contact from '../components/Contact'
 
 const Section = tachyons("section")`
 ph3 ph0-ns pv4-ns
@@ -14,7 +15,7 @@ dt wrap pt4 pt5-ns
 `
 
 const SectionAside = tachyons("div")`
-  fl w-100 w-50-ns tc tl-ns pb0 pb4-ns
+fl w-100 w-50-ns tl pb0 pb4-ns
 `
 
 const SectionSubTitle = tachyons("p")`
@@ -26,7 +27,7 @@ f3 fw6 dark-gray mb1 mt0
 `
 
 const SectionContent = tachyons("div")`
-  fl w-100 w-50-ns ph4 ph0-ns lh-copy mb6
+fl w-100 w-50-ns lh-copy mb6
 `
 
 export const AboutPageTemplate = ({ title, content, contentComponent }) => {
@@ -41,6 +42,7 @@ export const AboutPageTemplate = ({ title, content, contentComponent }) => {
         </SectionAside>
         <SectionContent>
           <PageContent className="content" content={content} />
+          <Contact />
         </SectionContent>
       </Article>
     </Section>

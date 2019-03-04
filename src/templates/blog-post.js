@@ -10,23 +10,22 @@ import Content, { HTMLContent } from '../components/Content'
 const ArticleContainer = tachyons('article')`
 mb6 ph3 ph0-ns pv4-ns
 `
-
 const TitleWrapper = tachyons('div')`
 wrap tc
 `
-
 const ArticleTitle = tachyons('h1')`
 f4 f2-ns fw6 tc pt4 pt5-ns mt0 mb3 lh-title
 `
-
 const ContentContainer = tachyons('div')`
 wrap mw12
+`
+const BackLink = tachyons(Link)`
+link link-primary fw6
 `
 
 export const BlogPostTemplate = ({
   content,
   contentComponent,
-  description,
   tags,
   title,
   date,
@@ -48,13 +47,14 @@ export const BlogPostTemplate = ({
         <div className="center measure-wide lh-copy">
           <PostContent content={content} />
           {tags && tags.length ? (
-            <div className="mt4">
+            <p>
               <span className="moon-gray">This post is tagged under: </span>
                 {tags.map(tag => (
                   <Link key={tag + `tag`} className="gray mr1" to={`/tags/${kebabCase(tag)}/`}>{tag}</Link>
                 ))}
-            </div>
+            </p>
           ) : null}
+        <BackLink to="/blog/">← Back to blog</BackLink>
         </div>
       </ContentContainer>
     </ArticleContainer>
@@ -82,6 +82,9 @@ const BlogPost = ({ data }) => {
         helmet={
           <Helmet
             titleTemplate="%s | Blog"
+            bodyAttributes={{
+                class: 'blog'
+            }}
           >
             <title>{`${post.frontmatter.title}`}</title>
             <meta name="description" content={`${post.frontmatter.description}`} />

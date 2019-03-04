@@ -4,6 +4,7 @@ import { StaticQuery, graphql } from "gatsby"
 import tachyons from 'tachyons-components'
 import { createGlobalStyle } from 'styled-components'
 import Navbar from '../components/Navbar.js'
+import Footer from '../components/Footer.js'
 import '../styles/main.scss'
 
 
@@ -79,6 +80,14 @@ const GlobalStyle = createGlobalStyle`
     outline: none;
   }
 
+  a.active {
+    color: #05f;
+    font-weight: 600;
+    background-color: rgba(0,85,255,.03);
+    border-bottom: 1px solid rgba(0,85,255, 0.1);
+    text-decoration: none;
+  }
+
   a.bg-primary:focus,
   a.bg-primary:hover,
   button:focus,
@@ -110,6 +119,13 @@ const GlobalStyle = createGlobalStyle`
   .blog .link:visited {
     color: #222;
     background-color: rgba(0,0,0,.03);
+  }
+
+  .blog .link-primary,
+  .blog .link-primary:visited {
+    color: #05f;
+    background-color: rgba(0, 85, 255, 0.03);
+    border-bottom: 1px solid rgba(0, 85, 255, 0.1);
   }
 
   @media screen and (max-width: 30em) {
@@ -156,6 +172,7 @@ const TemplateWrapper = ({ children }) => (
         <GlobalStyle />
         <Navbar />
         {children}
+        <Footer />
       </StyledBody>
     )}
   />

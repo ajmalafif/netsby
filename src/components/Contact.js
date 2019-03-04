@@ -1,7 +1,6 @@
 import React from "react"
 import { navigate } from "gatsby-link"
 import tachyons from 'tachyons-components'
-import Layout from '../../components/Layout'
 
 const Label = tachyons(`label`)`
 db gray lh-copy f6
@@ -25,7 +24,7 @@ function encode(data) {
     .join("&");
 }
 
-export default class Index extends React.Component {
+const Contact = class extends React.Component {
   constructor(props) {
     super(props);
     this.state = { isValidated: false };
@@ -52,8 +51,9 @@ export default class Index extends React.Component {
 
   render() {
     return (
-      <Layout>
+        <div>
         <div class="bt b--light-gray mt4 mb4"></div>
+        <h3 class="mb3">Contact me</h3>
         <form
           name="contact"
           method="post"
@@ -70,7 +70,7 @@ export default class Index extends React.Component {
               <input name="bot-field" onChange={this.handleChange} />
             </label>
           </div>
-          <Label htmlFor={"name"} >Your name</Label>
+          <Label htmlFor={"name"} >Name</Label>
           <Input type={"text"} name={"name"} onChange={this.handleChange} id={"name"} required={true} placeholder={"Your name"}/>
 
           <Label htmlFor={"email"}>Email</Label>
@@ -79,10 +79,12 @@ export default class Index extends React.Component {
           <Label htmlFor={"message"}>Message</Label>
           <Textarea name={"message"} onChange={this.handleChange} rows={7} id={"message"} required={true} placeholder={"Write your message here"} />
 
-          <Button type="submit">Send</Button>
+          <Button type="submit">Send Message</Button>
 
         </form>
-      </Layout>
+        </div>
     );
   }
 }
+
+export default Contact

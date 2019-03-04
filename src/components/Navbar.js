@@ -12,7 +12,6 @@ const StyledLink = styled(Link)`
   &:hover {
     color: #05f;
     background-color: rgba(0,85,255,.03);
-
   }
 `
 
@@ -42,6 +41,14 @@ const HeaderWithMatch = ({ children }) => (
     }
   </Match>
 )
+
+const isPartiallyActive = ({
+  isPartiallyCurrent
+}) => {
+  return isPartiallyCurrent
+    ? { className: "active" }
+    : null
+}
 
 const Navbar = class extends React.Component {
 
@@ -83,11 +90,13 @@ render() {
         </List>
         <List>
           <StyledLink to="/blog/"
+          getProps={isPartiallyActive}
           activeStyle={{
             color: '#05f',
             fontWeight: 600,
             backgroundColor: 'rgba(0,85,255,.03)',
-            borderBottom: '1px solid rgba(0,85,255, 0.1)'
+            borderBottom: '1px solid rgba(0,85,255, 0.1)',
+            textDecoration: 'none'
           }}
           >
             Blog
