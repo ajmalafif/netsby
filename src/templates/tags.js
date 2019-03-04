@@ -36,8 +36,8 @@ class TagRoute extends React.Component {
     const tagTopic = `related topic`
 
     return (
-      <Layout className="wrap">
-        <Section>
+      <Layout>
+        <Section className="wrap">
           <h1 className="f3 mb4">{tagHeader} <span className="fw6">“{tag}”</span> {tagTopic}</h1>
           <Helmet title={`${totalCount === 1 ? 'Article' : 'Articles'} on “${tag}” | ${title}`} />
           {postLinks}
