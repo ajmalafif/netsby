@@ -14,7 +14,7 @@ const TitleWrapper = tachyons('div')`
 wrap tc
 `
 const ArticleTitle = tachyons('h1')`
-f4 f2-ns fw6 tc pt4 pt5-ns mt0 mb3 lh-title
+f3 f2-ns fw6 tc pt4 pt5-ns mt0 mb3 lh-title
 `
 const ContentContainer = tachyons('div')`
 wrap mw12
