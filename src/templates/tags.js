@@ -5,7 +5,7 @@ import Layout from '../components/Layout'
 import tachyons from 'tachyons-components'
 
 const Section = tachyons('section')`
-blog mt5-ns mt4 w-100 ph3 ph0-ns pt3-ns
+blog w-100 ph3 ph0-ns pt3-ns mt4 mt5-ns
 `
 
 class TagRoute extends React.Component {
