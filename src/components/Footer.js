@@ -3,7 +3,7 @@ import tachyons from 'tachyons-components'
 import { Match } from '@reach/router'
 
 const Copyright = tachyons("footer")`
-wrap pv4 ph3 ph5-m ph6-l mid-gray ${props => props.home ? 'fixed left-0 bottom-0 right-0 z-0' : 'w-100'}
+pv4 ph3 ph5-m ph6-l mid-gray ${props => props.home ? 'fixed left-0 bottom-0 right-0 z-0' : 'w-100 wrap'}
 `
 
 const FooterWithMatch = ({ children }) => (
