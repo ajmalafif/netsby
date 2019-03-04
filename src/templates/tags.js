@@ -4,6 +4,10 @@ import { Link, graphql } from 'gatsby'
 import Layout from '../components/Layout'
 import tachyons from 'tachyons-components'
 
+const Section = tachyons('section')`
+blog w-100 wrap mt4 mt5-ns ph3 ph0-ns pt3-ns
+`
+
 class TagRoute extends React.Component {
   render() {
     const posts = this.props.data.allMarkdownRemark.edges
@@ -29,18 +33,18 @@ class TagRoute extends React.Component {
     const tagHeader = `${totalCount} article${
     totalCount === 1 ? '' : 's'
     } with`
-    const tagTopic = `related ${totalCount === 1 ? 'topic' : 'topics'}`
+    const tagTopic = `related topic`
 
     return (
       <Layout>
-        <section className="blog w-100 wrap mt4 mt5-ns ph3 ph0-ns pt3-ns">
+        <Section>
           <h1 className="f3 mb4">{tagHeader} <span className="fw6">“{tag}”</span> {tagTopic}</h1>
-          <Helmet title={`${tag} | ${title}`} />
+          <Helmet title={`${totalCount === 1 ? 'Article' : 'Articles'} on “${tag}” | ${title}`} />
           {postLinks}
           <p>
             <Link className="link fw6 f4" to="/tags/">Browse all topics →</Link>
           </p>
-        </section>
+        </Section>
       </Layout>
     )
   }
