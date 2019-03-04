@@ -2,6 +2,7 @@ import React from 'react'
 import Helmet from 'react-helmet'
 import { Link, graphql } from 'gatsby'
 import Layout from '../components/Layout'
+import tachyons from 'tachyons-components'
 
 class TagRoute extends React.Component {
   render() {
@@ -14,24 +15,30 @@ class TagRoute extends React.Component {
         </Link>
           </h3>
           <p className="lh-copy mt1 mb2">{post.node.excerpt}</p>
+          <p className='mb2 mt3'>
+          <Link className="fw6 link mid-gray" to={post.node.fields.slug}>
+          Continue reading →
+          </Link>
+          </p>
           <small className="mid-gray lh-copy">{post.node.frontmatter.date}</small>
       </div>
     ))
     const tag = this.props.pageContext.tag
     const title = this.props.data.site.siteMetadata.title
     const totalCount = this.props.data.allMarkdownRemark.totalCount
-    const tagHeader = `${totalCount} post${
-      totalCount === 1 ? '' : 's'
-    } tagged with “${tag}”`
+    const tagHeader = `${totalCount} article${
+    totalCount === 1 ? '' : 's'
+    } with`
+    const tagTopic = `related ${totalCount === 1 ? 'topic' : 'topics'}`
 
     return (
       <Layout>
         <section className="blog w-100 wrap mt4 mt5-ns ph3 ph0-ns pt3-ns">
-          <h1 className="f3 fw6 mb4">{tagHeader}</h1>
+          <h1 className="f3 mb4">{tagHeader} <span className="fw6">“{tag}”</span> {tagTopic}</h1>
           <Helmet title={`${tag} | ${title}`} />
           {postLinks}
           <p>
-            <Link to="/tags/">Browse all tags</Link>
+            <Link className="link fw6 f4" to="/tags/">Browse all topics →</Link>
           </p>
         </section>
       </Layout>
@@ -56,7 +63,7 @@ export const tagPageQuery = graphql`
       totalCount
       edges {
         node {
-          excerpt(pruneLength: 400)
+          excerpt(pruneLength: 150)
           fields {
             slug
           }

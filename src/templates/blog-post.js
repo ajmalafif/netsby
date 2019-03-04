@@ -8,7 +8,7 @@ import Layout from '../components/Layout'
 import Content, { HTMLContent } from '../components/Content'
 
 const ArticleContainer = tachyons('article')`
-mb6 ph3 ph0-ns pv4-ns
+mb5 ph3 ph0-ns pv4-ns
 `
 const TitleWrapper = tachyons('div')`
 wrap tc
@@ -20,7 +20,7 @@ const ContentContainer = tachyons('div')`
 wrap mw12
 `
 const BackLink = tachyons(Link)`
-link link-primary fw6
+link fw6
 `
 
 export const BlogPostTemplate = ({
@@ -47,10 +47,10 @@ export const BlogPostTemplate = ({
         <div className="center measure-wide lh-copy">
           <PostContent content={content} />
           {tags && tags.length ? (
-            <p>
-              <span className="moon-gray">This post is tagged under: </span>
+            <p className="mv4">
+              <span className="f5 fw6 mid-gray">{tags.length === 1 ? 'Related topic' : 'Related topics'}: </span>
                 {tags.map(tag => (
-                  <Link key={tag + `tag`} className="gray mr1" to={`/tags/${kebabCase(tag)}/`}>{tag}</Link>
+                  <Link key={tag + `tag`} className="gray mr2 link" to={`/tags/${kebabCase(tag)}/`}>{tag}</Link>
                 ))}
             </p>
           ) : null}
