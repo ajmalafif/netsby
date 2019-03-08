@@ -1,7 +1,7 @@
 module.exports = {
   siteMetadata: {
     title: '@ajmalafif',
-    description: 'Figuring out how to use Gatsby v2 with Netlify CMS for my personal',
+    description: 'Ajmal Afif‘s personal website',
   },
   plugins: [
     'gatsby-plugin-react-helmet',
