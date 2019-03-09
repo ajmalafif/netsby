@@ -5,10 +5,10 @@ import { IndexPageTemplate } from '../../templates/index-page'
 const IndexPagePreview = ({ entry, widgetFor }) => (
   <IndexPageTemplate
       title={entry.getIn(['data', 'title'])}
-      heading={entry.getIn(['data', 'heading'])}
       description={entry.getIn(['data', 'description'])}
       primaryButton={entry.getIn(['data', 'primaryButton'])}
       secondaryButton={entry.getIn(['data', 'secondaryButton'])}
+      heading={entry.getIn(['data', 'heading'])}
       content={widgetFor('body')}
     />
 )

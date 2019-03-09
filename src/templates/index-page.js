@@ -37,10 +37,11 @@ w-100 w-auto-ns link br2 ph4 pv3 mt2 dib blue bg-white tc bg-secondary bs-second
 export const IndexPageTemplate = ({
   title,
   description,
-  content,
-  contentComponent,
   primaryButton,
   secondaryButton,
+  heading,
+  content,
+  contentComponent,
   }) => {
   const PageContent = contentComponent || Content
 
@@ -57,7 +58,7 @@ export const IndexPageTemplate = ({
           <Description>{description}</Description>
         </ContainerTitle>
         <ContainerMain>
-          <Heading>Hi, I‘m Ajmal <span role="img" aria-label="emoji">👋🏼</span></Heading>
+          <Heading>{heading} <span role="img" aria-label="emoji">👋🏼</span></Heading>
           <PageContent className="lh-copy content" content={content} />
           <ButtonPrimary to="/experience/">{primaryButton}</ButtonPrimary>
           <ButtonSecondary to="/about/">{secondaryButton}</ButtonSecondary>
@@ -82,10 +83,10 @@ const IndexPage = ({ data }) => {
       <IndexPageTemplate
         contentComponent={HTMLContent}
         title={frontmatter.title}
-        heading={frontmatter.heading}
         description={frontmatter.description}
         primaryButton={frontmatter.primaryButton}
         secondaryButton={frontmatter.secondaryButton}
+        heading={frontmatter.heading}
         content={post.html}
       />
     </Layout>
@@ -109,6 +110,7 @@ export const IndexPageQuery = graphql`
       frontmatter {
         title
         description
+        heading
         primaryButton
         secondaryButton
       }
