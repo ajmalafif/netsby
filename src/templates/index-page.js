@@ -53,7 +53,6 @@ export const IndexPageTemplate = ({
       />
       <Container>
         <ContainerTitle>
-          <h1>Add</h1>
           <Title>{title}</Title>
           <Description>{description}</Description>
         </ContainerTitle>

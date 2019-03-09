@@ -59,6 +59,17 @@ collections:
                   - {label: "Company's details", name: text, widget: text}
                   - {label: Image, name: image, widget: image}
                   - {label: Alt, name: alt, widget: string}
+      - file: "src/pages/index.md"
+        label: "Homepage"
+        name: "homepage"
+        fields:
+          - {label: "Template Key", name: "templateKey", widget: "hidden", default: "index-page"}
+          - {label: "Title", name: "title", widget: "string"}
+          - {label: "Heading", name: "heading", widget: "string"}
+          - {label: "Description", name: "description", widget: "text"}
+          - {label: "Primary Button", name: "primaryButton", widget: "string"}
+          - {label: "secondary Button", name: "secondaryButton", widget: "string"}
+          - {label: "Body", name: "body", widget: "markdown"}
       - file: "src/pages/about/index.md"
         label: "About"
         name: "about"
