@@ -8,11 +8,17 @@ const Section = tachyons('section')`
 blog w-100 ph3 ph0-ns pt3-ns mt4 mt5-ns
 `
 
+const PageWrapper = tachyons('div')`
+w-70-ns mb4
+`
+
+
+
 class TagRoute extends React.Component {
   render() {
     const posts = this.props.data.allMarkdownRemark.edges
     const postLinks = posts.map(post => (
-      <div className="w-70-ns mb4" key={post.node.fields.slug}>
+      <PageWrapper key={post.node.fields.slug}>
         <h3 className="lh-title mb1 blue mt0">
         <Link className="link fw6" to={post.node.fields.slug}>
         {post.node.frontmatter.title}
@@ -25,7 +31,7 @@ class TagRoute extends React.Component {
           </Link>
           </p>
           <small className="mid-gray lh-copy">{post.node.frontmatter.date}</small>
-      </div>
+      </PageWrapper>
     ))
     const tag = this.props.pageContext.tag
     const title = this.props.data.site.siteMetadata.title

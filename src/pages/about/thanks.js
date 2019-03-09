@@ -1,7 +1,8 @@
-import React from "react"
+import React from 'react'
 import { Link } from 'gatsby'
 import tachyons from 'tachyons-components'
 import Layout from '../../components/Layout'
+import Helmet from 'react-helmet'
 
 const BackLink = tachyons(Link)`
 link fw6
@@ -22,10 +23,11 @@ f3 fw6 mb2
 
 export default () => (
   <Layout>
+    <Helmet><meta name='robots' content='noindex' /></Helmet>
     <PageWrapper>
     <PageSection>
       <PageHeader>Thank you!</PageHeader>
-      <p>I'll get back to you when I have the chance. You can also reach me on twitter, <a without rel="noopener noreferrer" target="_blank" className="link" href="https://twitter.com/ajmalafif">@ajmalafif</a>.</p>
+      <p>I'll get back to you when I have the chance. You can also reach me on twitter, <a rel="noopener noreferrer" target="_blank" className="link" href="https://twitter.com/ajmalafif">@ajmalafif</a>.</p>
       <p className="lh-copy">
       <BackLink to="/about/">← Back</BackLink>
       </p>
@@ -35,4 +37,4 @@ export default () => (
     </PageSection>
     </PageWrapper>
   </Layout>
-);
+)
