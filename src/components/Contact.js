@@ -52,8 +52,8 @@ const Contact = class extends React.Component {
   render() {
     return (
         <div>
-        <div class="bt b--light-gray mt4 mb4"></div>
-        <h3 class="mb3">Contact me</h3>
+        <div className="bt b--light-gray mt4 mb4"></div>
+        <h3 className="mb3">Contact me</h3>
         <form
           name="contact"
           method="post"

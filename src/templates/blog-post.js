@@ -40,7 +40,7 @@ export const BlogPostTemplate = ({
       <ArticleTitle>
         {title}
       </ArticleTitle>
-      <small className="gray">{date}</small>
+      <small className="mid-gray">{date}</small>
       </TitleWrapper>
       {/* <p>{description}</p> */}
       <ContentContainer>
