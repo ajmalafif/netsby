@@ -27,7 +27,7 @@ f3 fw6 dark-gray mb1 mt0
 `
 
 const SectionContent = tachyons("div")`
-fl w-100 w-50-ns lh-copy mb5
+fl w-100 w-50-ns lh-copy mb3
 `
 
 export const AboutPageTemplate = ({ title, content, contentComponent }) => {

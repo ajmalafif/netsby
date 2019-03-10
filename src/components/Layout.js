@@ -121,6 +121,17 @@ const GlobalStyle = createGlobalStyle`
     background-color: rgba(0,0,0,.03);
   }
 
+  footer .link,
+  footer .link:visited {
+    color: #555 !important;
+    background-color: transparent !important;
+  }
+
+  footer a.link:hover,
+  footer a:hover {
+    color: #05f !important;
+  }
+
   .blog .link-primary,
   .blog .link-primary:visited {
     color: #05f;
