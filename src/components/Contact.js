@@ -3,7 +3,7 @@ import { navigate } from "gatsby-link"
 import tachyons from 'tachyons-components'
 
 const Label = tachyons(`label`)`
-db gray lh-copy f6
+db mid-gray lh-copy f6
 `
 
 const Input = tachyons(`input`)`
