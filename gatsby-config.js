@@ -1,7 +1,7 @@
 module.exports = {
   siteMetadata: {
-    title: '@ajmalafif',
-    description: 'Ajmal Afif‘s personal website',
+    title: 'Ajmal Afif',
+    description: 'Personal Website of Ajmal Afif (@ajmalafif). Lifetime learner and digital designer.',
     siteUrl: `https://netsby.netlify.com`,
   },
   plugins: [
@@ -92,10 +92,10 @@ module.exports = {
         name: 'netsby',
         short_name: 'netsby',
         start_url: '/',
-        background_color: '#05f',
-        theme_color: '#05f',
+        background_color: '#0055ff',
+        theme_color: '#0055ff',
         display: 'minimal-ui',
-        icon: 'src/img/icon@3x.png', // This path is relative to the root of the site.
+        icon: 'src/img/favicon@3x.png', // This path is relative to the root of the site.
       },
     },
     // 'gatsby-plugin-offline',

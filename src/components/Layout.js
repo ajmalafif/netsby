@@ -161,12 +161,13 @@ const TemplateWrapper = ({ children }) => (
 	        <link rel="icon" type="image/png" href="/img/favicon-32x32.png" sizes="32x32" />
 	        <link rel="icon" type="image/png" href="/img/favicon-16x16.png" sizes="16x16" />
 	
-	        <link rel="mask-icon" href="/img/safari-pinned-tab.svg" color="#ff4400" />
-	        <meta name="theme-color" content="#fff" />
+	        <link rel="mask-icon" href="/img/safari-pinned-tab.svg" color="#0055ff" />
+	        <meta name="theme-color" content="#0055ff" />
 
 	        <meta property="og:type" content="website" />
           <meta property="og:title" content={data.site.siteMetadata.title} />
-          <meta property="og:url" content="/" />
+          <meta property="og:title" content={data.site.siteMetadata.description} />
+          <meta property="og:url" content={data.site.siteMetadata.siteURL} />
           <meta property="og:image" content="/img/og-image.jpg" />
         </Helmet>
         <GlobalStyle />
