@@ -70,7 +70,7 @@ export default class IndexPage extends React.Component {
                       {post.excerpt}
                     </p>
                     <p className='mb2 mt3'>
-                    <Link className="fw6 link mid-gray" to={post.fields.slug}>
+                    <Link className="link mid-gray" to={post.fields.slug}>
                     Continue reading →
                     </Link>
                     </p>

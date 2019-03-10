@@ -2,11 +2,20 @@ module.exports = {
   siteMetadata: {
     title: '@ajmalafif',
     description: 'Ajmal Afif‘s personal website',
+    siteUrl: `https://netsby.netlify.com`,
   },
   plugins: [
     'gatsby-plugin-react-helmet',
     'gatsby-plugin-styled-components',
     'gatsby-plugin-sass',
+    {
+      resolve: `gatsby-plugin-sitemap`,
+      options: {
+        // See: https://github.com/isaacs/minimatch
+        // The example below will exclude the single `path/to/page` and all routes beginning with `category`
+        exclude: ["/about/thanks"]
+      }
+    },
     {
       // keep as first gatsby-source-filesystem plugin for gatsby image support
       resolve: 'gatsby-source-filesystem',
