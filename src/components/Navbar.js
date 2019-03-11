@@ -66,11 +66,13 @@ render() {
       <UnorderedList>
       <List>
           <StyledLink to="/about/"
+          getProps={isPartiallyActive}
           activeStyle={{
             color: '#05f',
             fontWeight: 600,
             backgroundColor: 'rgba(0,85,255,.03)',
-            borderBottom: '1px solid rgba(0,85,255, 0.1)'
+            borderBottom: '1px solid rgba(0,85,255, 0.1)',
+            textDecoration: 'none'
           }}
           >
             About
