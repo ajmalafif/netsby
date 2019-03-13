@@ -1,3 +1,5 @@
+[![Netlify Status](https://api.netlify.com/api/v1/badges/0aa03345-4e1c-4411-991f-a634ff80d2c4/deploy-status)](https://app.netlify.com/sites/netsby/deploys)
+
 ## todo list
 - [ ] Homepage editable on backend
 - [ ] Navbar on homepage is fixed on mobile too
