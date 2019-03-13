@@ -70,7 +70,6 @@ const AboutPage = ({ data }) => {
         titleTemplate="%s | Ajmal Afif"
       >
         <title>{`${post.frontmatter.title}`}</title>
-        <meta name="description" content={`${post.frontmatter.description}`} />
       </Helmet>
     </Layout>
   )

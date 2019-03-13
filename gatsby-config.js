@@ -1,7 +1,7 @@
 module.exports = {
   siteMetadata: {
     title: 'Ajmal Afif',
-    description: 'Personal Website of Ajmal Afif (@ajmalafif). Lifetime learner and digital designer.',
+    description: 'Personal website of Ajmal Afif. Lifetime learner and digital designer.',
     siteUrl: `https://netsby.netlify.com`,
   },
   plugins: [
