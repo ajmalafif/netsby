@@ -23,7 +23,10 @@ f3 fw6 mb2
 
 export default () => (
   <Layout>
-    <Helmet><meta name='robots' content='noindex' /></Helmet>
+    <Helmet
+      titleTemplate="Thank you for reaching out | Ajmal Afif">
+      <meta name='robots' content='noindex' />
+      </Helmet>
     <PageWrapper>
     <PageSection>
       <PageHeader>Thank you!</PageHeader>

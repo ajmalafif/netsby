@@ -81,7 +81,7 @@ const BlogPost = ({ data }) => {
         description={post.frontmatter.description}
         helmet={
           <Helmet
-            titleTemplate="%s | Blog"
+            titleTemplate="%s | Ajmal Afif"
             bodyAttributes={{
                 class: 'blog'
             }}

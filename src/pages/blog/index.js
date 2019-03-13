@@ -3,6 +3,7 @@ import PropTypes from 'prop-types'
 import { Link, graphql } from 'gatsby'
 import Layout from '../../components/Layout'
 import tachyons from 'tachyons-components'
+import Helmet from 'react-helmet'
 
 const PageContainer = tachyons('div')`
 blog ph3 ph0-ns pv4-ns
@@ -42,6 +43,10 @@ export default class IndexPage extends React.Component {
 
     return (
       <Layout>
+        <Helmet
+          titleTemplate="Blog | Ajmal Afif">
+          <meta name='description' content='I enjoy writing down and reflect on my experience. My goal is to write more about design, frontend and anything in between.' />
+      </Helmet>
         <PageContainer>
           <PageHeaderContainer>
             <PageHeadingsContainer>

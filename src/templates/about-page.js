@@ -1,6 +1,7 @@
 import React from 'react'
 import PropTypes from 'prop-types'
 import { graphql } from 'gatsby'
+import Helmet from 'react-helmet'
 import Layout from '../components/Layout'
 import tachyons from 'tachyons-components'
 import Content, { HTMLContent } from '../components/Content'
@@ -65,6 +66,12 @@ const AboutPage = ({ data }) => {
         title={post.frontmatter.title}
         content={post.html}
       />
+      <Helmet
+        titleTemplate="%s | Ajmal Afif"
+      >
+        <title>{`${post.frontmatter.title}`}</title>
+        <meta name="description" content={`${post.frontmatter.description}`} />
+      </Helmet>
     </Layout>
   )
 }
