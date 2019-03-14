@@ -69,7 +69,6 @@ const AboutPage = ({ data }) => {
       <Helmet
         titleTemplate="%s | Ajmal Afif"
       >
-        <title>{`${post.frontmatter.title}`}</title>
       </Helmet>
     </Layout>
   )
