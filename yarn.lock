@@ -8406,9 +8406,9 @@ param-case@2.1.x:
   dependencies:
     no-case "^2.2.0"
 
-parcel-bundler@^1.12.1:
-  version "1.12.1"
-  resolved "https://registry.yarnpkg.com/parcel-bundler/-/parcel-bundler-1.12.1.tgz#a9eab83057e4fc52fb6b49ef569d9d7824cdf636"
+parcel-bundler@^1.12.2:
+  version "1.12.2"
+  resolved "https://registry.yarnpkg.com/parcel-bundler/-/parcel-bundler-1.12.2.tgz#5736afcbeee80a488bb946fd53ba52d1c5786960"
   dependencies:
     "@babel/code-frame" "^7.0.0"
     "@babel/core" "^7.0.0"
