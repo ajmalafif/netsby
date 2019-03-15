@@ -4641,9 +4641,9 @@ gatsby-plugin-netlify-headers@^1.0.1:
     pify "3.0.0"
     webpack-assets-manifest "^1.0.0"
 
-gatsby-plugin-netlify@^2.0.12:
-  version "2.0.12"
-  resolved "https://registry.yarnpkg.com/gatsby-plugin-netlify/-/gatsby-plugin-netlify-2.0.12.tgz#c1b5294969b22302363dbd8841d7a23a21687b50"
+gatsby-plugin-netlify@^2.0.13:
+  version "2.0.13"
+  resolved "https://registry.yarnpkg.com/gatsby-plugin-netlify/-/gatsby-plugin-netlify-2.0.13.tgz#8cd3bfed759c514548338b1def8321a78c7d77f4"
   dependencies:
     "@babel/runtime" "^7.0.0"
     fs-extra "^4.0.2"
