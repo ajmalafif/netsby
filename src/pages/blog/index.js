@@ -83,6 +83,7 @@ export default class IndexPage extends React.Component {
                   </div>
                 ))}
             </ArticleWrapper>
+            <p>Pagination here</p>
           </SectionArticles>
         </PageContainer>
       </Layout>
