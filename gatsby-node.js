@@ -73,34 +73,6 @@ exports.createPages = ({ actions, graphql }) => {
   })
 }
 
-exports.createPages = ({ graphql, actions }) => {
-  const { createPage } = actions
-  return new Promise((resolve, reject) => {
-    graphql(`
-      //graphql query
-    `).then(result => {
-      createPaginatedPages({
-        edges: result.data.posts.edges,
-        createPage: createPage,
-        pageTemplate: 'src/templates/blog-index.js',
-        pageLength: 5, // This is optional and defaults to 10 if not used
-        pathPrefix: 'blog', // This is optional and defaults to an empty string if not used
-        context: {}, // This is optional and defaults to an empty object if not used
-      })
-      result.data.posts.edges.map(({ node }) => {
-        createPage({
-          path: node.fields.slug,
-          component: path.resolve('./src/templates/post.js'),
-          context: {
-            slug: node.fields.slug,
-          },
-        })
-      })
-      resolve()
-    })
-  })
-}
-
 exports.onCreateNode = ({ node, actions, getNode }) => {
   const { createNodeField } = actions
   fmImagesToRelative(node) // convert image paths for gatsby images
