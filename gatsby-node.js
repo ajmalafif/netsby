@@ -2,7 +2,7 @@ const _ = require('lodash')
 const path = require('path')
 const { createFilePath } = require('gatsby-source-filesystem')
 const { fmImagesToRelative } = require('gatsby-remark-relative-images')
-const createPaginatedPages = require('gatsby-paginate')
+// const createPaginatedPages = require('gatsby-paginate')
 
 exports.createPages = ({ actions, graphql }) => {
   const { createPage } = actions
@@ -69,6 +69,34 @@ exports.createPages = ({ actions, graphql }) => {
           tag,
         },
       })
+    })
+  })
+}
+
+exports.createPages = ({ graphql, actions }) => {
+  const { createPage } = actions
+  return new Promise((resolve, reject) => {
+    graphql(`
+      //graphql query
+    `).then(result => {
+      createPaginatedPages({
+        edges: result.data.posts.edges,
+        createPage: createPage,
+        pageTemplate: 'src/templates/blog-index.js',
+        pageLength: 5, // This is optional and defaults to 10 if not used
+        pathPrefix: 'blog', // This is optional and defaults to an empty string if not used
+        context: {}, // This is optional and defaults to an empty object if not used
+      })
+      result.data.posts.edges.map(({ node }) => {
+        createPage({
+          path: node.fields.slug,
+          component: path.resolve('./src/templates/post.js'),
+          context: {
+            slug: node.fields.slug,
+          },
+        })
+      })
+      resolve()
     })
   })
 }
