@@ -793,9 +793,9 @@
     string-width "^2.0.0"
     strip-ansi "^3"
 
-"@raae/gatsby-remark-oembed@0.0.4":
-  version "0.0.4"
-  resolved "https://registry.yarnpkg.com/@raae/gatsby-remark-oembed/-/gatsby-remark-oembed-0.0.4.tgz#4bdc4d250b825ed862d96d3f63d97d7267c2c7c4"
+"@raae/gatsby-remark-oembed@0.0.5":
+  version "0.0.5"
+  resolved "https://registry.yarnpkg.com/@raae/gatsby-remark-oembed/-/gatsby-remark-oembed-0.0.5.tgz#37519c19a65f3fc43f4ae49763cd343babc3c51b"
   dependencies:
     axios "^0.18.0"
     bluebird "^3.5.1"
