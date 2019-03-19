@@ -4,6 +4,7 @@ import { Link, graphql } from 'gatsby'
 import Helmet from 'react-helmet'
 import Layout from '../components/Layout'
 import tachyons from 'tachyons-components'
+import SEO from '../components/Seo'
 // import Content, { HTMLContent } from '../components/Content'
 
 const PageContainer = tachyons('div')`
@@ -38,10 +39,7 @@ class BlogIndexPage extends React.Component {
 
     return (
       <Layout>
-        <Helmet
-          titleTemplate="Blog | Ajmal Afif">
-          <meta name='description' content='I enjoy writing down and reflect on my experience. My goal is to write more about design, frontend and anything in between.' />
-      </Helmet>
+        <SEO title="Blog"/>
         <PageContainer>
           <PageHeaderContainer>
             <PageHeadingsContainer>

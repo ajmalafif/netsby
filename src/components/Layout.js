@@ -176,11 +176,11 @@ const TemplateWrapper = ({ children }) => (
 	        <link rel="mask-icon" href="/img/safari-pinned-tab.svg" color="#0055ff" />
 	        <meta name="theme-color" content="#0055ff" />
 
-	        {/* <meta property="og:type" content="website" />
+	        <meta property="og:type" content="website" />
           <meta property="og:title" content={data.site.siteMetadata.title} />
           <meta property="og:title" content={data.site.siteMetadata.description} />
           <meta property="og:url" content={data.site.siteMetadata.siteURL} />
-          <meta property="og:image" content="/img/og-image.jpg" /> */}
+          <meta property="og:image" content="/img/og-image.jpg" />
         </Helmet>
         <SEO/>
         <GlobalStyle />

@@ -10,7 +10,7 @@ const TagsPage = ({
   <Layout>
     <div className="wrap">
     <section className="blog w-100 ph3 ph0-ns pt3-ns mt4 mt5-ns">
-      <Helmet title={`Topics | ${title}`} />
+      <Helmet title={`Topics`} />
       <div className="container content">
         <div className="columns">
           <div

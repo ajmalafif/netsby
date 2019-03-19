@@ -52,10 +52,6 @@ function SEO({ description, lang, image, meta, keywords, title, pathname }) {
                 name: `twitter:description`,
                 content: metaDescription,
               },
-              {
-                name: 'google-site-verification',
-                content: 'QlRmuLQWttdkbKlZ0ZwIBX3xv0M8ouqTW3wE2Eg_jKI'
-              }
             ]
               .concat(metaImage ? [
                 {
