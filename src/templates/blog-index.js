@@ -1,42 +1,37 @@
 import React from 'react'
 import PropTypes from 'prop-types'
 import { Link, graphql } from 'gatsby'
-import Layout from '../../components/Layout'
-import tachyons from 'tachyons-components'
 import Helmet from 'react-helmet'
+import Layout from '../components/Layout'
+import tachyons from 'tachyons-components'
+// import Content, { HTMLContent } from '../components/Content'
 
 const PageContainer = tachyons('div')`
 blog ph3 ph0-ns pv4-ns
 `
-
 const PageHeaderContainer = tachyons('div')`
 wrap dt bb b--light-gray pb4 pt4 pt5-ns
 `
-
 const PageHeadingsContainer = tachyons('div')`
 fl w-100 w-50-ns tl
 `
-
 const PageHeadings = tachyons('h2')`
 f3 fw6 dark-gray mb1 mt0
 `
-
 const PageSubHeadings = tachyons('p')`
 mid-gray mt0
 `
 const PageDescriptions = tachyons('div')`
 fl w-100 w-50-ns lh-copy mb0
 `
-
 const SectionArticles = tachyons('div')`
 w-100 dt mt4
 `
-
 const ArticleWrapper = tachyons('div')`
 wrap
 `
 
-export default class IndexPage extends React.Component {
+class BlogIndexPage extends React.Component {
   render() {
     const { data } = this.props
     const { edges: posts } = data.allMarkdownRemark
@@ -90,7 +85,7 @@ export default class IndexPage extends React.Component {
   }
 }
 
-IndexPage.propTypes = {
+BlogIndexPage.propTypes = {
   data: PropTypes.shape({
     allMarkdownRemark: PropTypes.shape({
       edges: PropTypes.array,
@@ -98,8 +93,10 @@ IndexPage.propTypes = {
   }),
 }
 
+export default BlogIndexPage
+
 export const pageQuery = graphql`
-  query BlogQuery {
+  query blogPageQuery {
     allMarkdownRemark(
       sort: { order: DESC, fields: [frontmatter___date] },
       filter: { frontmatter: { templateKey: { eq: "blog-post" } }}

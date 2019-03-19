@@ -1,0 +1,4 @@
+---
+templateKey: blog-index
+---
+I am a digital designer by trade. Always trying to make time to code more. I really enjoy learning and naturally feel it's a very rewarding experience.
