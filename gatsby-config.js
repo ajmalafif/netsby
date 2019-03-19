@@ -1,8 +1,14 @@
+const siteUrl = process.env.URL || process.env.DEPLOY_URL || `https://netsby.netlify.com`
+
 module.exports = {
   siteMetadata: {
     title: 'Ajmal Afif',
+    author: 'Ajmal Afif',
     description: 'Personal website of Ajmal Afif. Lifetime learner and digital designer.',
-    siteUrl: `https://netsby.netlify.com`,
+    siteUrl,
+    social: {
+      twitter: `ajmalafif`,
+    },
   },
   plugins: [
     'gatsby-plugin-react-helmet',
