@@ -2,7 +2,6 @@ import React from 'react'
 import { Link } from 'gatsby'
 import tachyons from 'tachyons-components'
 import Layout from '../../components/Layout'
-import SEO from '../../components/Seo'
 import Helmet from 'react-helmet'
 
 const BackLink = tachyons(Link)`
@@ -24,10 +23,10 @@ f3 fw6 mb2
 
 export default () => (
   <Layout>
-    <SEO title="Thank you for reaching out | Ajmal Afif"/>
-    <Helmet>
+    <Helmet
+      titleTemplate="Thank you for reaching out | Ajmal Afif">
       <meta name='robots' content='noindex' />
-    </Helmet>
+      </Helmet>
     <PageWrapper>
     <PageSection>
       <PageHeader>Thank you!</PageHeader>

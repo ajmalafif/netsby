@@ -4,7 +4,6 @@ import { StaticQuery, graphql } from "gatsby"
 import tachyons from 'tachyons-components'
 import { createGlobalStyle } from 'styled-components'
 import Navbar from '../components/Navbar.js'
-import SEO from '../components/Seo.js'
 import Footer from '../components/Footer.js'
 import '../styles/main.scss'
 
@@ -182,7 +181,6 @@ const TemplateWrapper = ({ children }) => (
           <meta property="og:url" content={data.site.siteMetadata.siteURL} />
           <meta property="og:image" content="/img/og-image.jpg" />
         </Helmet>
-        <SEO/>
         <GlobalStyle />
         <Navbar />
         {children}

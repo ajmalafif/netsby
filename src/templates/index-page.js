@@ -3,7 +3,6 @@ import PropTypes from 'prop-types'
 import { Link, graphql } from 'gatsby'
 import Content, { HTMLContent } from '../components/Content'
 import Layout from '../components/Layout'
-import SEO from '../components/Seo'
 import Helmet from 'react-helmet'
 import tachyons from 'tachyons-components'
 
@@ -48,8 +47,8 @@ export const IndexPageTemplate = ({
 
   return (
     <Section>
-      <SEO title="Home"/>
       <Helmet
+        titleTemplate="Ajmal Afif"
         bodyAttributes={{
             class: 'homepage'
         }}
