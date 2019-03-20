@@ -6,6 +6,7 @@ import Layout from '../components/Layout'
 import Features from '../components/Features'
 import tachyons from 'tachyons-components'
 import Content, { HTMLContent } from '../components/Content'
+import SEO from '../components/SEO'
 
 const ArticleContainer = tachyons('article')`
 dt wrap pt4 pt5-ns pb4
@@ -82,6 +83,7 @@ const PageContent = contentComponent || Content
 return (
   <div className="ph3 ph0-ns pv4-ns">
     {helmet || ''}
+    <SEO titleTemplate=""/>
     <ArticleContainer>
       <ArticleContainerHeadings>
         <SectionHeader>
