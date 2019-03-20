@@ -75,6 +75,7 @@ export const ExperiencePageTemplate = ({
   main,
   content,
   contentComponent,
+  pathname,
   helmet,
 }) => {
 const PageContent = contentComponent || Content
@@ -143,6 +144,7 @@ ExperiencePageTemplate.propTypes = {
     image3: PropTypes.oneOfType([PropTypes.object, PropTypes.string]),
   }),
   content: PropTypes.string,
+  pathname: PropTypes.string,
   contentComponent: PropTypes.func,
 }
 
@@ -164,8 +166,7 @@ const ExperiencePage = ({ data }) => {
           <Helmet
             titleTemplate="%s | Ajmal Afif"
           >
-            <title>{`${post.frontmatter.title}`}</title>
-            <meta name="description" content={`${post.frontmatter.description}`} />
+          <meta name="description" content={`${post.frontmatter.description}`} />
           </Helmet>
         }
       />

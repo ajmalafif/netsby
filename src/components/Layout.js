@@ -157,6 +157,11 @@ const TemplateWrapper = ({ children }) => (
             siteMetadata {
               title,
               description,
+              siteUrl,
+              author,
+              social {
+                twitter
+              }
             }
           }
         }
@@ -177,8 +182,7 @@ const TemplateWrapper = ({ children }) => (
 
 	        <meta property="og:type" content="website" />
           <meta property="og:title" content={data.site.siteMetadata.title} />
-          <meta property="og:title" content={data.site.siteMetadata.description} />
-          <meta property="og:url" content={data.site.siteMetadata.siteURL} />
+          <meta property="og:description" content={data.site.siteMetadata.description} />
           <meta property="og:image" content="/img/og-image.jpg" />
         </Helmet>
         <GlobalStyle />
