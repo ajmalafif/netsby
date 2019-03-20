@@ -4682,9 +4682,9 @@ gatsby-plugin-page-creator@^2.0.10:
     parse-filepath "^1.0.1"
     slash "^1.0.0"
 
-gatsby-plugin-purgecss@^3.1.0:
-  version "3.1.0"
-  resolved "https://registry.yarnpkg.com/gatsby-plugin-purgecss/-/gatsby-plugin-purgecss-3.1.0.tgz#ecaf5266317ef3deba94478f341f2855f58a3a74"
+gatsby-plugin-purgecss@^3.1.1:
+  version "3.1.1"
+  resolved "https://registry.yarnpkg.com/gatsby-plugin-purgecss/-/gatsby-plugin-purgecss-3.1.1.tgz#2855f0ca5fd96d9888147ade09aaf2daf16b0e1a"
   dependencies:
     fs-extra "^7.0.0"
     loader-utils "^1.1.0"
@@ -4781,9 +4781,9 @@ gatsby-remark-images@^3.0.10:
     unist-util-select "^1.5.0"
     unist-util-visit-parents "^2.0.1"
 
-gatsby-remark-prismjs@^3.2.5:
-  version "3.2.5"
-  resolved "https://registry.yarnpkg.com/gatsby-remark-prismjs/-/gatsby-remark-prismjs-3.2.5.tgz#c5b3bee63b36a9b153dfaa21552fa1c313022882"
+gatsby-remark-prismjs@^3.2.6:
+  version "3.2.6"
+  resolved "https://registry.yarnpkg.com/gatsby-remark-prismjs/-/gatsby-remark-prismjs-3.2.6.tgz#30f0ad27c910e4f5df49b8235dffd86d60709fc2"
   dependencies:
     "@babel/runtime" "^7.0.0"
     parse-numeric-range "^0.0.2"
@@ -4821,9 +4821,9 @@ gatsby-source-filesystem@^2.0.27:
     valid-url "^1.0.9"
     xstate "^3.1.0"
 
-gatsby-transformer-remark@^2.3.5:
-  version "2.3.5"
-  resolved "https://registry.yarnpkg.com/gatsby-transformer-remark/-/gatsby-transformer-remark-2.3.5.tgz#0465974c7b40505b1a2cc2c4e338d46908132460"
+gatsby-transformer-remark@^2.3.7:
+  version "2.3.7"
+  resolved "https://registry.yarnpkg.com/gatsby-transformer-remark/-/gatsby-transformer-remark-2.3.7.tgz#de0fea8e25e3fbc1bb5d03ac8f32f4fea19ee66d"
   dependencies:
     "@babel/runtime" "^7.0.0"
     bluebird "^3.5.0"
