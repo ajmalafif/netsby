@@ -164,8 +164,8 @@ const ExperiencePage = ({ data }) => {
           <Helmet
             titleTemplate="%s | Ajmal Afif"
           >
-          <title>{`${post.frontmatter.title}`}</title>
-          <meta name="description" content={`${post.frontmatter.description}`} />
+          <title>{frontmatter.title}</title>
+          <meta name="description" content={frontmatter.description} />
           </Helmet>
         }
       />
