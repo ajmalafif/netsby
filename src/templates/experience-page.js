@@ -83,7 +83,6 @@ const PageContent = contentComponent || Content
 return (
   <div className="ph3 ph0-ns pv4-ns">
     {helmet || ''}
-    <SEO titleTemplate=""/>
     <ArticleContainer>
       <ArticleContainerHeadings>
         <SectionHeader>
