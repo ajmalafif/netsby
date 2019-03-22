@@ -5,6 +5,7 @@ import tachyons from 'tachyons-components'
 import { createGlobalStyle } from 'styled-components'
 import Navbar from '../components/Navbar.js'
 import Footer from '../components/Footer.js'
+import SEO from '../components/SEO.js'
 import '../styles/main.scss'
 
 
@@ -186,6 +187,7 @@ const TemplateWrapper = ({ children }) => (
           <meta property="og:image" content="/img/og-image.jpg" />
         </Helmet>
         <GlobalStyle />
+        <SEO />
         <Navbar />
         {children}
         <Footer />
