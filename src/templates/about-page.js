@@ -31,7 +31,7 @@ const SectionContent = tachyons("div")`
 fl w-100 w-50-ns lh-copy mb3
 `
 
-export const AboutPageTemplate = ({ title, content, contentComponent }) => {
+export const AboutPageTemplate = ({ title, description, content, contentComponent }) => {
   const PageContent = contentComponent || Content
 
   return (
@@ -52,6 +52,7 @@ export const AboutPageTemplate = ({ title, content, contentComponent }) => {
 
 AboutPageTemplate.propTypes = {
   title: PropTypes.string.isRequired,
+  description: PropTypes.string,
   content: PropTypes.string,
   contentComponent: PropTypes.func,
 }
@@ -64,12 +65,14 @@ const AboutPage = ({ data }) => {
       <AboutPageTemplate
         contentComponent={HTMLContent}
         title={post.frontmatter.title}
+        description={post.frontmatter.description}
         content={post.html}
       />
       <Helmet
         titleTemplate="%s | Ajmal Afif"
       >
       <title>{`${post.frontmatter.title}`}</title>
+      <meta name="description" content={`${post.frontmatter.description}`} />
       </Helmet>
     </Layout>
   )
@@ -87,6 +90,7 @@ export const AboutPageQuery = graphql`
       html
       frontmatter {
         title
+        description
       }
     }
   }
