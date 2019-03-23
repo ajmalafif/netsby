@@ -88,6 +88,8 @@ const BlogPost = ({ data }) => {
           >
             <title>{`${post.frontmatter.title}`}</title>
             <meta name="description" content={`${post.frontmatter.description}`} />
+            <meta name="twitter:title" content={`${post.frontmatter.title} | Ajmal Afif`} />
+            <meta name="twitter:description" content={`${post.frontmatter.description}`} />
           </Helmet>
         }
         tags={post.frontmatter.tags}

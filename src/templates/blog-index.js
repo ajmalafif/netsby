@@ -41,6 +41,8 @@ class BlogIndexPage extends React.Component {
         <Helmet
           titleTemplate="Blog | Ajmal Afif">
           <meta name='description' content='I enjoy writing down and reflect on my experience. My goal is to write more about design, frontend and anything in between.' />
+          <meta name="twitter:title" content="Blog | Ajmal Afif" />
+          <meta name="twitter:description" content='I enjoy writing down and reflect on my experience. My goal is to write more about design, frontend and anything in between.' />
       </Helmet>
         <PageContainer>
           <PageHeaderContainer>
