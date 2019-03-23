@@ -166,6 +166,8 @@ const ExperiencePage = ({ data }) => {
           >
           <title>{frontmatter.title}</title>
           <meta name="description" content={frontmatter.description} />
+          <meta name="twitter:title" content={`${frontmatter.title} | Ajmal Afif`} />
+          <meta name="twitter:description" content={frontmatter.description} />
           </Helmet>
         }
       />

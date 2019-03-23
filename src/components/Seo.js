@@ -15,7 +15,7 @@ const SEO = ({ title, desc, banner, pathname, article, node }) => {
       siteUrl,
       defaultTitle,
       defaultDescription,
-      defaultBanner, 
+      defaultBanner,
       author,
       twitter,
     },
@@ -142,7 +142,6 @@ const SEO = ({ title, desc, banner, pathname, article, node }) => {
         {/* Insert schema.org data conditionally (webpage/article) + everytime (breadcrumbs) */}
         {!article && <script type="application/ld+json">{JSON.stringify(schemaOrgWebPage)}</script>}
         {article && <script type="application/ld+json">{JSON.stringify(schemaArticle)}</script>}
-        <script type="application/ld+json">{JSON.stringify(breadcrumb)}</script>
       </Helmet>
       <Twitter title={seo.title} image={seo.image} desc={seo.description} username={twitter} />
     </>
