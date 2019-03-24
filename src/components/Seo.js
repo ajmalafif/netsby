@@ -64,19 +64,6 @@ const SEO = ({ title, desc, banner, pathname, article, node }) => {
     },
   }
 
-  // Initial breadcrumb list
-
-  const itemListElement = [
-    {
-      '@type': 'ListItem',
-      item: {
-        '@id': siteUrl,
-        name: 'Homepage',
-      },
-      position: 1,
-    },
-  ]
-
   let schemaArticle = null
 
   if (article) {
@@ -104,8 +91,8 @@ const SEO = ({ title, desc, banner, pathname, article, node }) => {
           url: `${siteUrl}${defaultBanner}`,
         },
       },
-      datePublished: node.first_publication_date,
-      dateModified: node.last_publication_date,
+      datePublished: node.date,
+      dateModified: node.date,
       description: seo.description,
       url: seo.url,
       name: seo.title,
@@ -115,23 +102,6 @@ const SEO = ({ title, desc, banner, pathname, article, node }) => {
       },
       mainEntityOfPage: seo.url,
     }
-    // Push current blogpost into breadcrumb list
-    itemListElement.push({
-      '@type': 'ListItem',
-      item: {
-        '@id': seo.url,
-        name: seo.title,
-      },
-      position: 2,
-    })
-  }
-
-  const breadcrumb = {
-    '@context': 'http://schema.org',
-    '@type': 'BreadcrumbList',
-    description: 'Breadcrumbs list',
-    name: 'Breadcrumbs',
-    itemListElement,
   }
 
   return (

@@ -6,6 +6,7 @@ import { graphql, Link } from 'gatsby'
 import tachyons from 'tachyons-components'
 import Layout from '../components/Layout'
 import Content, { HTMLContent } from '../components/Content'
+import SEO from '../components/Seo'
 
 const ArticleContainer = tachyons('article')`
 mb5 ph3 ph0-ns pv4-ns
@@ -36,6 +37,10 @@ export const BlogPostTemplate = ({
   return (
     <ArticleContainer>
       {helmet || ''}
+      <SEO
+        node={content}
+        article
+      />
       <TitleWrapper>
       <ArticleTitle>
         {title}
@@ -95,6 +100,10 @@ const BlogPost = ({ data }) => {
         tags={post.frontmatter.tags}
         title={post.frontmatter.title}
         date={post.frontmatter.date}
+      />
+      <SEO
+        node={post.frontmatter.date}
+        article
       />
     </Layout>
   )

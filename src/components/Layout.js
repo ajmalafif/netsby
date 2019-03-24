@@ -5,7 +5,7 @@ import tachyons from 'tachyons-components'
 import { createGlobalStyle } from 'styled-components'
 import Navbar from '../components/Navbar.js'
 import Footer from '../components/Footer.js'
-import SEO from '../components/SEO.js'
+import SEO from '../components/Seo.js'
 import '../styles/main.scss'
 
 
