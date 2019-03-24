@@ -3,6 +3,7 @@ import Helmet from 'react-helmet'
 import PropTypes from 'prop-types'
 import { useStaticQuery, graphql } from 'gatsby'
 import Twitter from './Twitter'
+import Facebook from './Facebook'
 
 // Complete tutorial: https://www.gatsbyjs.org/docs/add-seo-component/
 
@@ -16,8 +17,11 @@ const SEO = ({ title, desc, banner, pathname, article, node }) => {
       defaultTitle,
       defaultDescription,
       defaultBanner,
+      siteLanguage,
+      ogLanguage,
       author,
       twitter,
+      facebook,
     },
   } = site
 
@@ -36,6 +40,7 @@ const SEO = ({ title, desc, banner, pathname, article, node }) => {
     '@context': 'http://schema.org',
     '@type': 'WebPage',
     url: siteUrl,
+    inLanguage: siteLanguage,
     mainEntityOfPage: siteUrl,
     description: defaultDescription,
     name: defaultTitle,
@@ -113,6 +118,15 @@ const SEO = ({ title, desc, banner, pathname, article, node }) => {
         {!article && <script type="application/ld+json">{JSON.stringify(schemaOrgWebPage)}</script>}
         {article && <script type="application/ld+json">{JSON.stringify(schemaArticle)}</script>}
       </Helmet>
+      <Facebook
+        desc={seo.description}
+        image={seo.image}
+        title={seo.title}
+        type={article ? 'article' : 'website'}
+        url={seo.url}
+        locale={ogLanguage}
+        name={facebook}
+      />
       <Twitter title={seo.title} image={seo.image} desc={seo.description} username={twitter} />
     </>
   )
@@ -147,8 +161,11 @@ const query = graphql`
         defaultTitle: title
         defaultDescription: description
         defaultBanner: banner
+        siteLanguage
+        ogLanguage
         author
         twitter
+        facebook
       }
     }
   }

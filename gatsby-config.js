@@ -8,7 +8,10 @@ module.exports = {
     description: 'Personal website of Ajmal Afif. Lifetime learner and digital designer.',
     banner: '/img/og-image.jpg',
     twitter: '@ajmalafif',
+    facebook: 'ajmalafif',
     author: 'Ajmal Afif',
+    siteLanguage: 'en',
+    ogLanguage: 'en_US',
   },
   plugins: [
     'gatsby-plugin-react-helmet',

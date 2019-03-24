@@ -29,6 +29,7 @@ export const BlogPostTemplate = ({
   contentComponent,
   tags,
   title,
+  description,
   date,
   helmet,
 }) => {
@@ -38,16 +39,22 @@ export const BlogPostTemplate = ({
     <ArticleContainer>
       {helmet || ''}
       <SEO
+        title={`${title} | Ajmal Afif`}
         node={content}
-        article
-      />
+        desc={description}
+        article>
+        <meta name="description" content={description} />
+        <meta name="twitter:title" content={`${title} | Ajmal Afif`} />
+          <meta name="twitter:description" content={description} />
+          <meta property="og:title" content={`${title} | Ajmal Afif`} />
+          <meta property="og:description" content={description} />
+        </SEO>
       <TitleWrapper>
       <ArticleTitle>
         {title}
       </ArticleTitle>
       <small className="gray">{date}</small>
       </TitleWrapper>
-      {/* <p>{description}</p> */}
       <ContentContainer>
         <div className="center measure-wide lh-copy">
           <PostContent content={content} />
@@ -86,24 +93,18 @@ const BlogPost = ({ data }) => {
         description={post.frontmatter.description}
         helmet={
           <Helmet
-            titleTemplate="%s | Ajmal Afif"
+            titleTemplate="%s"
             bodyAttributes={{
                 class: 'blog'
             }}
           >
-            <title>{`${post.frontmatter.title}`}</title>
+            <title>{`${post.frontmatter.title} | Ajmal Afif`} </title>
             <meta name="description" content={`${post.frontmatter.description}`} />
-            <meta name="twitter:title" content={`${post.frontmatter.title} | Ajmal Afif`} />
-            <meta name="twitter:description" content={`${post.frontmatter.description}`} />
           </Helmet>
         }
         tags={post.frontmatter.tags}
         title={post.frontmatter.title}
         date={post.frontmatter.date}
-      />
-      <SEO
-        node={post.frontmatter.date}
-        article
       />
     </Layout>
   )
