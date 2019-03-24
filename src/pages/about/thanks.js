@@ -24,12 +24,12 @@ f3 fw6 mb2
 export default () => (
   <Layout>
     <Helmet
-      titleTemplate="Thank you for reaching out | Ajmal Afif">
+      titleTemplate="Thank you for reaching out · Ajmal Afif">
       <meta name='robots' content='noindex' />
       <meta name="description" content={`I'll get back to you when I have the chance. You can also reach me on twitter, @ajmalafif.`} />
-      <meta name="twitter:title" content={`Thank you for reaching out | Ajmal Afif`} />
+      <meta name="twitter:title" content={`Thank you for reaching out · Ajmal Afif`} />
       <meta name="twitter:description" content={`I'll get back to you when I have the chance. You can also reach me on twitter, @ajmalafif.`} />
-      <meta property="og:title" content={`Thank you for reaching out | Ajmal Afif`} />
+      <meta property="og:title" content={`Thank you for reaching out · Ajmal Afif`} />
       <meta property="og:description" content={`I'll get back to you when I have the chance. You can also reach me on twitter, @ajmalafif.`} />
       </Helmet>
     <PageWrapper>

@@ -69,13 +69,13 @@ const AboutPage = ({ data }) => {
         content={post.html}
       />
       <Helmet
-        titleTemplate="%s | Ajmal Afif"
+        titleTemplate="%s · Ajmal Afif"
       >
       <title>{`${post.frontmatter.title}`}</title>
       <meta name="description" content={`${post.frontmatter.description}`} />
-      <meta name="twitter:title" content={`${post.frontmatter.title} | Ajmal Afif`} />
+      <meta name="twitter:title" content={`${post.frontmatter.title} · Ajmal Afif`} />
       <meta name="twitter:description" content={`${post.frontmatter.description}`} />
-      <meta property="og:title" content={`${post.frontmatter.title} | Ajmal Afif`} />
+      <meta property="og:title" content={`${post.frontmatter.title} · Ajmal Afif`} />
       <meta property="og:description" content={`${post.frontmatter.description}`} />
       </Helmet>
     </Layout>

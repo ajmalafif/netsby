@@ -39,14 +39,14 @@ export const BlogPostTemplate = ({
     <ArticleContainer>
       {helmet || ''}
       <SEO
-        title={`${title} | Ajmal Afif`}
+        title={`${title} · Ajmal Afif`}
         node={content}
         desc={description}
         article>
         <meta name="description" content={description} />
-        <meta name="twitter:title" content={`${title} | Ajmal Afif`} />
+        <meta name="twitter:title" content={`${title} · Ajmal Afif`} />
           <meta name="twitter:description" content={description} />
-          <meta property="og:title" content={`${title} | Ajmal Afif`} />
+          <meta property="og:title" content={`${title} · Ajmal Afif`} />
           <meta property="og:description" content={description} />
         </SEO>
       <TitleWrapper>
@@ -98,7 +98,7 @@ const BlogPost = ({ data }) => {
                 class: 'blog'
             }}
           >
-            <title>{`${post.frontmatter.title} | Ajmal Afif`} </title>
+            <title>{`${post.frontmatter.title} · Ajmal Afif`} </title>
             <meta name="description" content={`${post.frontmatter.description}`} />
           </Helmet>
         }
