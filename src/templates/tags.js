@@ -59,6 +59,8 @@ class TagRoute extends React.Component {
             <meta name="description" content={`All the ${totalCount === 1 ? 'article' : 'articles'} with “${tag}” related topic.`} />
             <meta name="twitter:title" content={`${totalCount === 1 ? 'Article' : 'Articles'} on “${tag}” | ${title}`} />
             <meta name="twitter:description" content={`All the ${totalCount === 1 ? 'article' : 'articles'} with “${tag}” related topic.`} />
+            <meta property="og:title" content={`${totalCount === 1 ? 'Article' : 'Articles'} on “${tag}” | ${title}`} />
+            <meta property="og:description" content={`All the ${totalCount === 1 ? 'article' : 'articles'} with “${tag}” related topic.`} />
           </Helmet>
           {postLinks}
           <p className="w-70-ns mb5 mb6-ns bt pt3 pt4-ns bt bl-0 br-0 bb-0 b--dotted b--black-30">

@@ -5,8 +5,6 @@ import { useStaticQuery, graphql } from 'gatsby'
 import Twitter from './Twitter'
 import Facebook from './Facebook'
 
-// Complete tutorial: https://www.gatsbyjs.org/docs/add-seo-component/
-
 const SEO = ({ title, desc, banner, pathname, article, node }) => {
   const { site } = useStaticQuery(query)
 
@@ -112,6 +110,7 @@ const SEO = ({ title, desc, banner, pathname, article, node }) => {
   return (
     <>
       <Helmet title={seo.title}>
+        <html lang={siteLanguage} />
         <meta name="description" content={seo.description} />
         <meta name="image" content={seo.image} />
         {/* Insert schema.org data conditionally (webpage/article) + everytime (breadcrumbs) */}

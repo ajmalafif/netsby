@@ -26,6 +26,8 @@ const TagsPage = ({
         <meta name="description" content={`All the topics for the blog.`} />
         <meta name="twitter:title" content={`All topics | ${title}`} />
         <meta name="twitter:description" content={`All the topics for the blog.`} />
+        <meta property="og:title" content={`All topics | ${title}`} />
+            <meta property="og:description" content={`All the topics for the blog.`} />
       </Helmet>
       <Heading>All topics</Heading>
         {group.map(tag => (

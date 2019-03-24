@@ -29,6 +29,8 @@ export default () => (
       <meta name="description" content={`I'll get back to you when I have the chance. You can also reach me on twitter, @ajmalafif.`} />
       <meta name="twitter:title" content={`Thank you for reaching out | Ajmal Afif`} />
       <meta name="twitter:description" content={`I'll get back to you when I have the chance. You can also reach me on twitter, @ajmalafif.`} />
+      <meta property="og:title" content={`Thank you for reaching out | Ajmal Afif`} />
+      <meta property="og:description" content={`I'll get back to you when I have the chance. You can also reach me on twitter, @ajmalafif.`} />
       </Helmet>
     <PageWrapper>
     <PageSection>
