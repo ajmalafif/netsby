@@ -75,7 +75,6 @@ export const BlogPostTemplate = ({
             </p>
           ) : null}
         <BackLink to="/blog/">← Back to blog</BackLink>
-        <p>{`${siteUrl}${hero}`}</p>
         </div>
       </ContentContainer>
     </ArticleContainer>
@@ -141,7 +140,13 @@ export const pageQuery = graphql`
         date(formatString: "MMMM DD, YYYY")
         title
         description
-        hero
+        hero {
+          childImageSharp {
+            fixed(width: 200, height: 200, quality: 90) {
+              ...GatsbyImageSharpFixed_tracedSVG
+            }
+          }
+        }
         tags
       }
     }
