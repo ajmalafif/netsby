@@ -4,7 +4,9 @@ title: Guides to approach your Shopify store redesign
 date: 2018-10-13T00:00:00.000Z
 description: >-
   The idea of redesigning a website can be scary and daunting. Not to mention the resources and cost that come with it.
-hero: '/img/tsuwave@3x.png'
+hero: 
+  image: '/img/tsuwave@3x.png'
+  alt: 'tsuwave'
 tags:
   - shopify
   - design

@@ -141,7 +141,8 @@ export const pageQuery = graphql`
         title
         description
         hero {
-          publicUrl
+          image
+          alt
         }
         tags
       }
