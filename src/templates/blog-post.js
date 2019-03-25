@@ -31,6 +31,7 @@ export const BlogPostTemplate = ({
   title,
   description,
   date,
+  hero,
   helmet,
 }) => {
   const PostContent = contentComponent || Content
@@ -45,9 +46,10 @@ export const BlogPostTemplate = ({
         article>
         <meta name="description" content={description} />
         <meta name="twitter:title" content={`${title} · Ajmal Afif`} />
-          <meta name="twitter:description" content={description} />
-          <meta property="og:title" content={`${title} · Ajmal Afif`} />
-          <meta property="og:description" content={description} />
+        <meta name="twitter:description" content={description} />
+        <meta property="og:title" content={`${title} · Ajmal Afif`} />
+        <meta property="og:description" content={description} />
+        <meta name="image" content={hero} />
         </SEO>
       <TitleWrapper>
       <ArticleTitle>
@@ -127,6 +129,7 @@ export const pageQuery = graphql`
         date(formatString: "MMMM DD, YYYY")
         title
         description
+        hero
         tags
       }
     }
