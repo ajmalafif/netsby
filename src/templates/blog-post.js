@@ -44,16 +44,19 @@ export const BlogPostTemplate = ({
         title={`${title} · Ajmal Afif`}
         node={content}
         desc={description}
+        image={`${siteUrl}${hero}`}
         article>
-        <meta name="og:image" content={`${siteUrl}${post.frontmatter.hero}`} />
-        <meta name="image" content={`${siteUrl}${post.frontmatter.hero}`} />
-        <meta name="twitter:image" content={`${siteUrl}${post.frontmatter.hero}`} />
         <meta name="description" content={description} />
         <meta name="twitter:title" content={`${title} · Ajmal Afif`} />
         <meta name="twitter:description" content={description} />
         <meta property="og:title" content={`${title} · Ajmal Afif`} />
         <meta property="og:description" content={description} />
-        </SEO>
+      </SEO>
+      <Helmet>
+        <meta name="twitter:image" content={`${siteUrl}${hero}`} />
+        <meta property="og:image" content={`${siteUrl}${hero}`} />
+        <meta name="image" content={`${siteUrl}${hero}`} />
+      </Helmet>
       <TitleWrapper>
       <ArticleTitle>
         {title}
@@ -72,6 +75,7 @@ export const BlogPostTemplate = ({
             </p>
           ) : null}
         <BackLink to="/blog/">← Back to blog</BackLink>
+        <p>{`${siteUrl}${hero}`}</p>
         </div>
       </ContentContainer>
     </ArticleContainer>
@@ -107,6 +111,8 @@ const BlogPost = ({ data }) => {
           >
             <title>{`${post.frontmatter.title} · Ajmal Afif`} </title>
             <meta name="description" content={`${post.frontmatter.description}`} />
+            <meta name="image" content={`${siteUrl}${post.frontmatter.hero}`} />
+            <meta property="og:image" content={`${siteUrl}${post.frontmatter.hero}`} />
           </Helmet>
         }
         tags={post.frontmatter.tags}
