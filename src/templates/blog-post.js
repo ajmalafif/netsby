@@ -45,12 +45,14 @@ export const BlogPostTemplate = ({
         node={content}
         desc={description}
         article>
+        <meta name="og:image" content={`${siteUrl}${post.frontmatter.hero}`} />
+        <meta name="image" content={`${siteUrl}${post.frontmatter.hero}`} />
+        <meta name="twitter:image" content={`${siteUrl}${post.frontmatter.hero}`} />
         <meta name="description" content={description} />
         <meta name="twitter:title" content={`${title} · Ajmal Afif`} />
         <meta name="twitter:description" content={description} />
         <meta property="og:title" content={`${title} · Ajmal Afif`} />
         <meta property="og:description" content={description} />
-        <meta property="random" content={`${siteUrl}${hero}`} />
         </SEO>
       <TitleWrapper>
       <ArticleTitle>
@@ -105,7 +107,6 @@ const BlogPost = ({ data }) => {
           >
             <title>{`${post.frontmatter.title} · Ajmal Afif`} </title>
             <meta name="description" content={`${post.frontmatter.description}`} />
-            <meta name="og:image" content={`${siteUrl}${post.frontmatter.hero}`} />
           </Helmet>
         }
         tags={post.frontmatter.tags}
@@ -113,10 +114,6 @@ const BlogPost = ({ data }) => {
         title={post.frontmatter.title}
         date={post.frontmatter.date}
       />
-      <SEO>
-        <meta name="image" content={`${siteUrl}${post.frontmatter.hero}`} />
-        <meta name="twitter:image" content={`${siteUrl}${post.frontmatter.hero}`} />
-      </SEO>
     </Layout>
   )
 }
@@ -138,7 +135,7 @@ export const pageQuery = graphql`
         date(formatString: "MMMM DD, YYYY")
         title
         description
-        hero 
+        hero
         tags
       }
     }
