@@ -35,6 +35,7 @@ export const BlogPostTemplate = ({
   helmet,
 }) => {
   const PostContent = contentComponent || Content
+  const siteUrl = process.env.URL || process.env.DEPLOY_URL || `https://netsby.netlify.com`
 
   return (
     <ArticleContainer>
@@ -49,7 +50,7 @@ export const BlogPostTemplate = ({
         <meta name="twitter:description" content={description} />
         <meta property="og:title" content={`${title} · Ajmal Afif`} />
         <meta property="og:description" content={description} />
-        <meta name="image" content={hero} />
+        <meta property="random" content={`${siteUrl}${hero}`} />
         </SEO>
       <TitleWrapper>
       <ArticleTitle>
@@ -80,6 +81,7 @@ BlogPostTemplate.propTypes = {
   contentComponent: PropTypes.func,
   description: PropTypes.string,
   title: PropTypes.string,
+  hero: PropTypes.oneOfType([PropTypes.object, PropTypes.string]),
   date: PropTypes.string,
   helmet: PropTypes.object,
 }
@@ -102,9 +104,13 @@ const BlogPost = ({ data }) => {
           >
             <title>{`${post.frontmatter.title} · Ajmal Afif`} </title>
             <meta name="description" content={`${post.frontmatter.description}`} />
+            <meta name="image" content={`${post.frontmatter.hero}`} />
+            <meta name="og:image" content={`${post.frontmatter.hero}`} />
+            <meta name="twitter:image" content={`${post.frontmatter.hero}`} />
           </Helmet>
         }
         tags={post.frontmatter.tags}
+        hero={post.frontmatter.hero}
         title={post.frontmatter.title}
         date={post.frontmatter.date}
       />
@@ -129,7 +135,7 @@ export const pageQuery = graphql`
         date(formatString: "MMMM DD, YYYY")
         title
         description
-        hero
+        hero 
         tags
       }
     }

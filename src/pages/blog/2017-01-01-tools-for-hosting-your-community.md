@@ -5,6 +5,7 @@ date: 2017-01-01T00:00:00.000Z
 description: >-
   Here are some tips to tap on communities and helps (which includes, experts)
   near you.
+hero: '/img/tsuwave@3x.png'
 tags:
   - design
   - community

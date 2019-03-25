@@ -6,6 +6,7 @@ description: >-
   I was trying to create custom page template in Roots  
   theme (now called Sage) for WordPress theme
   development.
+hero: '/img/tsuwave@3x.png'
 tags:
   - wordpress
   - javascript

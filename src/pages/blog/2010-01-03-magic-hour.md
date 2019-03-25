@@ -4,6 +4,7 @@ title: 'Magic hour'
 date: 2010-01-03T15:04:10.000Z
 description: >-
   Magic hour. Its the time where opportunity floats and luck surfaces. Magic hour is to be discovered and find out; not something to be taken for granted.
+hero: '/img/tsuwave@3x.png'
 tags:
   - musing
 ---

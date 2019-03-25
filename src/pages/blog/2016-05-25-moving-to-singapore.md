@@ -4,9 +4,9 @@ title: 'Moving to Singapore'
 date: 2016-05-25T15:04:10.000Z
 description: >-
   In 2016, I have moved to Singapore and working with Aviva Digital Garage.
-hero: /img/tsuwave@3x.png
 tags:
   - personal
+hero: '/img/tsuwave@3x.png'
 ---
 I have recently moved to Singapore and working with Aviva Digital Garage.
 
