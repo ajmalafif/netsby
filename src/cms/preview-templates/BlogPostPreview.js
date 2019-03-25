@@ -2,7 +2,7 @@ import React from 'react'
 import PropTypes from 'prop-types'
 import { BlogPostTemplate } from '../../templates/blog-post'
 
-const BlogPostPreview = ({ entry, widgetFor }) => (
+const BlogPostPreview = ({ entry, getAsset, widgetFor }) => (
   <BlogPostTemplate
     content={widgetFor('body')}
     description={entry.getIn(['data', 'description'])}

@@ -88,6 +88,7 @@ BlogPostTemplate.propTypes = {
 
 const BlogPost = ({ data }) => {
   const { markdownRemark: post } = data
+  const siteUrl = process.env.URL || process.env.DEPLOY_URL || `https://netsby.netlify.com`
 
   return (
     <Layout>
@@ -104,9 +105,7 @@ const BlogPost = ({ data }) => {
           >
             <title>{`${post.frontmatter.title} · Ajmal Afif`} </title>
             <meta name="description" content={`${post.frontmatter.description}`} />
-            <meta name="image" content={`${post.frontmatter.hero}`} />
-            <meta name="og:image" content={`${post.frontmatter.hero}`} />
-            <meta name="twitter:image" content={`${post.frontmatter.hero}`} />
+            <meta name="og:image" content={`${siteUrl}${post.frontmatter.hero}`} />
           </Helmet>
         }
         tags={post.frontmatter.tags}
@@ -114,6 +113,10 @@ const BlogPost = ({ data }) => {
         title={post.frontmatter.title}
         date={post.frontmatter.date}
       />
+      <SEO>
+        <meta name="image" content={`${siteUrl}${post.frontmatter.hero}`} />
+        <meta name="twitter:image" content={`${siteUrl}${post.frontmatter.hero}`} />
+      </SEO>
     </Layout>
   )
 }
