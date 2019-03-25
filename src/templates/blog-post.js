@@ -44,7 +44,7 @@ export const BlogPostTemplate = ({
         title={`${title} · Ajmal Afif`}
         node={content}
         desc={description}
-        image={`${siteUrl}${hero.image}`}
+        image={`${siteUrl}${hero}`}
         article>
         <meta name="description" content={description} />
         <meta name="twitter:title" content={`${title} · Ajmal Afif`} />
@@ -53,9 +53,9 @@ export const BlogPostTemplate = ({
         <meta property="og:description" content={description} />
       </SEO>
       <Helmet>
-        <meta name="twitter:image" content={`${siteUrl}${hero.image}`} />
-        <meta property="og:image" content={`${siteUrl}${hero.image}`} />
-        <meta name="image" content={`${siteUrl}${hero.image}`} />
+        <meta name="twitter:image" content={`${siteUrl}${hero}`} />
+        <meta property="og:image" content={`${siteUrl}${hero}`} />
+        <meta name="image" content={`${siteUrl}${hero}`} />
       </Helmet>
       <TitleWrapper>
       <ArticleTitle>
@@ -86,7 +86,7 @@ BlogPostTemplate.propTypes = {
   contentComponent: PropTypes.func,
   description: PropTypes.string,
   title: PropTypes.string,
-  hero: PropTypes.oneOfType([PropTypes.object, PropTypes.string]),
+  hero: PropTypes.string,
   date: PropTypes.string,
   helmet: PropTypes.object,
 }
@@ -110,8 +110,8 @@ const BlogPost = ({ data }) => {
           >
             <title>{`${post.frontmatter.title} · Ajmal Afif`} </title>
             <meta name="description" content={`${post.frontmatter.description}`} />
-            <meta name="image" content={`${siteUrl}${post.frontmatter.hero.image}`} />
-            <meta property="og:image" content={`${siteUrl}${post.frontmatter.hero.image}`} />
+            <meta name="image" content={`${siteUrl}${post.frontmatter.hero}`} />
+            <meta property="og:image" content={`${siteUrl}${post.frontmatter.hero}`} />
           </Helmet>
         }
         tags={post.frontmatter.tags}
@@ -140,10 +140,7 @@ export const pageQuery = graphql`
         date(formatString: "MMMM DD, YYYY")
         title
         description
-        hero {
-          image
-          alt
-        }
+        hero
         tags
       }
     }

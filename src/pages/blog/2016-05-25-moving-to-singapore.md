@@ -6,9 +6,7 @@ description: >-
   In 2016, I have moved to Singapore and working with Aviva Digital Garage.
 tags:
   - personal
-hero: 
-  image: '/img/tsuwave@3x.png'
-  alt: 'tsuwave'
+hero: '/img/tsuwave@3x.png'
 ---
 I have recently moved to Singapore and working with Aviva Digital Garage.
 

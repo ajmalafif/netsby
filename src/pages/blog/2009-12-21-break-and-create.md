@@ -4,9 +4,7 @@ title: 'Break and Create'
 date: 2009-12-21T15:04:10.000Z
 description: >-
   Both aren't easy to do. Especially when we're talking habits or routines. When we are so used of those bad habits and doing it over again consistently, with or without conscious—to break it takes more than just our mental effort.
-hero: 
-  image: '/img/tsuwave@3x.png'
-  alt: 'tsuwave'
+hero: '/img/tsuwave@3x.png'
 tags:
   - musing
 ---

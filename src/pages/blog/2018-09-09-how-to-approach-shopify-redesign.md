@@ -4,9 +4,7 @@ title: How to approach design for Shopify stores
 date: 2018-09-09T10:53:08.200Z
 description: >-
   Get some ideas on how to approach design effectively for your Shopify stores.
-hero: 
-  image: '/img/tsuwave@3x.png'
-  alt: 'tsuwave'
+hero: '/img/tsuwave@3x.png'
 tags:
   - shopify
   - design

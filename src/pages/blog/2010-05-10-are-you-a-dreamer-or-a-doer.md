@@ -5,9 +5,7 @@ date: 2010-05-10T15:04:10.000Z
 description: >-
   Dreamers swim in the pool of cloud;
   Doers swim in the pool of sweat.
-hero:
-  image: '/img/tsuwave@3x.png'
-  alt: 'tsuwave'
+hero: '/img/tsuwave@3x.png'
 tags:
   - musing
 ---
