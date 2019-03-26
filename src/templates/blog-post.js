@@ -111,6 +111,7 @@ const BlogPost = ({ data }) => {
           </Helmet>
         }
         tags={post.frontmatter.tags}
+        hero={post.frontmatter.hero}
         title={post.frontmatter.title}
         date={post.frontmatter.date}
       />
@@ -135,6 +136,7 @@ export const pageQuery = graphql`
         date(formatString: "MMMM DD, YYYY")
         title
         description
+        hero
         tags
       }
     }
