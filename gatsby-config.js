@@ -5,7 +5,7 @@ module.exports = {
     siteUrl: url, // For gatsby-plugin-sitemap
     title: 'Ajmal Afif',
     titleAlt: 'Ajmal Afif',
-    description: 'Personal website of Ajmal Afif. Lifetime learner and digital designer.',
+    description: 'Personal website of Ajmal Afif. Lifetime learner and digital designer. Designing for behavioral change through empathy. Humanizing user experiences by understanding contexts and cultures.',
     banner: '/img/og-image.jpg',
     twitter: '@ajmalafif',
     facebook: 'Ajmal Afif',
@@ -132,7 +132,7 @@ module.exports = {
         icon: 'src/img/favicon@3x.png', // This path is relative to the root of the site.
       },
     },
-    // 'gatsby-plugin-offline',
+    'gatsby-plugin-offline',
     {
       resolve: `gatsby-plugin-purgecss`,
       options: {
