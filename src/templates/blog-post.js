@@ -31,11 +31,11 @@ export const BlogPostTemplate = ({
   title,
   description,
   date,
-  hero,
+  // hero,
   helmet,
 }) => {
   const PostContent = contentComponent || Content
-  const siteUrl = process.env.URL || process.env.DEPLOY_URL || `https://netsby.netlify.com`
+  // const siteUrl = process.env.URL || process.env.DEPLOY_URL || `https://netsby.netlify.com`
 
   return (
     <ArticleContainer>
@@ -44,7 +44,6 @@ export const BlogPostTemplate = ({
         title={`${title} · Ajmal Afif`}
         node={content}
         desc={description}
-        image={`${siteUrl}${hero}`}
         article>
         <meta name="description" content={description} />
         <meta name="twitter:title" content={`${title} · Ajmal Afif`} />
@@ -52,11 +51,11 @@ export const BlogPostTemplate = ({
         <meta property="og:title" content={`${title} · Ajmal Afif`} />
         <meta property="og:description" content={description} />
       </SEO>
-      <Helmet>
-        <meta name="twitter:image" content={`${siteUrl}${hero}`} />
-        <meta property="og:image" content={`${siteUrl}${hero}`} />
-        <meta name="image" content={`${siteUrl}${hero}`} />
-      </Helmet>
+      {/* <Helmet>
+        <meta name="twitter:image" content={`${siteUrl}`} />
+        <meta property="og:image" content={`${siteUrl}`} />
+        <meta name="image" content={`${siteUrl}`} />
+      </Helmet> */}
       <TitleWrapper>
       <ArticleTitle>
         {title}
@@ -86,14 +85,13 @@ BlogPostTemplate.propTypes = {
   contentComponent: PropTypes.func,
   description: PropTypes.string,
   title: PropTypes.string,
-  hero: PropTypes.string,
   date: PropTypes.string,
   helmet: PropTypes.object,
 }
 
 const BlogPost = ({ data }) => {
   const { markdownRemark: post } = data
-  const siteUrl = process.env.URL || process.env.DEPLOY_URL || `https://netsby.netlify.com`
+  // const siteUrl = process.env.URL || process.env.DEPLOY_URL || `https://netsby.netlify.com`
 
   return (
     <Layout>
@@ -110,12 +108,9 @@ const BlogPost = ({ data }) => {
           >
             <title>{`${post.frontmatter.title} · Ajmal Afif`} </title>
             <meta name="description" content={`${post.frontmatter.description}`} />
-            <meta name="image" content={`${siteUrl}${post.frontmatter.hero}`} />
-            <meta property="og:image" content={`${siteUrl}${post.frontmatter.hero}`} />
           </Helmet>
         }
         tags={post.frontmatter.tags}
-        hero={post.frontmatter.hero}
         title={post.frontmatter.title}
         date={post.frontmatter.date}
       />
@@ -140,7 +135,6 @@ export const pageQuery = graphql`
         date(formatString: "MMMM DD, YYYY")
         title
         description
-        hero
         tags
       }
     }
