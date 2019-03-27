@@ -1,0 +1,5 @@
+/*
+  Link: <*.css>; rel=preload; as=style
+  Link: <*.js>; rel=preload; as=script
+  Link: <*.jpg>; rel=preload; as=image
+  Link: <*.png>; rel=preload; as=image
