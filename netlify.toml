@@ -1,0 +1,8 @@
+[[headers]]
+  for = "/*"
+  [headers.values]
+  Link = '''
+  <*.css>; rel=preload; as=style\
+  <*.js>; rel=preload; as=script\
+  <*.jpg>; rel=preload; as=image\
+  <*.png>; rel=preload; as=image'''
