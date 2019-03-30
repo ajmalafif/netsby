@@ -34,6 +34,9 @@ wrap
 class BlogIndexPage extends React.Component {
   render() {
     const { data } = this.props
+    const { group, index, first, last } = data
+    const previousUrl = index - 1 === 1 ? '' : (index - 1).toString()
+    const nextUrl = (index + 1).toString() + '/'
     const { edges: posts } = data.allMarkdownRemark
 
     return (
