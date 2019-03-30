@@ -1,10 +1,10 @@
 import React from 'react'
-import PropTypes from 'prop-types'
 import { Link, graphql } from 'gatsby'
+import PropTypes from 'prop-types'
 import Helmet from 'react-helmet'
 // import ArticleList from '../components/ArticleList'
-import Layout from '../components/Layout'
 import tachyons from 'tachyons-components'
+import Layout from '../components/Layout'
 
 const PageContainer = tachyons('div')`
 blog ph3 ph0-ns pv4-ns
@@ -31,27 +31,10 @@ const ArticleWrapper = tachyons('div')`
 wrap
 `
 
-const PaginationLink = props => {
-  if (!props.test) {
-    return (
-      <Link to={`/blog/${props.url}`} className='button is-rounded'>
-        {props.text}
-      </Link>
-    )
-  } else {
-    return (
-      <span disabled className='button is-rounded'>
-        {props.text}
-      </span>
-    )
-  }
-}
-
-const BlogIndexPage = ({ pageContext }) => {
-
-    const { group, index, first, last, pageCount } = pageContext
-    const previousUrl = index - 1 === 1 ? '' : (index - 1).toString()
-    const nextUrl = (index + 1).toString() + '/'
+class BlogIndexPage extends React.Component {
+render () {
+    const { data } = this.props
+    const { edges: posts } = data.allMarkdownRemark
 
     return (
       <Layout>
@@ -79,8 +62,7 @@ const BlogIndexPage = ({ pageContext }) => {
           </PageHeaderContainer>
           <SectionArticles>
             <ArticleWrapper>
-            <h4>{group}</h4>
-            {/* {this.prop.allMarkdownRemark.edges.map(({ node }) => (
+            {posts.map(({ node }) => (
             <div className="w-70-ns mb4 mb5-ns" key={node.id}>
             <h3 className="lh-title mb2 blue mt0">
               <Link className="link fw6" to={node.fields.slug}>
@@ -97,20 +79,13 @@ const BlogIndexPage = ({ pageContext }) => {
             </p>
             <small className="mid-gray lh-copy">{node.frontmatter.date}{node.frontmatter.author}</small>
             </div>
-            ))} */}
-              {/* <ArticleList posts={group} /> */}
-              {/* <section className='section'>
-                <div className='buttons is-centered'>
-                  <h4>{pageCount} Pages</h4>
-                  <PaginationLink test={first} url={previousUrl} text='Previous Page' />
-                  <PaginationLink test={last} url={nextUrl} text='Next Page' />
-                </div>
-              </section> */}
+            ))}
             </ArticleWrapper>
           </SectionArticles>
         </PageContainer>
       </Layout>
     )
+  }
 }
 
 BlogIndexPage.propTypes = {
