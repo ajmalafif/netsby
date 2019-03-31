@@ -4,7 +4,7 @@ import {Link} from 'gatsby'
 const ArticleList = ({posts}) => {
   return (
     <div>
-      {posts
+      {posts && posts.filter(post => post.node.frontmatter.templateKey === 'blog-post')
         .map(({ node: post }) => (
           <div className="w-70-ns mb4 mb5-ns" key={post.id}>
             <h3 className="lh-title mb2 blue mt0">

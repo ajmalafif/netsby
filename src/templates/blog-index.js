@@ -1,8 +1,8 @@
-import React from 'react'
+import React, {Component} from 'react'
 import { Link, graphql } from 'gatsby'
 import PropTypes from 'prop-types'
 import Helmet from 'react-helmet'
-// import ArticleList from '../components/ArticleList'
+import ArticleList from '../components/ArticleList'
 import tachyons from 'tachyons-components'
 import Layout from '../components/Layout'
 
@@ -31,10 +31,29 @@ const ArticleWrapper = tachyons('div')`
 wrap
 `
 
-class BlogIndexPage extends React.Component {
+const PaginationLink = props => {
+  if (!props.test) {
+    return (
+      <Link to={`/blog/${props.url}`} className='button is-rounded'>
+        {props.text}
+      </Link>
+    )
+  } else {
+    return (
+      <span disabled className='button is-rounded'>
+        {props.text}
+      </span>
+    )
+  }
+}
+
+class BlogIndexPage extends Component {
+// const BlogIndexPage = ({ pageContext }) => {
 render () {
-    const { data } = this.props
-    const { edges: posts } = data.allMarkdownRemark
+    const {pageContext} = this.props
+    const { group, index, first, last, pageCount } = pageContext
+    const previousUrl = index - 1 === 1 ? '' : (index - 1).toString()
+    const nextUrl = (index + 1).toString() + '/'
 
     return (
       <Layout>
@@ -62,24 +81,14 @@ render () {
           </PageHeaderContainer>
           <SectionArticles>
             <ArticleWrapper>
-            {posts.map(({ node }) => (
-            <div className="w-70-ns mb4 mb5-ns" key={node.id}>
-            <h3 className="lh-title mb2 blue mt0">
-              <Link className="link fw6" to={node.fields.slug}>
-                {node.frontmatter.title}
-              </Link>
-            </h3>
-            <p className="lh-copy mt1 mb2">
-              {node.excerpt}
-            </p>
-            <p className='mb2 mt3'>
-            <Link className="link mid-gray" to={node.fields.slug}>
-            Continue reading →
-            </Link>
-            </p>
-            <small className="mid-gray lh-copy">{node.frontmatter.date}{node.frontmatter.author}</small>
-            </div>
-            ))}
+              <ArticleList posts={group} />
+              <section className='section'>
+                <div className='buttons is-centered'>
+                  <h4>{pageCount} Pages</h4>
+                  <PaginationLink test={first} url={previousUrl} text='Previous Page' />
+                  <PaginationLink test={last} url={nextUrl} text='Next Page' />
+                </div>
+              </section>
             </ArticleWrapper>
           </SectionArticles>
         </PageContainer>
