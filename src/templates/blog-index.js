@@ -2,7 +2,6 @@ import React from 'react'
 import { Link, graphql } from 'gatsby'
 import PropTypes from 'prop-types'
 import Helmet from 'react-helmet'
-// import ArticleList from '../components/ArticleList'
 import tachyons from 'tachyons-components'
 import Layout from '../components/Layout'
 
