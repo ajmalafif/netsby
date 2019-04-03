@@ -43,7 +43,7 @@
     "tachyons": "^4.11.1",
     "tachyons-components": "^1.0.1",
     "tachyons-sass": "^4.9.5",
-    "typeface-inter": "^3.2.0",
+    "typeface-inter": "^3.3.0",
     "uuid": "^3.2.1"
   },
   "keywords": [

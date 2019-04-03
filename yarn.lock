@@ -12115,9 +12115,9 @@ typedarray@^0.0.6:
   version "0.0.6"
   resolved "https://registry.yarnpkg.com/typedarray/-/typedarray-0.0.6.tgz#867ac74e3864187b1d3d47d996a78ec5c8830777"
 
-typeface-inter@^3.2.0:
-  version "3.2.0"
-  resolved "https://registry.yarnpkg.com/typeface-inter/-/typeface-inter-3.2.0.tgz#ca110ea31588dca584afba014e6561349a7ce9db"
+typeface-inter@^3.3.0:
+  version "3.3.0"
+  resolved "https://registry.yarnpkg.com/typeface-inter/-/typeface-inter-3.3.0.tgz#f58d04db5b4e23b779b574337757d782174848b1"
 
 ua-parser-js@^0.7.18:
   version "0.7.19"
