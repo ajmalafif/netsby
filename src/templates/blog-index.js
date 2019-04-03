@@ -1,9 +1,10 @@
 import React from 'react'
-import { Link, graphql } from 'gatsby'
 import PropTypes from 'prop-types'
-import Helmet from 'react-helmet'
-import tachyons from 'tachyons-components'
+import { Link, graphql } from 'gatsby'
 import Layout from '../components/Layout'
+import ArticleList from '../components/ArticleList'
+import tachyons from 'tachyons-components'
+import Helmet from 'react-helmet'
 
 const PageContainer = tachyons('div')`
 blog ph3 ph0-ns pv4-ns
@@ -29,21 +30,44 @@ w-100 dt mt4
 const ArticleWrapper = tachyons('div')`
 wrap
 `
+const ButtonSecondary = tachyons(Link)`
+w-100 w-auto-ns no-underline br2 ph4 pv3 mt3 mt0-ns dib blue bg-white tc bg-secondary bs-secondary br-secondary btn-paginate
+`
+const ButtonDisabled = tachyons('div')`
+w-100 w-auto-ns no-underline br2 ph4 pv3 mt3 mt0-ns dib bg-white tc bg-secondary bs-secondary br-secondary ba b--light-gray o-40 btn-paginate
+`
+const Pagination = tachyons('div')`
+mb5 mv0-ns mb5 bt b--light-gray pt0 pt3-ns
+`
 
-class BlogIndexPage extends React.Component {
-render () {
-    const { data } = this.props
-    const { edges: posts } = data.allMarkdownRemark
+const PaginationLink = props => {
+  if (!props.test) {
+    return (
+      <ButtonSecondary to={`/blog/${props.url}`}>
+        {`${props.text}`}
+      </ButtonSecondary>
+    )
+  } else {
+    return (
+      <ButtonDisabled disabled>
+        {props.text}
+      </ButtonDisabled>
+    )
+  }
+}
+
+export default class IndexPage extends React.Component {
+  render() {
+    const {pageContext} = this.props
+    const {group, index, first, last} = pageContext
+    const previousUrl = index - 1 === 1 ? '' : (index - 1).toString()
+    const nextUrl = (index + 1).toString() + '/'
 
     return (
       <Layout>
         <Helmet
-          titleTemplate="Blog · Ajmal Afif">
+          titleTemplate="Blog | Ajmal Afif">
           <meta name='description' content='I enjoy writing down and reflect on my experience. My goal is to write more about design, frontend and anything in between.' />
-          <meta name="twitter:title" content="Blog · Ajmal Afif" />
-          <meta name="twitter:description" content='I enjoy writing down and reflect on my experience. My goal is to write more about design, frontend and anything in between.' />
-          <meta property="og:title" content="Blog · Ajmal Afif" />
-          <meta property="og:description" content='I enjoy writing down and reflect on my experience. My goal is to write more about design, frontend and anything in between.' />
       </Helmet>
         <PageContainer>
           <PageHeaderContainer>
@@ -61,24 +85,11 @@ render () {
           </PageHeaderContainer>
           <SectionArticles>
             <ArticleWrapper>
-            {posts.map(({ node }) => (
-            <div className="w-70-ns mb4 mb5-ns" key={node.id}>
-            <h3 className="lh-title mb2 blue mt0">
-              <Link className="link fw6" to={node.fields.slug}>
-                {node.frontmatter.title}
-              </Link>
-            </h3>
-            <p className="lh-copy mt1 mb2">
-              {node.excerpt}
-            </p>
-            <p className='mb2 mt3'>
-            <Link className="link mid-gray" to={node.fields.slug}>
-            Continue reading →
-            </Link>
-            </p>
-            <small className="mid-gray lh-copy">{node.frontmatter.date}{node.frontmatter.author}</small>
-            </div>
-            ))}
+              <ArticleList posts={group} />
+                <Pagination>
+                  <PaginationLink test={first} url={previousUrl} text='← Previous Page' />
+                  <PaginationLink test={last} url={nextUrl} text='Next Page →' />
+                </Pagination>
             </ArticleWrapper>
           </SectionArticles>
         </PageContainer>
@@ -87,7 +98,7 @@ render () {
   }
 }
 
-BlogIndexPage.propTypes = {
+IndexPage.propTypes = {
   data: PropTypes.shape({
     allMarkdownRemark: PropTypes.shape({
       edges: PropTypes.array,
@@ -95,10 +106,8 @@ BlogIndexPage.propTypes = {
   }),
 }
 
-export default BlogIndexPage
-
 export const pageQuery = graphql`
-  query blogPageQuery {
+  query BlogQuery {
     allMarkdownRemark(
       sort: { order: DESC, fields: [frontmatter___date] },
       filter: { frontmatter: { templateKey: { eq: "blog-post" } }}
