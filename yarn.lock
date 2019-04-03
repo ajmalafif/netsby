@@ -4902,9 +4902,9 @@ gatsby-cli@^2.5.4:
     yargs "^12.0.5"
     yurnalist "^1.0.2"
 
-gatsby-image@^2.0.36:
-  version "2.0.36"
-  resolved "https://registry.yarnpkg.com/gatsby-image/-/gatsby-image-2.0.36.tgz#4b97b559389c0bf7ad5ca2755905ec4b95e2ccb9"
+gatsby-image@^2.0.37:
+  version "2.0.37"
+  resolved "https://registry.yarnpkg.com/gatsby-image/-/gatsby-image-2.0.37.tgz#9c28c3d8c2a249f6f5eff929be67a761658762df"
   dependencies:
     "@babel/runtime" "^7.0.0"
     object-fit-images "^3.2.4"
