@@ -34,10 +34,10 @@ const ButtonSecondary = tachyons(Link)`
 w-100 w-auto-ns no-underline br2 ph4 pv3 mt3 mt0-ns dib blue bg-white tc bg-secondary bs-secondary br-secondary btn-paginate
 `
 const ButtonDisabled = tachyons('div')`
-w-100 w-auto-ns no-underline br2 ph4 pv3 mt3 mt0-ns dib bg-white tc bg-secondary bs-secondary br-secondary ba b--light-gray o-40 btn-paginate
+w-100 w-auto-ns no-underline br2 ph4 pv3 mt3 mt0-ns dib bg-white tc bg-secondary bs-secondary ba b--silver o-40 btn-paginate
 `
 const Pagination = tachyons('div')`
-mb5 mv0-ns mb5 bt b--light-gray pt0 pt3-ns
+mb5 bt b--light-gray pt3
 `
 
 const PaginationLink = props => {
@@ -87,8 +87,8 @@ export default class IndexPage extends React.Component {
             <ArticleWrapper>
               <ArticleList posts={group} />
                 <Pagination>
-                  <PaginationLink test={first} url={previousUrl} text='← Previous Page' />
-                  <PaginationLink test={last} url={nextUrl} text='Next Page →' />
+                  <PaginationLink test={first} url={previousUrl} text='← Previous page' />
+                  <PaginationLink test={last} url={nextUrl} text='Next page →' />
                 </Pagination>
             </ArticleWrapper>
           </SectionArticles>
