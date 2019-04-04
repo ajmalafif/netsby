@@ -87,8 +87,8 @@ export default class IndexPage extends React.Component {
             <ArticleWrapper>
               <ArticleList posts={group} />
                 <Pagination>
-                  <PaginationLink className="fr fl-ns" test={first} url={previousUrl} text='← Previous page' />
-                <PaginationLink className="fl fr-ns" test={last} url={nextUrl} text='Next page →' />
+                  <PaginationLink test={first} url={previousUrl} text='← Newer posts' />
+                <PaginationLink test={last} url={nextUrl} text='Older posts →' />
                 </Pagination>
             </ArticleWrapper>
           </SectionArticles>

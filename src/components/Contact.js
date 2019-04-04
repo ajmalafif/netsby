@@ -15,7 +15,7 @@ pa2 input-reset ba b--moon-gray bg-transparent w-100 mb3
 `
 
 const Button = tachyons(`button`)`
-link pointer br2 ph4 pv3 dib white bg-primary db w-100 w-auto-ns tc
+w-100 w-auto-ns link br2 ph4 pv3 dib mr3-ns white bg-primary tc bn pointer
 `
 
 function encode(data) {

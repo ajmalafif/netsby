@@ -19,9 +19,9 @@ f3 f2-ns fw6 tc pt4 pt5-ns mt0 mb3 lh-title
 const ContentContainer = tachyons('div')`
 wrap mw12
 `
-// const BackLink = tachyons(Link)`
-// link fw6
-// `
+const BackLink = tachyons(Link)`
+w-100 w-auto-ns no-underline br2 ph4 pv3 mt3 mt0-ns dib blue bg-white tc bg-secondary bs-secondary br-secondary btn-paginate 
+`
 
 export const BlogPostTemplate = ({
   content,
@@ -54,6 +54,7 @@ export const BlogPostTemplate = ({
                 ))}
             </p>
           ) : null}
+          <BackLink to="/blog/">← Back to Blog</BackLink>
         </div>
       </ContentContainer>
     </ArticleContainer>

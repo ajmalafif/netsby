@@ -32,7 +32,7 @@ const TagsPage = ({
       <Heading>All topics</Heading>
         {group.map(tag => (
           <p key={tag.fieldValue}>
-            <span className="dark-gray">{tag.totalCount === 1 ? 'There is' : 'There are'} <span className="fw6">{tag.totalCount} {tag.totalCount === 1 ? 'article' : 'articles'}</span> with <Link className="link fw6" to={`/tags/${kebabCase(tag.fieldValue)}/`}>{tag.fieldValue} →</Link> related {tag.totalCount === 1 ? 'topic' : 'topics'}.</span>
+            <span className="dark-gray">{tag.totalCount === 1 ? 'There is' : 'There are'} <span className="fw6">{tag.totalCount} {tag.totalCount === 1 ? 'post' : 'posts'}</span> with <Link className="link fw6" to={`/tags/${kebabCase(tag.fieldValue)}/`}>{tag.fieldValue} →</Link> related {tag.totalCount === 1 ? 'topic' : 'topics'}.</span>
             
           </p>
         ))}
