@@ -66,7 +66,7 @@ export default class IndexPage extends React.Component {
     return (
       <Layout>
         <Helmet
-          titleTemplate="Blog | Ajmal Afif">
+          titleTemplate="Blog · Ajmal Afif">
           <meta name='description' content='I enjoy writing down and reflect on my experience. My goal is to write more about design, frontend and anything in between.' />
       </Helmet>
         <PageContainer>
@@ -87,8 +87,8 @@ export default class IndexPage extends React.Component {
             <ArticleWrapper>
               <ArticleList posts={group} />
                 <Pagination>
-                  <PaginationLink test={first} url={previousUrl} text='← Previous page' />
-                  <PaginationLink test={last} url={nextUrl} text='Next page →' />
+                  <PaginationLink className="fr fl-ns" test={first} url={previousUrl} text='← Previous page' />
+                <PaginationLink className="fl fr-ns" test={last} url={nextUrl} text='Next page →' />
                 </Pagination>
             </ArticleWrapper>
           </SectionArticles>
