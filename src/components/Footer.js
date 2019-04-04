@@ -3,7 +3,7 @@ import tachyons from 'tachyons-components'
 import { Match } from '@reach/router'
 
 const Copyright = tachyons("footer")`
-pt4 ph3 ph5-m ph6-l mid-gray ${props => props.home ? 'fixed left-0 bottom-0 right-0 z-1 pb4' : 'w-100 wrap pb5 pb4-ns'}
+pt4 ph3 ph5-m ph6-l mid-gray ${props => props.home ? 'fixed left-0 bottom-0 right-0 z-1 pb4' : 'w-100 wrap pb6 pb4-ns'}
 `
 const Trademark = tachyons("small")`
 f6 db tc
