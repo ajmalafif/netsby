@@ -4934,9 +4934,9 @@ gatsby-paginate@^1.0.17:
   dependencies:
     path "^0.12.7"
 
-gatsby-plugin-manifest@^2.0.27:
-  version "2.0.27"
-  resolved "https://registry.yarnpkg.com/gatsby-plugin-manifest/-/gatsby-plugin-manifest-2.0.27.tgz#9a950f3ef97b8e5eb5a5d77b7c42ee002655685e"
+gatsby-plugin-manifest@^2.0.28:
+  version "2.0.28"
+  resolved "https://registry.yarnpkg.com/gatsby-plugin-manifest/-/gatsby-plugin-manifest-2.0.28.tgz#cf3022184cbe09dcd6739540515d8d83593bbdf2"
   dependencies:
     "@babel/runtime" "^7.0.0"
     sharp "^0.22.0"
