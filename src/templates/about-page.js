@@ -76,6 +76,7 @@ const AboutPage = ({ data }) => {
       <meta name="twitter:title" content={`${post.frontmatter.title} · Ajmal Afif`} />
       <meta name="twitter:description" content={`${post.frontmatter.description}`} />
       <meta property="og:title" content={`${post.frontmatter.title} · Ajmal Afif`} />
+      <meta property="og:site_name" content={`Ajmal Afif`} />
       <meta property="og:description" content={`${post.frontmatter.description}`} />
       </Helmet>
     </Layout>
