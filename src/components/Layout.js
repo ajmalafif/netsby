@@ -178,6 +178,7 @@ const TemplateWrapper = ({ children }) => (
 	        <link rel="icon" type="image/png" href="/img/favicon-32x32.png" sizes="32x32" />
 	        <link rel="icon" type="image/png" href="/img/favicon-16x16.png" sizes="16x16" />
 	
+          <link rel="canonical" href="https://ajmalafif.com" />
 	        <link rel="mask-icon" href="/img/safari-pinned-tab.svg" color="#0055ff" />
 	        <meta name="theme-color" content="#0055ff" />
 
