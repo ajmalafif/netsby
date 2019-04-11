@@ -57,7 +57,7 @@ export const IndexPageTemplate = ({
         <meta name="twitter:title" content={`Ajmal Afif`} />
         <meta name="twitter:description" content={content} />
         <meta property="og:site_name" content={`Ajmal Afif`} />
-        <meta property="og:title" content={`Ajmal Afif`} />
+        <meta property="og:title" content={`@ajmalafif`} />
         <meta property="og:description" content={content} />
       </Helmet>
       <Container>
