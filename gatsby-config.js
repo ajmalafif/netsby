@@ -6,7 +6,7 @@ module.exports = {
     title: 'Ajmal Afif',
     titleAlt: 'Ajmal Afif',
     description: 'Personal website of Ajmal Afif. Lifetime learner and digital designer. Designing for behavioral change through empathy. Humanizing user experiences by understanding contexts and cultures.',
-    banner: '/img/og-image.jpg',
+    banner: '/img/og-image.png',
     twitter: '@ajmalafif',
     facebook: 'Ajmal Afif',
     author: 'Ajmal Afif',
