@@ -5,6 +5,7 @@ import tachyons from 'tachyons-components'
 import { createGlobalStyle } from 'styled-components'
 import Navbar from '../components/Navbar.js'
 import Footer from '../components/Footer.js'
+import SEO from '../components/Seo.js'
 import '../styles/main.scss'
 
 
@@ -182,6 +183,7 @@ const TemplateWrapper = ({ children }) => (
 	        <link rel="mask-icon" href="/img/safari-pinned-tab.svg" color="#0055ff" />
         </Helmet>
         <GlobalStyle />
+        <SEO />
         <Navbar />
         {children}
         <Footer />
