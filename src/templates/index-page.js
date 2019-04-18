@@ -48,13 +48,13 @@ export const IndexPageTemplate = ({
   return (
     <Section>
       <Helmet
-        titleTemplate="Ajmal Afif"
+        titleTemplate="Netsby"
         bodyAttributes={{
             class: 'homepage'
         }}
       >
-        <meta name="twitter:title" content={`Ajmal Afif`} />
-        <meta property="og:site_name" content={`Ajmal Afif`} />
+        <meta name="twitter:title" content={`Netsby`} />
+        <meta property="og:site_name" content={`Netsby`} />
         <meta property="og:title" content={`@ajmalafif`} />
       </Helmet>
       <Container>

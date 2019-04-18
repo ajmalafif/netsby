@@ -3,8 +3,8 @@ const url = process.env.URL || process.env.DEPLOY_URL || `https://netsby.netlify
 module.exports = {
   siteMetadata: {
     siteUrl: url, // For gatsby-plugin-sitemap
-    title: 'Ajmal Afif',
-    titleAlt: 'Ajmal Afif',
+    title: 'Netsby',
+    titleAlt: 'Netsby',
     description: 'Personal website of Ajmal Afif. Lifetime learner and digital designer. Designing for behavioral change through empathy. Humanizing user experiences by understanding contexts and cultures.',
     banner: '/img/og-image.png',
     twitter: '@ajmalafif',
