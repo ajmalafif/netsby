@@ -54,7 +54,7 @@ export const IndexPageTemplate = ({
         }}
       >
         <meta name="twitter:title" content={`Netsby`} />
-        <meta property="og:site_name" content={`Netsby`} />
+        <meta property="og:site_name" content={`Netsby by @ajmalafif`} />
         <meta property="og:title" content={`@ajmalafif`} />
       </Helmet>
       <Container>
