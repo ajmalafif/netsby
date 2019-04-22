@@ -26,6 +26,7 @@ w-100 w-auto-ns no-underline br2 ph4 pv3 mt3 mt0-ns dib blue bg-white tc bg-seco
 export const BlogPostTemplate = ({
   content,
   contentComponent,
+  hero,
   tags,
   title,
   date,
@@ -88,8 +89,10 @@ const BlogPost = ({ data }) => {
           >
             <title>{`${post.frontmatter.title}`}</title>
             <meta name="description" content={`${post.frontmatter.description}`} />
+            <meta name="image" content={post.frontmatter.hero} />
           </Helmet>
         }
+        hero={post.frontmatter.hero}
         tags={post.frontmatter.tags}
         title={post.frontmatter.title}
         date={post.frontmatter.date}
@@ -115,6 +118,7 @@ export const pageQuery = graphql`
         date(formatString: "MMMM DD, YYYY")
         title
         description
+        hero
         tags
       }
     }
