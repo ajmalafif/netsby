@@ -5106,9 +5106,9 @@ gatsby-remark-relative-images@^0.2.2:
     slash "2.0.0"
     unist-util-select "1.5.0"
 
-gatsby-source-filesystem@^2.0.29:
-  version "2.0.29"
-  resolved "https://registry.yarnpkg.com/gatsby-source-filesystem/-/gatsby-source-filesystem-2.0.29.tgz#2cc2746072d8bb60d5818cd64bcd7e7754873090"
+gatsby-source-filesystem@^2.0.31:
+  version "2.0.31"
+  resolved "https://registry.yarnpkg.com/gatsby-source-filesystem/-/gatsby-source-filesystem-2.0.31.tgz#6d60fbd9bd579cdf1e0ce1c698e477fd312e2860"
   dependencies:
     "@babel/runtime" "^7.0.0"
     better-queue "^3.8.7"
