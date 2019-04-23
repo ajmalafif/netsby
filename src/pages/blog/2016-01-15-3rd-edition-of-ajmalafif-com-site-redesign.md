@@ -4,7 +4,9 @@ title: '3rd edition of ajmalafif.com — site redesign'
 date: 2015-08-12T15:04:10.000Z
 description: >-
   3rd revision of my personal website redesign I did back in 2015
-hero: '/img/tsuwave@3x.png'
+hero:
+    - alt: Tsuwave Logo
+      image: '/img/tsuwave@3x.png' 
 tags:
   - wordpress
   - javascript

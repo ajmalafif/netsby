@@ -4,7 +4,9 @@ title: 'Include external JavaScript into Roots'
 date: 2013-04-08T15:04:10.000Z
 description: >-
   I was trying to load JavaScript into Roots theme (now called Sage) for WordPress theme development.
-hero: '/img/tsuwave@3x.png'
+hero:
+    - alt: Tsuwave Logo
+      image: '/img/tsuwave@3x.png' 
 tags:
   - wordpress
   - javascript

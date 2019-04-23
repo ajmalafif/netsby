@@ -4,7 +4,9 @@ title: 'Fake your passion'
 date: 2011-11-01T15:04:10.000Z
 description: >-
   “Fake your passion”. I understand where it comes from though. I dislike lengthy and draggy post, so I wouldn't go into detailed examples. Believe it or not, there are situations and circumstances where passion, is being "faked". Specifically when passion is related to career or interest. It's a survival thing which one will have to fake a passion in order to pursue or move on (or even, survive) in life. 
-hero: '/img/tsuwave@3x.png'
+hero:
+    - alt: Tsuwave Logo
+      image: '/img/tsuwave@3x.png' 
 tags:
   - musing
 ---
