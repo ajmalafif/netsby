@@ -93,8 +93,8 @@ const BlogPost = ({ data }) => {
           >
             <title>{`${post.frontmatter.title}`}</title>
             <meta name="description" content={`${post.frontmatter.description}`} />
-            <meta name="og:image" content={`${post.frontmatter.hero.image}`} />
-            <meta name="og:image:alt" content={`${post.frontmatter.hero.alt}`} />
+            <meta property="og:image" content={`${post.frontmatter.hero.image}`} />
+            <meta property="og:image:alt" content={`${post.frontmatter.hero.alt}`} />
           </Helmet>
         }
         hero={post.frontmatter.hero}
