@@ -4898,7 +4898,7 @@ fuzzy@^0.1.1:
   version "0.1.3"
   resolved "https://registry.yarnpkg.com/fuzzy/-/fuzzy-0.1.3.tgz#4c76ec2ff0ac1a36a9dccf9a00df8623078d4ed8"
 
-gatsby-cli@^2.5.11, gatsby-cli@^2.5.9:
+gatsby-cli@^2.5.11:
   version "2.5.11"
   resolved "https://registry.yarnpkg.com/gatsby-cli/-/gatsby-cli-2.5.11.tgz#8a00104cce88128d3f5a28967445230a6d49fc34"
   dependencies:
@@ -5161,7 +5161,7 @@ gatsby-source-filesystem@^2.0.29:
     valid-url "^1.0.9"
     xstate "^3.1.0"
 
-gatsby-telemetry@^1.0.7, gatsby-telemetry@^1.0.9:
+gatsby-telemetry@^1.0.9:
   version "1.0.9"
   resolved "https://registry.yarnpkg.com/gatsby-telemetry/-/gatsby-telemetry-1.0.9.tgz#f9192d5bf72fb239d477e9b556a7dc040c4a566b"
   dependencies:
@@ -5217,9 +5217,9 @@ gatsby-transformer-sharp@^2.1.18:
     probe-image-size "^4.0.0"
     sharp "^0.21.3"
 
-gatsby@^2.3.25:
-  version "2.3.25"
-  resolved "https://registry.yarnpkg.com/gatsby/-/gatsby-2.3.25.tgz#1b430090c322c8ac71bfc01be750ed87ed16ff8e"
+gatsby@^2.3.29:
+  version "2.3.29"
+  resolved "https://registry.yarnpkg.com/gatsby/-/gatsby-2.3.29.tgz#65162804ecc1bf33ae1ff3b2d5a66deec5798e63"
   dependencies:
     "@babel/code-frame" "^7.0.0"
     "@babel/core" "^7.0.0"
@@ -5276,11 +5276,11 @@ gatsby@^2.3.25:
     flat "^4.0.0"
     fs-exists-cached "1.0.0"
     fs-extra "^5.0.0"
-    gatsby-cli "^2.5.9"
+    gatsby-cli "^2.5.11"
     gatsby-link "^2.0.16"
     gatsby-plugin-page-creator "^2.0.12"
     gatsby-react-router-scroll "^2.0.7"
-    gatsby-telemetry "^1.0.7"
+    gatsby-telemetry "^1.0.9"
     glob "^7.1.1"
     got "8.0.0"
     graphql "^14.1.1"
