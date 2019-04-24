@@ -98,6 +98,8 @@ const BlogPost = ({ data }) => {
           </Helmet>
         }
         hero={post.frontmatter.hero}
+        image={post.frontmatter.hero.image}
+        alt={post.frontmatter.hero.alt}
         tags={post.frontmatter.tags}
         title={post.frontmatter.title}
         date={post.frontmatter.date}
