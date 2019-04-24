@@ -127,7 +127,13 @@ export const pageQuery = graphql`
         description
         hero {
           alt
-          image
+          image {
+            childImageSharp {
+              fixed(width: 200, height: 200, quality: 90) {
+                ...GatsbyImageSharpFixed_tracedSVG
+              }
+            }
+          }
         }
         tags
       }
