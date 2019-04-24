@@ -27,7 +27,6 @@ collections:
             fields:
               - {label: Image, name: image, widget: image}
               - {label: Alt, name: alt, widget: string}
-      # - {label: "OpenGraph Image", name: "hero", widget: "string"}
   - name: "pages"
     label: "Pages"
     create: false

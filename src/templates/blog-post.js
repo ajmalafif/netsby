@@ -67,7 +67,10 @@ BlogPostTemplate.propTypes = {
   contentComponent: PropTypes.func,
   description: PropTypes.string,
   title: PropTypes.string,
-  hero: PropTypes.oneOfType([PropTypes.object, PropTypes.string]),
+  hero: PropTypes.shape({
+    alt: PropTypes.string,
+    image: PropTypes.oneOfType([PropTypes.object, PropTypes.string]),
+  }),
   date: PropTypes.string,
   helmet: PropTypes.object,
 }
