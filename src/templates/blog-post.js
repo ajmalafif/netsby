@@ -84,6 +84,9 @@ const BlogPost = ({ data }) => {
         content={post.html}
         contentComponent={HTMLContent}
         description={post.frontmatter.description}
+        hero={post.frontmatter.hero}
+        image={post.frontmatter.hero.image}
+        alt={post.frontmatter.hero.alt}
         helmet={
           <Helmet
             titleTemplate="%s | Ajmal Afif"
@@ -97,9 +100,6 @@ const BlogPost = ({ data }) => {
             <meta property="og:image:alt" content={`${post.frontmatter.hero.alt}`} />
           </Helmet>
         }
-        hero={post.frontmatter.hero}
-        image={post.frontmatter.hero.image}
-        alt={post.frontmatter.hero.alt}
         tags={post.frontmatter.tags}
         title={post.frontmatter.title}
         date={post.frontmatter.date}
