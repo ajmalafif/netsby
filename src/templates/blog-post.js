@@ -128,8 +128,6 @@ export const pageQuery = graphql`
         hero {
           alt
           image {
-            childImageSharp {
-            }
           }
         }
         tags
