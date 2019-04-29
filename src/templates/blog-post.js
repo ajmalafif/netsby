@@ -129,9 +129,6 @@ export const pageQuery = graphql`
           alt
           image {
             childImageSharp {
-              fixed(width: 200, height: 200, quality: 90) {
-                ...GatsbyImageSharpFixed_tracedSVG
-              }
             }
           }
         }
