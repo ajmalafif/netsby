@@ -96,7 +96,7 @@ export default class IndexPage extends React.Component {
                       return <PaginationLink test={isActive} url={`/${number === 1 ? '' : number}`} text={number} />
                     })
                   }
-                  <PaginationLink test={last} url={nextUrl} text='Next →' />
+                  {!last && <PaginationLink test={last} url={nextUrl} text='Next →' />}
                 </Pagination>
             </ArticleWrapper>
           </SectionArticles>
