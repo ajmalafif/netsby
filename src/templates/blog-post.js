@@ -127,8 +127,6 @@ export const pageQuery = graphql`
         description
         hero {
           alt
-          image {
-          }
         }
         tags
       }
