@@ -58,10 +58,12 @@ const PaginationLink = props => {
 
 export default class IndexPage extends React.Component {
   render() {
-    const {pageContext} = this.props
-    const {group, index, first, last} = pageContext
+    const {location, pageContext} = this.props
+    const {group, index, pageCount, first, last} = pageContext
     const previousUrl = index - 1 === 1 ? '' : (index - 1).toString()
     const nextUrl = (index + 1).toString() + '/'
+
+    const pageNumbers = new Array(pageCount).fill(undefined).map((_, index) => index + 1)
 
     return (
       <Layout>
@@ -87,8 +89,14 @@ export default class IndexPage extends React.Component {
             <ArticleWrapper>
               <ArticleList posts={group} />
                 <Pagination>
-                  <PaginationLink test={first} url={previousUrl} text='← Newer posts' />
-                <PaginationLink test={last} url={nextUrl} text='Older posts →' />
+                  {!first && <PaginationLink test={first} url={previousUrl} text='← Prev' />}
+                  {
+                    pageNumbers.map(number => {
+                      const isActive = location.pathname.indexOf(number) > -1 || (location.pathname === '/blog/' && number === 1)
+                      return <PaginationLink test={isActive} url={`/${number === 1 ? '' : number}`} text={number} />
+                    })
+                  }
+                  {!last && <PaginationLink test={last} url={nextUrl} text='Next →' />}
                 </Pagination>
             </ArticleWrapper>
           </SectionArticles>
