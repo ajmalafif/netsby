@@ -5968,7 +5968,7 @@ gatsby-remark-relative-images@^0.2.2:
     slash "2.0.0"
     unist-util-select "1.5.0"
 
-gatsby-source-filesystem@^2.0.32:
+gatsby-source-filesystem@^2.0.33:
   version "2.0.33"
   resolved "https://registry.yarnpkg.com/gatsby-source-filesystem/-/gatsby-source-filesystem-2.0.33.tgz#c8b4ed9a231a325ca356f739bab77ea8fad5824d"
   integrity sha512-GH/Y8dJ/+EKie3ckMrcHn1MsYcLVNbglCKNoTaDuY31rFCh3gq6310bdi8u//J+dcgcz7ggHXTN0W7FXxWF9FQ==
