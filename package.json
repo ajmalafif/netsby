@@ -4,7 +4,7 @@
   "version": "0.1.0",
   "author": "Ajmal Afif",
   "dependencies": {
-    "@raae/gatsby-remark-oembed": "0.0.6",
+    "@raae/gatsby-remark-oembed": "0.0.7",
     "@reach/router": "^1.2.1",
     "babel-plugin-styled-components": "^1.10.0",
     "gatsby": "^2.4.3",
