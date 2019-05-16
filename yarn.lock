@@ -5634,6 +5634,15 @@ fs-extra@^7.0.0, fs-extra@^7.0.1:
     jsonfile "^4.0.0"
     universalify "^0.1.0"
 
+fs-extra@^8.0.1:
+  version "8.0.1"
+  resolved "https://registry.yarnpkg.com/fs-extra/-/fs-extra-8.0.1.tgz#90294081f978b1f182f347a440a209154344285b"
+  integrity sha512-W+XLrggcDzlle47X/XnS7FXrXu9sDo+Ze9zpndeBxdgv88FHLm1HtmkhEwavruS6koanBjp098rUpHs65EmG7A==
+  dependencies:
+    graceful-fs "^4.1.2"
+    jsonfile "^4.0.0"
+    universalify "^0.1.0"
+
 fs-minipass@^1.2.5:
   version "1.2.5"
   resolved "https://registry.yarnpkg.com/fs-minipass/-/fs-minipass-1.2.5.tgz#06c277218454ec288df77ada54a03b8702aacb9d"
@@ -5826,14 +5835,14 @@ gatsby-plugin-page-creator@^2.0.13:
     micromatch "^3.1.10"
     slash "^1.0.0"
 
-gatsby-plugin-purgecss@^3.1.1:
-  version "3.1.1"
-  resolved "https://registry.yarnpkg.com/gatsby-plugin-purgecss/-/gatsby-plugin-purgecss-3.1.1.tgz#2855f0ca5fd96d9888147ade09aaf2daf16b0e1a"
-  integrity sha512-98SBK2ZmsmL2HdTw+2lJOhuOkxpHoTOuwKW2+0qx0nZ+WlSiUOkY3o4fXAtQOFlcaxDzjRXbw1hpP1NaXQciQg==
+gatsby-plugin-purgecss@^4.0.0:
+  version "4.0.0"
+  resolved "https://registry.yarnpkg.com/gatsby-plugin-purgecss/-/gatsby-plugin-purgecss-4.0.0.tgz#3bd26ac26441fe3dbb5da323cde1298416573072"
+  integrity sha512-oWPooBGAXZorznbrNxeE3BgKAf8Dq6XU/ilJ1Sa+zBhxq9ypwqHFu7pfGaKE0ZYNCd9OqQkcj72xud1P+1Ssog==
   dependencies:
-    fs-extra "^7.0.0"
+    fs-extra "^8.0.1"
     loader-utils "^1.1.0"
-    purgecss "^1.0.1"
+    purgecss "^1.3.0"
 
 gatsby-plugin-react-helmet@^3.0.12:
   version "3.0.12"
@@ -11308,7 +11317,7 @@ punycode@^1.2.4, punycode@^1.4.1:
   resolved "https://registry.yarnpkg.com/punycode/-/punycode-1.4.1.tgz#c0d5a63b2718800ad8e1eb0fa5269c84dd41845e"
   integrity sha1-wNWmOycYgArY4esPpSachN1BhF4=
 
-purgecss@^1.0.1:
+purgecss@^1.3.0:
   version "1.3.0"
   resolved "https://registry.yarnpkg.com/purgecss/-/purgecss-1.3.0.tgz#fc3c303df9a74a75547545b2c0da28a9ec63da00"
   integrity sha512-0UMnr8aUsPO7RbzAT72UELRvwMHhadtuunDm7rcgRS6b8pCVO8yglIqikiYFwQk2XP606mk+GpjI1G74Auxgtg==
