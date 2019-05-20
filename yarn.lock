@@ -5706,10 +5706,10 @@ fuzzy@^0.1.1:
   resolved "https://registry.yarnpkg.com/fuzzy/-/fuzzy-0.1.3.tgz#4c76ec2ff0ac1a36a9dccf9a00df8623078d4ed8"
   integrity sha1-THbsL/CsGjap3M+aAN+GIweNTtg=
 
-gatsby-cli@^2.5.14:
-  version "2.5.14"
-  resolved "https://registry.yarnpkg.com/gatsby-cli/-/gatsby-cli-2.5.14.tgz#1bcf6fd98e2bf6272d76d6a3dc681d687b971bc0"
-  integrity sha512-g05QENiBqeBFmELyII2+Kbqu5y4IwlPmZx4lGiKUh31lY+7S+rXkwsefwVQk+hwGRvmpkqoR4fSeGOEfiHR2lQ==
+gatsby-cli@^2.5.14, gatsby-cli@^2.5.15:
+  version "2.5.15"
+  resolved "https://registry.yarnpkg.com/gatsby-cli/-/gatsby-cli-2.5.15.tgz#9566c32fa768e2a265e169fdffe9d565ca69c910"
+  integrity sha512-RtXInDDqcimbMve2E7/8nvMcedMTPWPf/SnNklgA6LzzFuGJTmNEeuvo4RMQN0sFSmgo6OBbDtYFJh0zIjQ6Yw==
   dependencies:
     "@babel/code-frame" "^7.0.0"
     "@babel/runtime" "^7.0.0"
