@@ -5815,10 +5815,10 @@ gatsby-link@^2.1.1:
     "@types/reach__router" "^1.0.0"
     prop-types "^15.6.1"
 
-gatsby-paginate@^1.0.18:
-  version "1.0.18"
-  resolved "https://registry.yarnpkg.com/gatsby-paginate/-/gatsby-paginate-1.0.18.tgz#f6e768adddc8c096903728f59da3cecce35a1b93"
-  integrity sha512-Ie8PQ5RsC2a4ort2YeGX4xcrzajIi3B0o6xQ3QTlKOaHYmQbe3khz9BbTQxu/AMlF/OVoaeyvHQbQt4zM+p8eA==
+gatsby-paginate@^1.1.0:
+  version "1.1.0"
+  resolved "https://registry.yarnpkg.com/gatsby-paginate/-/gatsby-paginate-1.1.0.tgz#8d53816b382d55754ac3536d503d8e903327693b"
+  integrity sha512-Bqpd1lROEhYwbhUpYJ70HcoO1xr1oCIcuGIL7EoYHKqYNSbvVq5/AikZH3SDR/44YWoXMISgSo6yWDD2IKenUw==
   dependencies:
     path "^0.12.7"
 
