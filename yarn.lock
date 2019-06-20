@@ -5922,10 +5922,10 @@ gatsby-plugin-react-helmet@^3.0.12:
   dependencies:
     "@babel/runtime" "^7.0.0"
 
-gatsby-plugin-remove-trailing-slashes@^2.0.11:
-  version "2.0.11"
-  resolved "https://registry.yarnpkg.com/gatsby-plugin-remove-trailing-slashes/-/gatsby-plugin-remove-trailing-slashes-2.0.11.tgz#72bfa5d68009b9759c2d5aa63565cd4cd67a8fff"
-  integrity sha512-pJWTRM6ty0kc8O5b0C0zkUjMItvTIvLLEMCuX6UwGbt53EQyqn7vSgujJRSVKWCrOR+wBtLDYcm31++VR4xF3w==
+gatsby-plugin-remove-trailing-slashes@^2.1.0:
+  version "2.1.0"
+  resolved "https://registry.yarnpkg.com/gatsby-plugin-remove-trailing-slashes/-/gatsby-plugin-remove-trailing-slashes-2.1.0.tgz#4f0d2cec9dd45f2bbfd71dc5d79eccc7ba67b3ad"
+  integrity sha512-loOVqen2bdc2eeC3nnB6zuqEckItHOoIcSXiUuTMLwWWTbhmxSKKGBux+2wMkfdxWlzP0Bnxur1MOpaz9FMN2w==
   dependencies:
     "@babel/runtime" "^7.0.0"
 
