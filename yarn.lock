@@ -5950,10 +5950,10 @@ gatsby-plugin-netlify-headers@^1.0.1:
     pify "3.0.0"
     webpack-assets-manifest "^1.0.0"
 
-gatsby-plugin-netlify@^2.1.1:
-  version "2.1.1"
-  resolved "https://registry.yarnpkg.com/gatsby-plugin-netlify/-/gatsby-plugin-netlify-2.1.1.tgz#82355ea9bc969bf6d4876817fbe7ed0d74d7dd3d"
-  integrity sha512-FoIw6+gUyEWKwwanvMUWy+4XGzohtkv4zs0Rbb8i8PXFTgtLkT+9u/lbinJ6D7ocL3ttzEY5CE6ceQEfUsN4lg==
+gatsby-plugin-netlify@^2.1.2:
+  version "2.1.2"
+  resolved "https://registry.yarnpkg.com/gatsby-plugin-netlify/-/gatsby-plugin-netlify-2.1.2.tgz#4c8a854fdb009c8450355d54becc514e7737eb5e"
+  integrity sha512-9ANZYaU/ODDPg5SxfXn1+d4qO6HCRfyMXRj87ehq1DyMQ5jncLTdEDHz8T/uyZTnzQ+ojbmrFf/rDFuQbCOHHQ==
   dependencies:
     "@babel/runtime" "^7.0.0"
     fs-extra "^4.0.2"
