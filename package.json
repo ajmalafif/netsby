@@ -7,7 +7,7 @@
     "@raae/gatsby-remark-oembed": "0.0.7",
     "@reach/router": "^1.2.1",
     "babel-plugin-styled-components": "^1.10.6",
-    "gatsby": "^2.10.5",
+    "gatsby": "^2.13.39",
     "gatsby-cli": "^2.7.19",
     "gatsby-image": "^2.2.6",
     "gatsby-paginate": "^1.1.0",
