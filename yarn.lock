@@ -5865,7 +5865,7 @@ gatsby-cli@^2.7.2, gatsby-cli@^2.7.28:
     ink "^2.3.0"
     ink-spinner "^3.0.1"
 
-gatsby-core-utils@^1.0.0, gatsby-core-utils@^1.0.4:
+gatsby-core-utils@^1.0.4:
   version "1.0.4"
   resolved "https://registry.yarnpkg.com/gatsby-core-utils/-/gatsby-core-utils-1.0.4.tgz#098b5b2f444faadd3bc9f7e20bd0a092129882ba"
   integrity sha512-r9HhRvnaPFliO9IzN6Yz2xTsZ8vtWKvzQHz0GwW3iFe6KkhXC+Y1p8eEaorRz6AnOE6sRbWaeqpe3AA6FbKr2g==
@@ -5934,15 +5934,15 @@ gatsby-plugin-netlify-cache@^1.2.0:
     babel-runtime "^6.26.0"
     fs-extra "^7.0.0"
 
-gatsby-plugin-netlify-cms@^3.0.18:
-  version "3.0.18"
-  resolved "https://registry.yarnpkg.com/gatsby-plugin-netlify-cms/-/gatsby-plugin-netlify-cms-3.0.18.tgz#5f5f47c7870ce7e55c784fc91a573a13ddfc45f1"
-  integrity sha512-7Ee7cBJLuqntA/Md+MRkwUIYz+N4GRydEmV5oZH4937vhAFUnf6yE3k16tpHHkc66T4XXGibAI007CixBKAcwg==
+gatsby-plugin-netlify-cms@^4.1.6:
+  version "4.1.6"
+  resolved "https://registry.yarnpkg.com/gatsby-plugin-netlify-cms/-/gatsby-plugin-netlify-cms-4.1.6.tgz#e0a3acccd51aa9e073f8f2f5ee6bb332db0c586d"
+  integrity sha512-OFHIKN7QBxlTxnYakp5NK+5ZFKZ5mYYI1U/zcdi/F7ss7s2kyZ5WGIlbvCJVN22GPcpVjS5sqtvc2CULcoHFFQ==
   dependencies:
     "@pieh/friendly-errors-webpack-plugin" "1.7.0-chalk-2"
     html-webpack-exclude-assets-plugin "^0.0.7"
     html-webpack-plugin "^3.2.0"
-    lodash "^4.17.10"
+    lodash "^4.17.14"
     mini-css-extract-plugin "^0.4.1"
     netlify-identity-widget "^1.4.11"
     webpack "^4.16.0"
