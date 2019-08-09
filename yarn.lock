@@ -6010,10 +6010,10 @@ gatsby-plugin-remove-trailing-slashes@^2.1.2:
   dependencies:
     "@babel/runtime" "^7.0.0"
 
-gatsby-plugin-sass@^2.1.4:
-  version "2.1.4"
-  resolved "https://registry.yarnpkg.com/gatsby-plugin-sass/-/gatsby-plugin-sass-2.1.4.tgz#93602fe2ccff6a1b86b392e36becfc783e92feb8"
-  integrity sha512-aVd5rBKUNn4AzvxbRZKMKAo0x5y532Adj5wUWGbd0wW0yyAuGa0nc/wd58Wf7kVChTI1uAaOMnbGh+mW6owmjw==
+gatsby-plugin-sass@^2.1.5:
+  version "2.1.5"
+  resolved "https://registry.yarnpkg.com/gatsby-plugin-sass/-/gatsby-plugin-sass-2.1.5.tgz#c7624171d409e346e6d0553c9acd0c7a668ac268"
+  integrity sha512-JxBdfSA1GFg6NCZ+OJSiM1bzyE4Ov3L7n00siSAJAn90l8yTBLgW7Pm4UVQT7xlx2bhbikSovqOr48zPxBDY6w==
   dependencies:
     "@babel/runtime" "^7.0.0"
     sass-loader "^7.0.1"
