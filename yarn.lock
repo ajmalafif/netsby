@@ -6335,10 +6335,10 @@ gatsby-plugin-netlify-cache@^1.2.0:
     babel-runtime "^6.26.0"
     fs-extra "^7.0.0"
 
-gatsby-plugin-netlify-cms@^4.1.9:
-  version "4.1.9"
-  resolved "https://registry.yarnpkg.com/gatsby-plugin-netlify-cms/-/gatsby-plugin-netlify-cms-4.1.9.tgz#4368466e20474bd8c3b590f85bf88102ae0cef16"
-  integrity sha512-TrhhNfRYCfBoB+aFaumFo9Frfrd0JVXtBwk0g6o/XpgYqiKErP1/Hai3EOQzB3y4xkN+WdAOENMqg9QdrI6RnA==
+gatsby-plugin-netlify-cms@^4.1.11:
+  version "4.1.11"
+  resolved "https://registry.yarnpkg.com/gatsby-plugin-netlify-cms/-/gatsby-plugin-netlify-cms-4.1.11.tgz#a94cd14af6b4bed5e3add200648aa4fd8cc38533"
+  integrity sha512-q3BXcLpSJyIWm6H3+vGFGM7rG0uNUmwL1x0htjKE/9tirxqilmp6DnbuYjf018cEvcvM73oundUhGlPd2Cc8qg==
   dependencies:
     "@pieh/friendly-errors-webpack-plugin" "1.7.0-chalk-2"
     html-webpack-exclude-assets-plugin "^0.0.7"
