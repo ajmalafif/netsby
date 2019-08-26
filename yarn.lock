@@ -6418,13 +6418,13 @@ gatsby-plugin-netlify-headers@^1.0.1:
     pify "3.0.0"
     webpack-assets-manifest "^1.0.0"
 
-gatsby-plugin-netlify@^2.1.9:
-  version "2.1.9"
-  resolved "https://registry.yarnpkg.com/gatsby-plugin-netlify/-/gatsby-plugin-netlify-2.1.9.tgz#62aff932dae6abf6f9deab732156906503f50cf5"
-  integrity sha512-TX9MJU72dozbVDSSmDhmLra/z9X7slcoqVEdStdIJNBTPpfQXxi3UxE8Zvz8GHkM3+JhNfNXPTDYmAqKc4PUpw==
+gatsby-plugin-netlify@^2.1.10:
+  version "2.1.10"
+  resolved "https://registry.yarnpkg.com/gatsby-plugin-netlify/-/gatsby-plugin-netlify-2.1.10.tgz#299064ed82984bc2c11dd5ab08474a818dd462bd"
+  integrity sha512-ApB1+y/rYGbMy6lSwgam0hHDj5TmCSQWMG2n4MaV8VwtW+p9JOxwf6zWquhzasSrjnwWSKCkYmWf1DMKsqyh1g==
   dependencies:
     "@babel/runtime" "^7.5.5"
-    fs-extra "^4.0.3"
+    fs-extra "^8.1.0"
     kebab-hash "^0.1.2"
     lodash "^4.17.15"
     webpack-assets-manifest "^3.1.1"
