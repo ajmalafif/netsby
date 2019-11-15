@@ -11,7 +11,7 @@
     "gatsby-cli": "^2.8.10",
     "gatsby-image": "^2.2.33",
     "gatsby-paginate": "^1.1.1",
-    "gatsby-plugin-manifest": "^2.2.6",
+    "gatsby-plugin-manifest": "^2.2.28",
     "gatsby-plugin-netlify": "^2.1.25",
     "gatsby-plugin-netlify-cache": "^1.2.0",
     "gatsby-plugin-netlify-cms": "^4.1.28",
