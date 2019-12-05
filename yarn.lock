@@ -6708,15 +6708,15 @@ gatsby-paginate@^1.1.1:
   dependencies:
     path "^0.12.7"
 
-gatsby-plugin-manifest@^2.2.6:
-  version "2.2.6"
-  resolved "https://registry.yarnpkg.com/gatsby-plugin-manifest/-/gatsby-plugin-manifest-2.2.6.tgz#7dc0758ad16cb7656f0b808c7fef282b8f165d8c"
-  integrity sha512-QjOKUOrtwbmiXBAcFi0uvzQEGJa5PELXriJjXNuDmn++72sCybgoluOrY4Ajed+WUf82865RIXq58isK3Dmmgw==
+gatsby-plugin-manifest@^2.2.31:
+  version "2.2.31"
+  resolved "https://registry.yarnpkg.com/gatsby-plugin-manifest/-/gatsby-plugin-manifest-2.2.31.tgz#ed68f9366416e5833de76673a3f6785c96875f82"
+  integrity sha512-kU49eQQ4HqIVjKa3aMOvKFoDIZD0MahHZg3KluNpgRDw89JgUMivfTrCoTYq364ZCjwRxqYVFIm2CFf5WPRkhQ==
   dependencies:
-    "@babel/runtime" "^7.0.0"
-    gatsby-core-utils "^1.0.5"
-    semver "^5.6.0"
-    sharp "^0.22.1"
+    "@babel/runtime" "^7.7.4"
+    gatsby-core-utils "^1.0.22"
+    semver "^5.7.1"
+    sharp "^0.23.3"
 
 gatsby-plugin-netlify-cache@^1.2.0:
   version "1.2.0"
