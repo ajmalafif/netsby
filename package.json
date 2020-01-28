@@ -63,6 +63,6 @@
   "devDependencies": {
     "gatsby-plugin-remove-trailing-slashes": "^2.1.20",
     "prettier": "^1.19.1",
-    "rimraf": "^3.0.0"
+    "rimraf": "^3.0.1"
   }
 }
