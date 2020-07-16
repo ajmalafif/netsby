@@ -30,7 +30,7 @@
     "gatsby-source-filesystem": "^2.1.48",
     "gatsby-transformer-remark": "^2.6.50",
     "gatsby-transformer-sharp": "^2.3.14",
-    "lodash": "^4.17.15",
+    "lodash": "^4.17.19",
     "lodash-webpack-plugin": "^0.11.4",
     "netlify-cms": "^2.10.18",
     "node-sass": "^4.13.1",
